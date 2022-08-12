@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
 });
 
 // localhost:8000/nextpage
+// localhost:8000/nextpage
 app.get("/nextpage", (req, res) => {
   res.render("nextpage");
 });
