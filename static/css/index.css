@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    text-align: center;
+}
+header, nav, div, main, footer {
+    border: 1px solid red;
+}
+/* header부분 */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#logo_Box, #navBar, #login_Box {
+    width: 100%;
+}
+
+/* main부분 */
+main {
+    background-color: lightgrey;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* footer부분 */
+footer {
+    background-color: lightgrey;
+    width: 100%;
+    height: 58px;
+    position: relative;
+}
