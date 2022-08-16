@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  font-size: 10px;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.one,
+.seven,
+.thirteen {
+  background-image: url('/static/artistImg/profile00.png');
+}
+
+.two,
+.eight,
+.fourteen {
+  background-image: url('/static/artistImg/profile01.jpg');
+}
+
+.three,
+.nine,
+.fifteen {
+  background-image: url('/static/artistImg/profile02.jpg');
+}
+
+.four,
+.ten {
+  background-image: url('/static/artistImg/profile03.jpg');
+}
+
+.five,
+.eleven {
+  background-image: url('/static/artistImg/profile04.jpg');
+}
+
+.six,
+.twelve {
+  background-image: url('/static/artistImg/profile05.jpg');
+}
+
+
+.container header {
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  max-width: 30%;
+  transform: translateY(-50%);
+}
+
+/* .closeBtn {
+  position: fixed;
+  right: 0;
+
+  margin: 20px;
+  padding: .5em;
+
+  z-index: 1;
+  border: 2px solid #000;
+  border-radius: 50%;
+  filter: invert(1);
+} */
+
+.downBtn {
+  position: fixed;
+  width: 2.5em;
+  height: 2.5em;
+  bottom: 2.5em;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+/* 이미지 모바일 반응형으로  */
+img {
+  width: 100%;
+  display: block;
+  filter: invert(1);
+}
