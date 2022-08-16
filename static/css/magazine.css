@@ -18,34 +18,34 @@
 .one,
 .seven,
 .thirteen {
-  background-image: url('/static/artistImg/profile00.png');
+  background-image: url('/static/img/artistImg/profile00.png');
 }
 
 .two,
 .eight,
 .fourteen {
-  background-image: url('/static/artistImg/profile01.jpg');
+  background-image: url('/static/img/artistImg/profile01.jpg');
 }
 
 .three,
 .nine,
 .fifteen {
-  background-image: url('/static/artistImg/profile02.jpg');
+  background-image: url('/static/img/artistImg/profile02.jpg');
 }
 
 .four,
 .ten {
-  background-image: url('/static/artistImg/profile03.jpg');
+  background-image: url('/static/img/artistImg/profile03.jpg');
 }
 
 .five,
 .eleven {
-  background-image: url('/static/artistImg/profile04.jpg');
+  background-image: url('/static/img/artistImg/profile04.jpg');
 }
 
 .six,
 .twelve {
-  background-image: url('/static/artistImg/profile05.jpg');
+  background-image: url('/static/img/artistImg/profile05.jpg');
 }
 
 
