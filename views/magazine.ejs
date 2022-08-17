@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>parallax</title>
+  <link rel="stylesheet" href="/static/css/magazine.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 아이콘 래퍼 지정 -->
+    <div class="wrapper_buttons">
+
+      <section class="button close">
+        <button id='closeBtn' class='close_button_value' type="button">X</button>
+      </section>
+
+      <section class="button down">
+        <img src="/static/img/artistImg/page_down_arrow_action.gif" />
+      </section>
+
+    </div>
+
+    <!-- 이미지 래퍼 지정 -->
+    <section class="img_wrapper one">
+      <div class='user_name'> 김 백 진 </div>
+    </section>
+
+    
+      <section class="img_wrapper two">
+      <div class="divided_img_page2"></div>
+      <aside class="model_info">
+        <div>
+          <p>생년월일</p>
+          <p> 2022. 08. 17 </p>
+        </div>
+        <div> 
+          <p> 키 </p>
+          <p> 1** cm</p>
+        </div>
+        <div> 
+          <p> 몸무게 </p>
+          <p> ** kg</p>
+        </div>
+        <div> 
+          <p> 3 size </p>
+          <p> 00 - 00 - 00 </p>
+        </div>
+      </aside>
+      <!-- <form class="wrapper_form">
+        <input type="text" id='birth_date' maxlength="6" placeholder="birth date here : 생년월일">
+        <input type="text" id='height' maxlength="3" placeholder="Height here : 키">
+        <input type="text" id='weight' maxlength="2" placeholder="Weight here : 몸무게">
+        <input type="text" id='threeSize' maxlength="8" placeholder="3 - Size here : B-W-H  ">
+      </form> -->
+    </section>
+
+    <section class="img_wrapper three"></section>
+
+    <section class="img_wrapper four">
+      <div class="divided_img_page4"></div>
+      <aside class="model_career">
+        <div class="model_career_details">
+          <p>경력1</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+        </div>
+        <div class="model_career_details">
+          <p>경력2</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+        </div>
+      </aside>
+      <!-- <aside class="divided_img_page4"></aside>
+      <form class="wrapper_form">
+        <input type="text" id='birth_date' maxlength="6" placeholder="birth date here : 생년월일">
+        <input type="text" id='height' maxlength="3" placeholder="Height here : 키">
+        <input type="text" id='weight' maxlength="2" placeholder="Weight here : 몸무게">
+        <input type="text" id='threeSize' maxlength="8" placeholder="3 - Size here : B-W-H  ">
+      </form> -->
+    </section> 
+
+    <section class="img_wrapper five">
+
+      <aside class="model_career">
+        <div class="model_career_details">
+          <p>경력1</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+        </div>
+        <div class="model_career_details">
+          <p>경력2</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+        </div>
+      </aside>
+
+      <div class="divided_img_page5"></div>
+     
+    </section> 
+
+    <section class="img_wrapper six">
+      <div class="divided_img_page6"></div>
+      <aside class="model_career">
+        <div class="model_career_details">
+          <p>경력1</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+        </div>
+        <div class="model_career_details">
+          <p>경력2</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+          <p> 경력 내용</p>
+        </div>
+      </aside>
+      <!-- <aside class="divided_img_page4"></aside>
+      <form class="wrapper_form">
+        <input type="text" id='birth_date' maxlength="6" placeholder="birth date here : 생년월일">
+        <input type="text" id='height' maxlength="3" placeholder="Height here : 키">
+        <input type="text" id='weight' maxlength="2" placeholder="Weight here : 몸무게">
+        <input type="text" id='threeSize' maxlength="8" placeholder="3 - Size here : B-W-H  ">
+      </form> -->
+    </section> 
+
+    <section class="img_wrapper seven"></section>
+
+    <section class="img_wrapper eight"></section>
+
+
+  </div>
+
+
+  <!--
+  <section class="img_wrapper two">
+    <header>
+      <form class="info_box">
+        <input class='birth_date' type="text" placeholder="생년월일">
+        <input class='height' type="text" placeholder="키">
+        <input class='weight' type="text" placeholder="몸무게">
+        <input class='three_size' type="text" placeholder="3 사이즈">
+      </form>
+    </header> -->
+  </section>
+
+  <script>
+
+    // duration 속도 지정
+    // function setDuration() {
+    //   const durationScrollTo = (y, duration = 1000) => {
+    //     const stepY = (y - window.scrollY) / duration;
+
+    //     const currentY = window.scrollY;
+
+    //     const startTime = new Date().getTime();
+
+    //     const scrollInterval = setInterval(() => {
+    //       const now = new Date().getTime() - startTime;
+
+    //       window.scrollTo({ top: currentY + (stepY * now) });
+
+    //       if (duration <= now) {
+    //         clearInterval(scrollInterval);
+    //       }
+    //     }, 1);
+    //   };
+    // }
+
+    function lazyLoad() {
+      let imgs = document.querySelectorAll('.container');
+
+      if (window.scrollY == 0) {
+        window.scrollTo({ top: imgs[1].offsetTop, behavior: 'smooth' });
+      } else {
+        for (let i = 0; i < imgs.length; i++) {
+          if (window.scrollY >= imgs[i].offsetTop) {
+            window.scrollTo({ top: imgs[i + 1].offsetTop, behavior: 'smooth' });
+          }
+        }
+      }
+    }
+
+    //jQuery
+    $('.down').on('click', lazyLoad)
+
+
+    // const closeBtn = document.getElementById('closeBtn');
+
+    // closeBtn.addEventListener('click',()=>{
+    //   self.close();
+
+    // })
+
+
+  </script>
+</body>
+
+</html>
