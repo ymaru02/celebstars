@@ -16,7 +16,7 @@
     <div class="wrapper_buttons">
 
       <section class="button close">
-        <button class='close_button_value' type="button">X</button>
+        <button id='closeBtn' class='close_button_value' type="button">X</button>
       </section>
 
       <section class="button down">
@@ -164,13 +164,7 @@
   </div>
 
 
-  <!-- 
-
-
-    
-
-  
-
+  <!--
   <section class="img_wrapper two">
     <header>
       <form class="info_box">
@@ -183,52 +177,6 @@
   </section>
 
   <script>
-
-    // const addClassName = [
-    //   'one',
-    //   'two',
-    //   'three',
-    //   'four',
-    //   'five',
-    //   'six',
-    //   'seven',
-    //   'eight',
-    //   'nine',
-    //   'ten',
-    //   'eleven',
-    //   'twelve',
-    //   'thirteen',
-    //   'fourteen',
-    //   'fifteen',
-    // ]
-
-    // function addClass() {
-    //   const CONTAINER_CLASS = 'container'
-
-    //   for (let i = 0; i < addClassName.length; i++) {
-
-    //     const createSection = document.createElement('section');
-    //     const createHeader = document.createElement('header')
-    //     const createH1 = document.createElement('h1')
-
-    //     createH1.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo delectus et exercitationem fugamolestiae.';
-
-    //     createSection.className = CONTAINER_CLASS
-    //     createSection.classList.add(addClassName[i])
-
-    //     createSection.appendChild(createHeader)
-    //     createHeader.appendChild(createH1)
-    //     document.body.appendChild(createSection)
-
-
-    //     // $("body").append('<section><header><h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo delectus et exercitationem fugamolestiae.</h1></header></section>')
-    //     // $('section').addClass('container')
-    //     // $('section').addClass(`${addClassName[i]}`)
-
-    //   }
-    // }
-
-    // addClass()
 
     // duration 속도 지정
     // function setDuration() {
@@ -265,11 +213,16 @@
       }
     }
 
-    // const downBtn = document.querySelector('.downBtn')
-    // downBtn.addEventListener('click', lazyLoad)
-
     //jQuery
-    $('.downBtn').on('click', lazyLoad)
+    $('.down').on('click', lazyLoad)
+
+
+    // const closeBtn = document.getElementById('closeBtn');
+
+    // closeBtn.addEventListener('click',()=>{
+    //   self.close();
+
+    // })
 
 
   </script>
