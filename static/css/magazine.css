@@ -4,87 +4,171 @@
 }
 
 .container {
+  width: 100vw;
   height: 100vh;
-  background-size: cover;
-  background-attachment: fixed;
+  z-index: 0;
   position: relative;
-  font-size: 10px;
 }
 
-*::-webkit-scrollbar {
+.container::-webkit-scrollbar {
   display: none;
 }
 
-.one,
-.seven,
-.thirteen {
-  background-image: url('/static/img/artistImg/profile00.png');
-}
-
-.two,
-.eight,
-.fourteen {
-  background-image: url('/static/img/artistImg/profile01.jpg');
-}
-
-.three,
-.nine,
-.fifteen {
-  background-image: url('/static/img/artistImg/profile02.jpg');
-}
-
-.four,
-.ten {
-  background-image: url('/static/img/artistImg/profile03.jpg');
-}
-
-.five,
-.eleven {
-  background-image: url('/static/img/artistImg/profile04.jpg');
-}
-
-.six,
-.twelve {
-  background-image: url('/static/img/artistImg/profile05.jpg');
-}
-
-
-.container header {
-  color: rgba(255, 255, 255, 0.8);
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  max-width: 30%;
-  transform: translateY(-50%);
-}
-
-/* .closeBtn {
-  position: fixed;
-  right: 0;
-
-  margin: 20px;
-  padding: .5em;
-
+/* 버튼 래퍼 공통 CSS */
+.wrapper_buttons {
+  width: 100%;
+  position: relative;
   z-index: 1;
-  border: 2px solid #000;
-  border-radius: 50%;
-  filter: invert(1);
-} */
+}
 
-.downBtn {
+.button {
   position: fixed;
   width: 2.5em;
-  height: 2.5em;
+
+}
+
+.close {
+  right: 0;
+  top: 2em;
+
+  transform: translate(-2.5em, -2em);
+
+  margin: 20px;
+  text-align: center;
+}
+
+img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* CLOSE BUTTON DESIGN, 개인 메모: 나중에 after로 만들어 보기 */
+.close_button_value {
+  font-size: 2.5em;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.down {
   bottom: 2.5em;
   left: 50%;
-  z-index: 1;
   transform: translateX(-50%);
 }
 
-/* 이미지 모바일 반응형으로  */
-img {
-  width: 100%;
-  display: block;
-  filter: invert(1);
+/* 이미지 래퍼 공통 CSS */
+.img_wrapper {
+  /* width: 100%; */
+  height: 100%;
+
+  font-size: 10px;
+
+  position: relative;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* 첫번째 이미지 */
+.one {
+  background-image: url('/static/img/artistImg/profile00.png');
+}
+
+.user_name {
+  position: absolute;
+  font-size: 6em;
+  color: #fff;
+  right: 1em;
+  bottom: 2em;
+
+  padding: .25em;
+  border: .1em solid #fff;
+
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.divided_img_page2 {
+  height: 100%;
+  background-image: url("/static/img/artistImg/profile01.jpg");
+  background-size: cover;
+}
+
+
+.model_info { /* wrapper_form */
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 2em;
+  gap: 2em;
+
+  background-color: gray;
+  color: #fff;
+}
+
+.three {
+  background-image: url('/static/img/artistImg/profile02.jpg');
+  background-size: cover;
+}
+
+.four,
+.six {
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+}
+
+.divided_img_page4 {
+  height: 100%;
+  background-image: url("/static/img/artistImg/profile03.jpg");
+  background-size: cover;
+}
+
+.model_career {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.model_career_details {
+  padding: 3em;
+  display: grid;
+}
+
+.five {
+  display: grid;
+  grid-template-columns: 30% 70% ;
+}
+
+.divided_img_page5 {
+  height: 100%;
+  background-image: url("/static/img/artistImg/profile05.jpg");
+  background-size: cover;
+}
+
+.divided_img_page6 {
+  height: 100%;
+  background-image: url("/static/img/artistImg/profile01.jpg");
+  background-size: cover;
+}
+
+.seven {
+  height: 100%;
+  background-image: url("/static/img/artistImg/profile02.jpg");
+  background-size: cover;
+}
+
+.eight {
+  height: 100%;
+  background-image: url("/static/img/artistImg/profile03.jpg");
+  background-size: cover;
 }
