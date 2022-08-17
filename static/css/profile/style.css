@@ -1,0 +1,39 @@
+.profile {
+  width: 1100px;
+  margin: 0 auto;
+}
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+.profile-img {
+  margin-right: 10px;
+  width: 50%;
+}
+.profile-content {
+  margin-left: 10px;
+  width: 50%;
+  height: 100%;
+}
+.font-20 {
+  font-size: 25px;
+}
+
+.center {
+  width: 1000px;
+  margin: 0 auto;
+}
+.inner {
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+.carousel-img {
+  width: 300px;
+  height: 400px;
+}
