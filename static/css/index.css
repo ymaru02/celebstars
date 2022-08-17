@@ -7,6 +7,7 @@
 }
 body {
   margin: 0;
+  padding-top: 100px;
 }
 header,
 footer {
@@ -30,14 +31,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 10px;
   border-bottom: 1px solid lightgray;
+  position: fixed;
+  top: 0;
 }
-#logo_Box a img {
+#logo_box a img {
   width: 250px;
   height: 100%;
 }
-#navBar {
+#navbar {
   width: auto;
   height: 40px;
   display: flex;
@@ -45,27 +47,28 @@ header {
   align-items: center;
   margin-top: 40px;
 }
-#navBar ul {
+#navbar ul {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-left: -40px;
   gap: 20px;
 }
-#navBar ul li {
+#navbar ul li {
   display: block;
+  width: 130px;
 }
-#navBar li a {
+#navbar li a {
   text-decoration: none;
   color: black;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: bold;
   padding: 5px 10px 5px 10px;
 }
-#navBar li a:hover {
+#navbar li a:hover {
   font-size: 25px;
 }
-#login_Box {
+#login_box {
   width: 100px;
   height: 40px;
   display: flex;
@@ -73,28 +76,28 @@ header {
   align-items: center;
   margin-top: 40px;
 }
-#login_Box ul {
+#login_box ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
   margin-right: 20px;
 }
-#login_Box a {
+#login_box a {
   text-decoration: none;
 }
-#login_Icon {
+#login_icon {
   width: 25px;
 }
-#qa_Icon {
+#qa_icon {
   width: 35px;
 }
-#navBar_Mob {
+#navbar_mob {
   display: none;
   background-color: var(--celeb_color);
   height: 30px;
 }
-#navBar_Mob li a {
+#navbar_mob li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -102,20 +105,20 @@ header {
   padding: 5px 10px 5px 10px;
 }
 @media screen and (max-width: 768px) {
-  #logo_Box a img {
+  #logo_box a img {
     width: 200px;
     height: 100%;
   }
-  #login_Icon {
+  #login_icon {
     width: 22px;
   }
-  #qa_Icon {
+  #qa_icon {
     width: 32px;
   }
-  #navBar {
+  #navbar {
     display: none;
   }
-  #navBar_Mob {
+  #navbar_mob {
     display: block;
   }
   header {
@@ -130,6 +133,7 @@ main {
 
 /* footer부분 */
 footer {
+  margin-top: 20px;
   background-color: lightgrey;
   height: 58px;
 }
