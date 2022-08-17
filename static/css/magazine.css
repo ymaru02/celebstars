@@ -75,7 +75,7 @@ img {
 
 /* 첫번째 이미지 */
 .one {
-  background-image: url('/static/img/artistImg/profile00.png');
+  background-image: url('/static/img/artistImg/김백진/메인.jpeg');
 }
 
 .user_name {
@@ -97,7 +97,7 @@ img {
 
 .divided_img_page2 {
   height: 100%;
-  background-image: url("/static/img/artistImg/profile01.jpg");
+  background-image: url("/static/img/artistImg/김백진/image0.jpeg");
   background-size: cover;
 }
 
@@ -117,7 +117,7 @@ img {
 }
 
 .three {
-  background-image: url('/static/img/artistImg/profile02.jpg');
+  background-image: url('/static/img/artistImg/김백진/image1.jpeg');
   background-size: cover;
 }
 
@@ -130,7 +130,7 @@ img {
 
 .divided_img_page4 {
   height: 100%;
-  background-image: url("/static/img/artistImg/profile03.jpg");
+  background-image: url("/static/img/artistImg/김백진/image2.jpeg");
   background-size: cover;
 }
 
@@ -151,24 +151,24 @@ img {
 
 .divided_img_page5 {
   height: 100%;
-  background-image: url("/static/img/artistImg/profile05.jpg");
+  background-image: url("/static/img/artistImg/김백진/image3.jpeg");
   background-size: cover;
 }
 
 .divided_img_page6 {
   height: 100%;
-  background-image: url("/static/img/artistImg/profile01.jpg");
+  background-image: url("/static/img/artistImg/김백진/image4.jpeg");
   background-size: cover;
 }
 
 .seven {
   height: 100%;
-  background-image: url("/static/img/artistImg/profile02.jpg");
+  background-image: url("/static/img/artistImg/김백진/image5.jpeg");
   background-size: cover;
 }
 
 .eight {
   height: 100%;
-  background-image: url("/static/img/artistImg/profile03.jpg");
+  background-image: url("/static/img/artistImg/김백진/image6.jpeg");
   background-size: cover;
 }
