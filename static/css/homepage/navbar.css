@@ -1,6 +1,3 @@
-:root {
-  --celeb_color: #092063;
-}
 * {
   margin: 0;
   text-align: center;
@@ -13,7 +10,6 @@ body {
 #wrap {
   margin: auto;
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 li {
@@ -22,7 +18,7 @@ li {
 }
 /* header부분 */
 .header_box {
-  width: 100%;
+  width: 100vw;
   height: 100px;
   position: fixed;
   top: 0;
@@ -31,15 +27,14 @@ li {
   background-color: white;
 }
 .navbar_header {
-  margin: auto;
-  width: 1280px;
+  margin: 0 50px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 #logo_box a img {
-  width: 250px;
+  width: 200px;
   height: 100%;
 }
 #navbar {
@@ -51,12 +46,12 @@ li {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-left: -40px;
   gap: 20px;
 }
 #navbar ul li {
-  display: inline-block;
-  width: 130px;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
 }
 #navbar li a {
   text-decoration: none;
@@ -104,21 +99,18 @@ li {
 }
 @media screen and (max-width: 768px) {
   .navbar_header {
-    width: 100%;
-  }
-  #logo_box {
-    margin-left: 10px;
+    margin: 0 20px;
   }
   #logo_box a img {
     width: 200px;
     height: 100%;
+    margin-left: 10px;
   }
   #login_icon {
     width: 22px;
   }
   #qa_icon {
     width: 32px;
-    margin-right: 10px;
   }
   #navbar {
     display: none;

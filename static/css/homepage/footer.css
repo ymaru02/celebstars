@@ -1,12 +1,70 @@
-footer {
-  margin-top: 20px;
-  background-color: lightgrey;
-  width: 100%;
-  height: 100px;
+.footer {
+  width: 100vw;
   bottom: 0;
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: start;
   border-top: 1px solid lightgray;
+  flex-direction: column;
+}
+.info_bottom,
+.info_top {
+  width: 75%;
+  display: flex;
+}
+.info_bottom {
+  margin-bottom: 30px;
+  justify-content: center;
+  flex-direction: column;
+}
+.info_top {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.footer_logo {
+  margin-left: 20px;
+}
+.footer_logo img {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.celeb_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.celeb_desc p {
+  font-size: 14px;
+  line-height: 35%;
+  word-spacing: 5px;
+  white-space: nowrap;
+}
+.info_top_item ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.info_top_item ul li a {
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+}
+.sns_icon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.sns_icon li a img {
+  width: 36px;
+  height: 36px;
+}
+@media screen and (max-width: 768px) {
+  .footer_logo img {
+    width: 100px;
+    height: 50px;
+  }
 }
