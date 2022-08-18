@@ -3,18 +3,37 @@
   margin: 0;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: #000;
+
+}
+
+.hidden {
+  display: none;
+}
+
 .container {
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
+  max-width: 1280px;
+  min-height: 100vh;
   position: relative;
+  margin: 0 auto;
+  font-size: 10px;
 }
 
 .container::-webkit-scrollbar {
   display: none;
 }
 
-/* 버튼 래퍼 공통 CSS */
+/* 버튼 */
 .wrapper_buttons {
   width: 100%;
   position: relative;
@@ -30,19 +49,12 @@
 .close {
   right: 0;
   top: 2em;
-
-  transform: translate(-2.5em, -2em);
-
   margin: 20px;
   text-align: center;
+  transform: translate(-2.5em, -2em);
+
 }
 
-img {
-  min-width: 100%;
-  min-height: 100%;
-}
-
-/* CLOSE BUTTON DESIGN, 개인 메모: 나중에 after로 만들어 보기 */
 .close_button_value {
   font-size: 2.5em;
   padding: 0;
@@ -57,94 +69,188 @@ img {
   transform: translateX(-50%);
 }
 
-/* 이미지 래퍼 공통 CSS */
-.img_wrapper {
-  /* width: 100%; */
-  height: 100%;
+.toTheTop {
+  position: absolute;
+  
+  bottom: 0;
+  left: 50%;
 
-  font-size: 10px;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  transform: translate(-50%, 0);
+}
 
+.toTheTop:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+/* BG imgs 공통 */
+.img_wrapper,
+.page_one,
+.page_two,
+.page_three,
+.page_four,
+.page_five,
+.page_six,
+.page_seven,
+.page_eight,
+.page_nine,
+.page_ten,
+.page_last_thirteen,
+.two_img,
+.four_img,
+.five_img,
+.six_img,
+.nine_img,
+.ten_img,
+.eleven_img,
+.twelve_img {
+  width: 100%;
+  height: 100vh;
+}
+
+.page_one {
+  background: url('/static/img/artistImg/김백진/메인.jpeg') center no-repeat fixed;
+  background-size: 100% 100%;
   position: relative;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
 }
 
-/* 첫번째 이미지 */
-.one {
-  background-image: url('/static/img/artistImg/김백진/메인.jpeg');
+.page_three {
+  background: url('/static/img/artistImg/김백진/image1.jpeg') center no-repeat fixed;
+  background-size: 100% 100%;
 }
 
+.page_seven {
+  background: url('/static/img/artistImg/김백진/image5.jpeg') center no-repeat fixed;
+  background-size: 100% 100%;
+}
+
+.page_eight {
+  background: url('/static/img/artistImg/김백진/image6.jpeg') center no-repeat fixed;
+  background-size: 100% 100%;
+}
+
+.page_eleven {
+  background: url('/static/img/artistImg/김백진/image12.jpeg') center no-repeat fixed;
+  background-size: 100% 100%;
+}
+
+.page_twelve {
+  background: url('/static/img/artistImg/김백진/image13.jpeg') center no-repeat fixed;
+  background-size: 100% 100%;
+}
+
+.two_img {
+  background: url('/static/img/artistImg/김백진/image0.jpeg') no-repeat fixed;
+  background-size: calc(100% - 30%) 100%;
+}
+
+.four_img {
+  background: url('/static/img/artistImg/김백진/image2.jpeg') no-repeat fixed;
+  background-size: calc(100% - 30%) 100%;
+}
+
+.five_img {
+  background: url('/static/img/artistImg/김백진/image3.jpeg') right no-repeat fixed;
+  background-size: calc(100% - 30%) 100%;
+}
+
+.six_img {
+  background: url('/static/img/artistImg/김백진/image4.jpeg') no-repeat fixed;
+  background-size: calc(100% - 30%) 100%;
+}
+
+.nine_img {
+  background: url('/static/img/artistImg/김백진/image7.jpeg') no-repeat fixed;
+  background-size: calc(100% - 50%) 100%;
+}
+
+.ten_img {
+  background: url('/static/img/artistImg/김백진/image9.jpeg') right no-repeat fixed;
+  background-size: calc(100% - 50%) 100%;
+}
+
+.eleven_img {
+  background: url('/static/img/artistImg/김백진/image10.jpeg') left no-repeat fixed;
+  background-size: calc(100% - 40%) 100%;
+}
+
+.twelve_img {
+  background: url('/static/img/artistImg/김백진/image11.jpeg') right no-repeat fixed;
+  background-size: calc(100% - 40%) 100%;
+}
+
+.last_fifteen_img {
+  background: url('/static/img/artistImg/김백진/image14.jpeg') center no-repeat;
+  background-size: 100% 100%
+}
+
+/* 화면 분리 CSS */
+.page_two,
+.page_four,
+.page_six {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.page_five {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.page_nine {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.page_ten {
+  position: relative;
+}
+
+.page_last_thirteen {
+  padding: 2em;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+
+.eleven_img,
+.twelve_img {
+  position: absolute;
+  height: 55%;
+  margin: 1em;
+}
+
+.eleven_img {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.twelve_img {
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.last_fifteen_img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 분리된 화면 속 아이템들 CSS */
 .user_name {
   position: absolute;
   font-size: 6em;
   color: #fff;
   right: 1em;
-  bottom: 2em;
-}
-
-.two {
-  display: grid;
-  grid-template-columns: 70% 30%;
-}
-
-.four,
-.six {
-  display: grid;
-  grid-template-columns: 70% 30%;
-}
-
-.five {
-  display: grid;
-  grid-template-columns: 30% 70% ;
-}
-
-.divided_img_page2 {
-  height: 100%;
-  background-image: url("/static/img/artistImg/김백진/image0.jpeg");
-  background-size: cover;
-}
-
-.three {
-  background-image: url('/static/img/artistImg/김백진/image1.jpeg');
-  background-size: cover;
-}
-
-.divided_img_page4 {
-  height: 100%;
-  background-image: url("/static/img/artistImg/김백진/image2.jpeg");
-  background-size: cover;
-}
-
-.divided_img_page5 {
-  height: 100%;
-  background-image: url("/static/img/artistImg/김백진/image3.jpeg");
-  background-size: cover;
-}
-
-.divided_img_page6 {
-  height: 100%;
-  background-image: url("/static/img/artistImg/김백진/image4.jpeg");
-  background-size: cover;
-}
-
-.seven {
-  height: 100%;
-  background-image: url("/static/img/artistImg/김백진/image5.jpeg");
-  background-size: cover;
-}
-
-.eight {
-  height: 100%;
-  background-image: url("/static/img/artistImg/김백진/image6.jpeg");
-  background-size: cover;
+  bottom: 1em;
+  transform: translate(-.5em, -.5em);
 }
 
 
-.model_info { /* wrapper_form */
+.model_info {
+  /* wrapper_form */
   font-size: 20px;
 
   display: flex;
@@ -168,4 +274,25 @@ img {
   display: grid;
 }
 
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
 
+.social_info {
+  display: flex;
+  align-items: center;
+}
+.info_item {
+  border: 1px solid #000;
+  padding: 1em;
+  margin-left: 1em;
+}
+@media screen and (max-width: 768px) {
+  .info_item {
+    display: none
+  }
+  
+}

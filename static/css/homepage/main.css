@@ -1,12 +1,20 @@
 main {
+  width: 100%;
   display: flex;
   flex-direction: column;
   height: auto;
   margin: auto;
   align-items: center;
+  margin-bottom: 50px;
+}
+#banner_img {
+  width: 100vw;
+  height: 90vh;
 }
 #banner_img div img {
-  height: 450px;
+  width: 100vw;
+  height: 90vh;
+  object-fit: fill;
 }
 #banner_box button span {
   width: 70px;
@@ -38,20 +46,18 @@ main {
 }
 #magazine_title,
 #casting_title {
-  margin: auto;
   text-align: center;
   width: 100%;
   padding: 0 20px;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
-  margin-bottom: -10px;
+  justify-content: space-between;
+  margin: 50px 10px -10px 10px;
   position: relative;
-  margin-top: 50px;
 }
 #magazine_title h2,
 #casting_title h2 {
-  color: var(--celeb_color);
+  color: black;
   font-weight: bold;
 }
 #magazine_title a,
@@ -85,7 +91,7 @@ main {
   color: black;
 }
 #casting_box div img {
-  height: 130px;
+  max-height: 150px;
   padding: 10px 10px;
 }
 #magazine_box div .card {
@@ -104,22 +110,56 @@ main {
   overflow: hidden;
   height: 125px;
 }
+.ytb_qa_box {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+.celeb_ytb,
+.ytb_qa_box div img {
+  border-radius: 5px;
+  margin: 0 3px;
+  height: 315px;
+}
 @media screen and (max-width: 768px) {
   #banner_box {
     width: 100%;
   }
+  #banner_img {
+    height: 150px;
+  }
   #banner_img div img {
+    width: 100vw;
     height: 150px;
   }
   .main_box_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
     width: 100%;
+  }
+  #magazine_title,
+  #casting_title {
+    width: 95vw;
+  }
+  .casting_carousel {
+    width: 90vw;
   }
   #magazine_box {
     margin: auto;
-    width: 100%;
+    width: 95vw;
   }
   #magazine_box div .card img {
-    height: auto;
+    height: 120px;
+  }
+  .ytb_qa_box {
+    flex-direction: column;
+  }
+  .ytb1 {
+    margin-bottom: 5px;
+  }
+  .ytb_qa_box div img {
+    display: none;
   }
 }
