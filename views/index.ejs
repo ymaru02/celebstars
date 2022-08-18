@@ -5,63 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>celebstars</title>
-    <link rel="stylesheet" href="/static/css/homepage/navbar.css" />
+
     <link rel="stylesheet" href="/static/css/homepage/main.css" />
     <link rel="stylesheet" href="/static/css/homepage/footer.css" />
-    <!-- 부트스트랩 -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+
+    <%-include("style.ejs")%>
   </head>
   <body>
     <div id="wrap">
-      <div class="header_box">
-        <header class="navbar_header">
-          <div id="logo_box">
-            <a href="/">
-              <img
-                src="/static/img/homepage/navbar/celebstars_logo.png"
-                alt=""
-                id="logo_img"
-              />
-            </a>
-          </div>
-          <nav id="navbar">
-            <ul>
-              <li><a href="/">캐스팅</a></li>
-              <li><a href="/">매거진</a></li>
-              <li><a href="/">미디어</a></li>
-              <li><a href="/">커뮤니티</a></li>
-            </ul>
-          </nav>
-          <div id="login_box">
-            <ul>
-              <li>
-                <a href="">
-                  <img
-                    src="/static/img/homepage/navbar/login_icon.png"
-                    alt=""
-                    id="login_icon"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img
-                    src="/static/img/homepage/navbar/q&a_icon.png"
-                    alt=""
-                    id="qa_icon"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </header>
-      </div>
+      <%-include("navbar.ejs")%>
       <nav id="navbar_mob">
         <ul>
           <li><a href="/">캐스팅</a></li>
