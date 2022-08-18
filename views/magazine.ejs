@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>parallax</title>
   <link rel="stylesheet" href="/static/css/magazine.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="container">
-    <!-- 아이콘 래퍼 
+    <!-- 아이콘 래퍼  -->
     <div class="wrapper_buttons">
       <section class="button close">
         <button id='closeBtn' class='close_button_value' type="button">X</button>
@@ -21,12 +22,12 @@
         <img src="/static/img/artistImg/page_down_arrow_action.gif" />
       </section>
     </div>
--->
+
     <!-- 이미지  -->
     <section class="img_wrapper page_one">
       <div class='user_name'>김 백 진</div>
     </section>
-  
+
     <section class="img_wrapper">
       <div class="page_two">
         <img class="two_img">
@@ -59,23 +60,15 @@
         <aside class="model_career">
           <div class="model_career_details">
             <p>경력1</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
+            <% for (let i=0; i<8; i++) {%>
+              <p> 경력 내용</p>
+              <% } %>
           </div>
           <div class="model_career_details">
             <p>경력2</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
+            <% for (let i=0; i<8; i++) {%>
+              <p> 경력 내용</p>
+            <% } %>
           </div>
         </aside>
       </div>
@@ -86,23 +79,15 @@
         <aside class="model_career">
           <div class="model_career_details">
             <p>경력1</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
+            <% for (let i=0; i<8; i++) {%>
+              <p> 경력 내용</p>
+            <% } %>
           </div>
           <div class="model_career_details">
             <p>경력2</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
-            <p> 경력 내용</p>
+            <% for (let i=0; i<8; i++) {%>
+              <p> 경력 내용</p>
+            <% } %>
           </div>
         </aside>
 
@@ -115,23 +100,15 @@
       <aside class="model_career">
         <div class="model_career_details">
           <p>경력1</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
+          <% for (let i=0; i<8; i++) {%>
+            <p> 경력 내용</p>
+          <% } %>
         </div>
         <div class="model_career_details">
           <p>경력2</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
-          <p> 경력 내용</p>
+          <% for (let i=0; i<8; i++) {%>
+            <p> 경력 내용</p>
+          <% } %>
         </div>
       </aside>
     </section>
@@ -154,32 +131,42 @@
     </section>
 
     <section class="img_wrapper page_eleven"></section>
-    <section class="img_wrapper page_twelve"></section> 
+    <section class="img_wrapper page_twelve"></section>
 
     <section class="img_wrapper">
       <div class="page_last_thirteen">
-        <div class="last_fifteen_img">1</div>
+        <div class="last_fifteen_img"></div>
         <ul class="social">
-          <li class="social_items">
-            <p>전화 아이콘 : </p>
-            <p>010-0000-0000 </p>
+          <li class="social_info">
+            <img src="/static/img/icon/phone.png">
+            <div class="info_item">010-5575-2759</div>
           </li>
-          <li class="social_items">
-            <a href='#'>
-              인스타 링크
+          <li>
+            <a class="social_info" href='https://www.instagram.com/celebstars_k/'>
+              <img src="/static/img/icon/instagram.png">
+              <div class="info_item">셀럽스타즈 인스타</div>
             </a>
           </li>
-          <li class="social_items">
-            <a class='social_items' href='#'>
-              유튜브 링크
+          <li>
+            <a class="social_info" href='https://www.facebook.com/people/%EC%85%80%EB%9F%BD%EC%8A%A4%ED%83%80%EC%A6%88/100054498323412/'>
+              <img src="/static/img/icon/facebook.png">
+              <div class="info_item">셀럽스타즈 페북</div>
             </a>
           </li>
-          <li class="social_items">
-            <a href=''>
-              <img class="social_items" src="/static/img/artistImg/icon/kakao.svg">
+          <li>
+            <a class="social_info" href='https://www.youtube.com/channel/UCzlfQtFGGo74GkuvsAkMQGg'>
+              <img src="/static/img/icon/ytb.png">
+              <div class="info_item">셀럽스타즈 유튜브</div>
+            </a>
+          </li>
+          <li>
+            <a class="social_info" href='#'>
+              <img src="/static/img/icon/kakao.png">
+              <div class="info_item">셀럽스타즈 카톡</div>
             </a>
           </li>
         </ul>
+        <div class="toTheTop">처음으로 돌아가기</div>
       </div>
     </section>
 
@@ -207,29 +194,54 @@
     //   };
     // }
 
-    // function lazyLoad() {
-    //   let imgs = document.querySelectorAll('.img_wrapper');
+    let imgs = document.querySelectorAll('.img_wrapper');
+    // window.scrollTo({ top: imgs[0].offsetTop, behavior: "smooth" });
 
-    //   if (window.scrollY == 0) {
-    //     window.scrollTo({ top: imgs[1].offsetTop, behavior: 'smooth' });
-    //   } else {
-    //     for (let i = 0; i < imgs.length; i++) {
-    //       if (window.scrollY >= imgs[i].offsetTop) {
-    //         window.scrollTo({ top: imgs[i + 1].offsetTop, behavior: 'smooth' });
-    //       }
-    //     }
-    //   }
-    // }
+    // 버튼 눌러 다음 페이지로 이동
+    function lazyLoad() {
+      if (window.scrollY === 0) {
+        window.scrollTo({ top: imgs[1].offsetTop, behavior: 'smooth' });
+      } else {
+        for (let i = 0; i < imgs.length; i++) {
+          if (window.scrollY >= imgs[i].offsetTop) {
+            window.scrollTo({ top: imgs[i + 1].offsetTop, behavior: 'smooth' });
+          }
+        }
+      }
+    }
 
-    // const downBtn = document.querySelector('.down');
-    // downBtn.addEventListener('click', lazyLoad)
+    const downBtn = document.querySelector('.down');
+    downBtn.addEventListener('click', lazyLoad)
 
+    // 창닫기 기능
     // const closeBtn = document.getElementById('closeBtn');
+    // closeBtn.addEventListener('click', () => {
+    //   console.log(1)
+    //   document.close();
+    // });
 
-    // closeBtn.addEventListener('click',()=>{
-    //   self.close();
 
+    // 스크롤 하단 감지
+    const HIDDEN_CLASS = 'hidden';
+    document.addEventListener("scroll", function () {
+      // console.log(window.scrollY,window.innerHeight,document.body.clientHeight)
+      if (window.scrollY + window.innerHeight === document.body.clientHeight) {
+        downBtn.classList.add(HIDDEN_CLASS);
+      } else {
+        downBtn.classList.remove(HIDDEN_CLASS);
+      }
+    })
+
+    // to the top
+    const toTheTop = document.querySelector('.toTheTop');
+
+    $('.toTheTop').on('click',()=>{
+      window.scrollTo({ top: imgs[0].offsetTop, behavior: "smooth" });
+    })
+    // toTheTop.addEventListener('click', () => {
+    //   window.scrollTo({ top: imgs[0].offsetTop, behavior: "smooth" });
     // })
+
 
 
   </script>
