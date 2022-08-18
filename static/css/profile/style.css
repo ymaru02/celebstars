@@ -1,0 +1,51 @@
+.profile {
+  width: 1280px;
+  margin: 0 auto;
+}
+.profile-container {
+  display: flex;
+  justify-content: center;
+  background-image: url("/static/img/profile/user1/main6.jpg");
+  backdrop-filter: blur(50px);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px rgb(179, 179, 179);
+  overflow: hidden;
+}
+.profile-inner {
+  display: flex;
+  justify-content: center;
+  padding: 50px 30px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+}
+.profile-img {
+  border-radius: 20px;
+  height: 100%;
+}
+.profile-content {
+}
+.profile-name {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.profile-description {
+  font-size: 20px;
+}
+
+.center {
+  width: 1200px;
+  margin: 0 auto;
+}
+.inner {
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+.carousel-img {
+  width: 300px;
+  height: 400px;
+}
