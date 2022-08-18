@@ -1,0 +1,125 @@
+main {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: auto;
+  align-items: center;
+}
+#banner_img div img {
+  height: 450px;
+}
+#banner_box button span {
+  width: 70px;
+  height: 100px;
+}
+.main_box_2 {
+  margin: auto;
+  width: 1280px;
+}
+.casting_carousel {
+  position: relative;
+}
+.casting_carousel button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 45%;
+}
+.casting_carousel .casting_prev {
+  margin-left: -20px;
+}
+.casting_carousel .casting_next {
+  margin-right: -20px;
+}
+.casting_carousel button span {
+  height: 70px;
+  background-color: rgb(202, 208, 214);
+  border-radius: 12px;
+}
+#magazine_title,
+#casting_title {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: -10px;
+  position: relative;
+  margin-top: 50px;
+}
+#magazine_title h2,
+#casting_title h2 {
+  color: var(--celeb_color);
+  font-weight: bold;
+}
+#magazine_title a,
+#casting_title a {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+}
+#casting_box {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  margin-top: 0;
+}
+#magazine_box {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0;
+}
+#casting_box div {
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+#casting_box a {
+  text-decoration: none;
+  color: black;
+}
+#casting_box div img {
+  height: 130px;
+  padding: 10px 10px;
+}
+#magazine_box div .card {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 3px 3px 9px 3px lightgray;
+}
+#magazine_box div .card a {
+  text-decoration: none;
+  color: black;
+}
+#magazine_box div .card img {
+  height: 220px;
+}
+#magazine_box div .card .card-body {
+  overflow: hidden;
+  height: 125px;
+}
+@media screen and (max-width: 768px) {
+  #banner_box {
+    width: 100%;
+  }
+  #banner_img div img {
+    height: 150px;
+  }
+  .main_box_2 {
+    margin: auto;
+    width: 100%;
+  }
+  #magazine_box {
+    margin: auto;
+    width: 100%;
+  }
+  #magazine_box div .card img {
+    height: auto;
+  }
+}
