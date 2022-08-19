@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>parallax</title>
   <link rel="stylesheet" href="../../static/css/magazine/magazine.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body class="body">
@@ -30,34 +31,90 @@
     </section>
 
     <section class="img_wrapper">
+
       <div class="page_two">
-        <img class="two_img">
-        <aside class="model_info">
-          <div>
-            <p>생년월일</p>
-            <p> 2022. 08. 17 </p>
+        <div class="magazine_filter">
+          <div class="two_img_wrapper">
+            <img class="two_img" src="../../static/img/artistImg/김백진/image1.jpeg">
+            <div class="model_info">
+              <div>
+                <p>생년월일</p>
+                <p> 2022. 08. 17 </p>
+              </div>
+              <div>
+                <p> 키 </p>
+                <p> 1** cm</p>
+              </div>
+              <div>
+                <p> 몸무게 </p>
+                <p> ** kg</p>
+              </div>
+              <div>
+                <p> 3 size </p>
+                <p> 00 - 00 - 00 </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <p> 키 </p>
-            <p> 1** cm</p>
-          </div>
-          <div>
-            <p> 몸무게 </p>
-            <p> ** kg</p>
-          </div>
-          <div>
-            <p> 3 size </p>
-            <p> 00 - 00 - 00 </p>
-          </div>
-        </aside>
+        </div>
       </div>
     </section>
 
-    <section class="img_wrapper page_three"></section>
+    <section class="img_wrapper page_three">
+      <div class="magazine_filter">
+        <img class="three_img" src="../../static/img/artistImg/김백진/image1.jpeg" alt="">
+      </div>
+    </section>
 
     <section class="img_wrapper">
       <div class="page_four">
         <img class="four_img">
+        <div class="magazine_filter">
+          <aside class="model_career">
+            <div class="model_career_details">
+              <p>경력1</p>
+              <% for (let i=0; i<8; i++) {%>
+                <p> 경력 내용</p>
+                <% } %>
+            </div>
+            <div class="model_career_details">
+              <p>경력2</p>
+              <% for (let i=0; i<8; i++) {%>
+                <p> 경력 내용</p>
+                <% } %>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="img_wrapper">
+      <div class="page_five">
+        <div class="magazine_filter">
+
+          <aside class="model_career">
+            <div class="model_career_details">
+              <p>경력1</p>
+              <% for (let i=0; i<8; i++) {%>
+                <p> 경력 내용</p>
+                <% } %>
+            </div>
+            <div class="model_career_details">
+              <p>경력2</p>
+              <% for (let i=0; i<8; i++) {%>
+                <p> 경력 내용</p>
+                <% } %>
+            </div>
+          </aside>
+        </div>
+
+        <div class="five_img"></div>
+      </div>
+    </section>
+
+    <section class="img_wrapper page_six">
+      <div class="six_img"></div>
+      <div class="magazine_filter">
+
         <aside class="model_career">
           <div class="model_career_details">
             <p>경력1</p>
@@ -69,53 +126,22 @@
             <p>경력2</p>
             <% for (let i=0; i<8; i++) {%>
               <p> 경력 내용</p>
-            <% } %>
+              <% } %>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="img_wrapper">
-      <div class="page_five">
-        <aside class="model_career">
-          <div class="model_career_details">
-            <p>경력1</p>
-            <% for (let i=0; i<8; i++) {%>
-              <p> 경력 내용</p>
-            <% } %>
-          </div>
-          <div class="model_career_details">
-            <p>경력2</p>
-            <% for (let i=0; i<8; i++) {%>
-              <p> 경력 내용</p>
-            <% } %>
-          </div>
-        </aside>
-
-        <div class="five_img"></div>
+    <section class="img_wrapper page_seven">
+      <div class="magazine_filter">
+        <img class="three_img" src="/static/img/artistImg/김백진/image5.jpeg" alt="">
       </div>
     </section>
-
-    <section class="img_wrapper page_six">
-      <div class="six_img"></div>
-      <aside class="model_career">
-        <div class="model_career_details">
-          <p>경력1</p>
-          <% for (let i=0; i<8; i++) {%>
-            <p> 경력 내용</p>
-          <% } %>
-        </div>
-        <div class="model_career_details">
-          <p>경력2</p>
-          <% for (let i=0; i<8; i++) {%>
-            <p> 경력 내용</p>
-          <% } %>
-        </div>
-      </aside>
+    <section class="img_wrapper page_eight">
+      <div class="magazine_filter">
+        <img class="three_img" src="/static/img/artistImg/김백진/image6.jpeg" alt="">
+      </div>
     </section>
-
-    <section class="img_wrapper page_seven"></section>
-    <section class="img_wrapper page_eight"></section>
 
     <section class="img_wrapper">
       <div class="page_nine">
@@ -125,48 +151,66 @@
     </section>
 
     <section class="img_wrapper">
+
       <div class="page_ten">
-        <div class="eleven_img"></div>
-        <div class="twelve_img"></div>
+        <div class="magazine_filter">
+
+          <div class="eleven_img"></div>
+          <div class="twelve_img"></div>
+        </div>
       </div>
     </section>
 
-    <section class="img_wrapper page_eleven"></section>
-    <section class="img_wrapper page_twelve"></section>
+    <section class="img_wrapper page_eleven">
+      <div class="magazine_filter">
+        <img class="three_img" src="/static/img/artistImg/김백진/image12.jpeg" alt="">
+      </div>
+    </section>
+    <section class="img_wrapper page_twelve">
+      <div class="magazine_filter">
+        <img class="three_img" src="/static/img/artistImg/김백진/image13.jpeg" alt="">
+      </div>
+    </section>
 
     <section class="img_wrapper">
       <div class="page_last_thirteen">
-        <div class="last_fifteen_img"></div>
-        <ul class="social ul">
-          <li class="social_info li">
-            <img src="/static/img/icon/phone.png">
-            <div class="info_item">010-5575-2759</div>
-          </li>
-          <li class="li">
-            <a class="social_info a" href='https://www.instagram.com/celebstars_k/'>
-              <img src="/static/img/icon/instagram.png">
-              <div class="info_item">셀럽스타즈 인스타</div>
-            </a>
-          </li>
-          <li class="li">
-            <a class="social_info a" href='https://www.facebook.com/people/%EC%85%80%EB%9F%BD%EC%8A%A4%ED%83%80%EC%A6%88/100054498323412/'>
-              <img src="/static/img/icon/facebook.png">
-              <div class="info_item">셀럽스타즈 페북</div>
-            </a>
-          </li>
-          <li class="li">
-            <a class="social_info a" href='https://www.youtube.com/channel/UCzlfQtFGGo74GkuvsAkMQGg'>
-              <img src="/static/img/icon/ytb.png">
-              <div class="info_item">셀럽스타즈 유튜브</div>
-            </a>
-          </li>
-          <li class="li">
-            <a class="social_info a" href='#'>
-              <img src="/static/img/icon/kakao.png">
-              <div class="info_item">셀럽스타즈 카톡</div>
-            </a>
-          </li>
-        </ul>
+        <div class="magazine_filter">
+          <div class="last_wrapper">
+            <img class='last_fifteen_img' src='/static/img/artistImg/김백진/image14.jpeg'>
+
+            <ul class="social magazine_ul">
+            <li class="social_info magazine_li">
+              <img src="/static/img/icon/phone.png">
+              <div class="info_item">010-5575-2759</div>
+            </li>
+            <li class="magazine_li">
+              <a class="social_info magazine_a" href='https://www.instagram.com/celebstars_k/'>
+                <img src="/static/img/icon/instagram.png">
+                <div class="info_item">셀럽스타즈 인스타</div>
+              </a>
+            </li>
+            <li class="magazine_li">
+              <a class="social_info magazine_a"
+                href='https://www.facebook.com/people/%EC%85%80%EB%9F%BD%EC%8A%A4%ED%83%80%EC%A6%88/100054498323412/'>
+                <img src="/static/img/icon/facebook.png">
+                <div class="info_item">셀럽스타즈 페북</div>
+              </a>
+            </li>
+            <li class="magazine_li">
+              <a class="social_info magazine_a" href='https://www.youtube.com/channel/UCzlfQtFGGo74GkuvsAkMQGg'>
+                <img src="/static/img/icon/ytb.png">
+                <div class="info_item">셀럽스타즈 유튜브</div>
+              </a>
+            </li>
+            <li class="magazine_li">
+              <a class="social_info magazine_a" href='#'>
+                <img src="/static/img/icon/kakao.png">
+                <div class="info_item">셀럽스타즈 카톡</div>
+              </a>
+            </li>
+          </ul>
+          </div>
+        </div>
       </div>
       <div class="toTheTop">
         <img class='toTheTopIcon' src="../../static/img/artistImg/page_down_arrow_action.gif">
@@ -199,7 +243,7 @@
     const closeBtn = document.getElementById('closeBtn');
     closeBtn.addEventListener('click', () => {
       console.log(1)
-     
+
 
       window.close();
       // return false
@@ -207,7 +251,7 @@
 
 
     // 스크롤 하단 감지
-    const HIDDEN_CLASS = 'hidden';
+    const HIDDEN_CLASS = 'magazine_hidden';
     document.addEventListener("scroll", function () {
       // console.log(window.scrollY,window.innerHeight,document.body.clientHeight)
       if (window.scrollY + window.innerHeight === document.body.clientHeight) {
@@ -220,7 +264,7 @@
     // to the top
     const toTheTop = document.querySelector('.toTheTop');
 
-    $('.toTheTop').on('click',()=>{
+    $('.toTheTop').on('click', () => {
       window.scrollTo({ top: imgs[0].offsetTop, behavior: "smooth" });
     })
     // toTheTop.addEventListener('click', () => {
