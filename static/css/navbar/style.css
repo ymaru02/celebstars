@@ -1,70 +1,69 @@
-:root {
-  --celeb_color: #092063;
-}
 * {
   margin: 0;
+  /* text-align: center; */
+  font-family: "IBM Plex Sans KR", sans-serif;
 }
 body {
   margin: 0;
+  padding-top: 100px;
 }
-header,
-footer {
+#wrap {
+  margin: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 85%;
+  flex-direction: column;
 }
 li {
   list-style: none;
   display: inline-block;
 }
-a {
-  text-decoration: none;
-}
 /* header부분 */
-header {
-  margin: auto;
-  width: 100%;
+.header_box {
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+}
+.navbar_header {
+  margin: 0 50px;
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 10px;
-  border-bottom: 1px solid lightgray;
+  justify-content: space-between;
 }
-#logo_Box a img {
-  width: 250px;
+#logo_box a img {
+  width: 200px;
   height: 100%;
 }
-#navBar {
+#navbar {
   width: auto;
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 40px;
 }
-#navBar ul {
+#navbar ul {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-left: -40px;
   gap: 20px;
 }
-#navBar ul li {
-  display: block;
+#navbar ul li {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
 }
-#navBar li a {
+#navbar li a {
   text-decoration: none;
   color: black;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: bold;
   padding: 5px 10px 5px 10px;
 }
-#navBar li a:hover {
+#navbar li a:hover {
   font-size: 25px;
 }
-#login_Box {
+#login_box {
   width: 100px;
   height: 40px;
   display: flex;
@@ -72,28 +71,26 @@ header {
   align-items: center;
   margin-top: 40px;
 }
-#login_Box ul {
+#login_box ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
   margin-right: 20px;
 }
-#login_Box a {
-  text-decoration: none;
-}
-#login_Icon {
+#login_icon {
   width: 25px;
 }
-#qa_Icon {
+#qa_icon {
   width: 35px;
 }
-#navBar_Mob {
+#navbar_mob {
   display: none;
-  background-color: var(--celeb_color);
-  height: 30px;
+  background-color: black;
+  height: 35px;
+  width: 100%;
 }
-#navBar_Mob li a {
+#navbar_mob li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -101,34 +98,29 @@ header {
   padding: 5px 10px 5px 10px;
 }
 @media screen and (max-width: 768px) {
-  #logo_Box a img {
+  .navbar_header {
+    margin: 0 20px;
+  }
+  #logo_box a img {
     width: 200px;
     height: 100%;
+    margin-left: 10px;
   }
-  #login_Icon {
+  #login_icon {
     width: 22px;
   }
-  #qa_Icon {
+  #qa_icon {
     width: 32px;
   }
-  #navBar {
+  #navbar {
     display: none;
   }
-  #navBar_Mob {
-    display: block;
+  #navbar_mob {
+    display: flex;
+    justify-content: space-around;
   }
-  header {
-    border: none;
+  #navbar_mob li {
+    font-size: 20px;
+    margin: 0px 20px;
   }
-}
-
-/* main부분 */
-main {
-  /* background-color: lightgrey; */
-}
-
-/* footer부분 */
-footer {
-  background-color: lightgrey;
-  height: 58px;
 }
