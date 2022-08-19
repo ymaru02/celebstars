@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%-include("../link.ejs")%>
     <link href="/static/css/profile/profile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/css/magazine/magazine.css" />
     <title>Document</title>
   </head>
   <body>
     <%-include("../navbar/navbar.ejs")%>
     <div class="profile">
       <div class="profile-header">
-        <button type="button" class="btn btn-outline-primary">
-          <a href="/profileUpdate"> 프로필 관리하기</a>
-        </button>
+        <a href="/profileUpdate"
+          ><button type="button" class="btn btn-outline-primary">
+            프로필 관리하기
+          </button></a
+        >
       </div>
     </div>
     <!-- profile -->
@@ -54,95 +57,280 @@
                 <div class="col mt-3">
                   <div class="card h-100">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
+                      <h5 class="card-title">드라마</h5>
+                      <p class="card-text">2022 08</p>
                     </div>
                   </div>
                 </div>
                 <div class="col mt-3">
                   <div class="card h-100">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
+                      <h5 class="card-title">영화</h5>
+                      <p class="card-text">2022 08</p>
                     </div>
                   </div>
                 </div>
                 <div class="col mt-3">
                   <div class="card h-100">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
+                      <h5 class="card-title">광고</h5>
+                      <p class="card-text">2022 08</p>
                     </div>
                   </div>
                 </div>
                 <div class="col mt-3">
                   <div class="card h-100">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
+                      <h5 class="card-title">잡지</h5>
+                      <p class="card-text">2022 08</p>
                     </div>
                   </div>
                 </div>
                 <div class="col mt-3">
                   <div class="card h-100">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
-                      </p>
+                      <h5 class="card-title">무대</h5>
+                      <p class="card-text">2022 08</p>
                     </div>
                   </div>
                 </div>
                 <div class="col mt-3">
                   <div class="card h-100">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
+                      <h5 class="card-title">TV</h5>
+                      <p class="card-text">2022 08</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- Button trigger modal -->
+            <div class="ful-screen">
+              <a href="/magazine">
+                <button type="button" class="btn btn-outline-primary">
+                  <strong> 프로필 보기 </strong>
+                </button>
+              </a>
+              <!-- <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#magazineModal"
+                onclick="hiddenScroll()"
+              >
+                <strong> 프로필 보기 </strong>
+              </button> -->
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <%-include('./modal/magazine.ejs')%>
 
     <!-- profile img -->
     <main class="profile">
       <div class="profile-top">
-        <span class="profile-top-text">대표 사진</span>
+        <h2>
+          <strong> 대표 사진 </strong>
+        </h2>
       </div>
-      <div class="center"></div>
+      <div class="center">
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture5.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture6.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture7.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture8.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture9.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture10.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture11.png"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture12.png"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture13.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture14.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/picture15.png"
+            alt=""
+          />
+        </div>
+      </div>
     </main>
 
     <!-- profile movie -->
     <main class="profile">
       <div class="profile-top">
-        <span class="profile-top-text">대표 영상</span>
+        <h2>
+          <strong> 대표 영상 </strong>
+        </h2>
       </div>
-      <div class="center"></div>
+      <div class="center">
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/main1.png"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/main2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/main3.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/main4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/main5.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/main6.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/main7.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/main8.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/main9.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/main10.jpg"
+            alt=""
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/profile/user1/main11.png"
+            alt=""
+          />
+        </div>
+      </div>
     </main>
 
     <script src="/jq/jquery.js"></script>
