@@ -1,4 +1,4 @@
-main {
+.main {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,11 +7,11 @@ main {
   align-items: center;
   margin-bottom: 50px;
 }
-#banner_img {
+.banner_img {
   width: 100vw;
   height: 90vh;
 }
-#banner_img div img {
+.banner_img div img {
   width: 100vw;
   height: 90vh;
   object-fit: fill;
@@ -44,8 +44,8 @@ main {
   background-color: rgb(202, 208, 214);
   border-radius: 12px;
 }
-#magazine_title,
-#casting_title {
+.magazine_title,
+.casting_title {
   text-align: center;
   width: 100%;
   padding: 0 20px;
@@ -55,25 +55,26 @@ main {
   margin: 50px 10px -10px 10px;
   position: relative;
 }
-#magazine_title h2,
-#casting_title h2 {
+.magazine_title h2,
+.casting_title h2 {
   color: black;
   font-weight: bold;
 }
-#magazine_title a,
-#casting_title a {
+.magazine_title a,
+.casting_title a {
   color: rgb(179, 179, 179);
   text-decoration: none;
   position: absolute;
   right: 10px;
 }
-#casting_box {
+.casting_box {
   margin: auto;
   width: 100%;
+  height: 360px;
   display: flex;
   margin-top: 0;
 }
-#magazine_box {
+.magazine_box {
   margin: auto;
   width: 100%;
   display: flex;
@@ -81,34 +82,51 @@ main {
   justify-content: space-around;
   margin-top: 0;
 }
-#casting_box div {
+.casting_box .card {
   width: 100%;
   align-items: center;
   margin-top: 10px;
 }
-#casting_box a {
+.card-header {
+  text-align: center;
+  font-weight: bold;
+}
+.casting_box .card .casting_img {
+  display: flex;
+  align-items: center;
+  height: 175px;
+}
+.casting_box a {
   text-decoration: none;
   color: black;
 }
-#casting_box div img {
+.casting_box div img {
   max-height: 150px;
   padding: 10px 10px;
 }
-#magazine_box div .card {
+.casting_box .card-body {
+  height: 90px;
+}
+.casting_box .card-body,
+.casting_box .card-footer {
+  text-align: center;
+}
+.magazine_box .col .card {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 0.375rem;
   box-shadow: 3px 3px 9px 3px lightgray;
 }
-#magazine_box div .card a {
+.magazine_box div .card a {
   text-decoration: none;
   color: black;
 }
-#magazine_box div .card img {
+.magazine_box div .card img {
   height: 220px;
 }
-#magazine_box div .card .card-body {
+.magazine_box div .card a .card-body {
   overflow: hidden;
   height: 125px;
+  text-align: center;
 }
 .ytb_qa_box {
   display: flex;
@@ -121,16 +139,24 @@ main {
   margin: 0 3px;
   height: 315px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   #banner_box {
     width: 100%;
   }
-  #banner_img {
+  .banner_img,
+  .banner_img div img {
     height: 150px;
   }
-  #banner_img div img {
-    width: 100vw;
-    height: 150px;
+  .casting_box {
+    height: 320px;
+  }
+  .casting_box .card .casting_img {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+  .casting_box .card-body {
+    height: 102px;
   }
   .main_box_2 {
     display: flex;
@@ -139,19 +165,20 @@ main {
     margin: auto;
     width: 100%;
   }
-  #magazine_title,
-  #casting_title {
+  .magazine_title,
+  .casting_title {
     width: 95vw;
   }
   .casting_carousel {
     width: 90vw;
   }
-  #magazine_box {
+  .magazine_box {
     margin: auto;
     width: 95vw;
+    flex-direction: row;
   }
-  #magazine_box div .card img {
-    height: 120px;
+  .magazine_box div .card img {
+    height: 350px;
   }
   .ytb_qa_box {
     flex-direction: column;
