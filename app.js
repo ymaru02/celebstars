@@ -17,10 +17,12 @@ app.use("/js", express.static(__dirname + "/node_modules/bootstrap/dist/js"));
 app.use("/jq", express.static(__dirname + "/node_modules/jquery/dist"));
 // redirect CSS bootstrap
 app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/css"));
+// redirect CSS bootstrap
+app.use("/icon", express.static(__dirname + "/node_modules/bootstrap-icons"));
 // redirect slick-carousel CSS
 app.use(
-  "/slick",
-  express.static(__dirname + "/node_modules/slick-carousel/slick")
+	"/slick",
+	express.static(__dirname + "/node_modules/slick-carousel/slick")
 );
 
 const port = 8000;
@@ -30,7 +32,10 @@ app.get("/", (req, res) => {
 });
 
 app.get("/profile", (req, res) => {
-  res.render("profile/profile");
+	res.render("profile/profile");
+});
+app.get("/profileupdate", (req, res) => {
+  res.render("profile/profileUpdate");
 });
 
 // localhost:8000/nextpage

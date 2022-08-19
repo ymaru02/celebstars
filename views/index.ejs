@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>celebstars</title>
-    <link rel="stylesheet" href="/static/css/homepage/main.css" />
-    <!-- 부트스트랩 -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="stylesheet" href="/static/css/main/main.css" />
+    <%-include("link.ejs")%>
   </head>
   <body>
     <div id="wrap">
-      <%-include('nevbar.ejs')%>
+      <%-include("./navbar/navbar.ejs")%>
+      <nav id="navbar_mob">
+        <ul>
+          <li><a href="/">캐스팅</a></li>
+          <li><a href="/">매거진</a></li>
+          <li><a href="/">미디어</a></li>
+          <li><a href="/">커뮤니티</a></li>
+        </ul>
+      </nav>
       <main>
         <div id="banner_box" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
@@ -615,7 +617,7 @@
           </div>
         </div>
       </main>
-      <%-include('footer.ejs')%>
+      <%-include('./footer/footer.ejs')%>
     </div>
     <!-- 부트스트랩 -->
     <script src="/js/bootstrap.min.js"></script>
