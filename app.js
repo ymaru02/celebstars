@@ -21,33 +21,33 @@ app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/css"));
 app.use("/icon", express.static(__dirname + "/node_modules/bootstrap-icons"));
 // redirect slick-carousel CSS
 app.use(
-	"/slick",
-	express.static(__dirname + "/node_modules/slick-carousel/slick")
+  "/slick",
+  express.static(__dirname + "/node_modules/slick-carousel/slick")
 );
 
 const port = 8000;
 
 app.get("/", (req, res) => {
-	res.render("index");
+  res.render("index");
 });
 
 app.get("/profile", (req, res) => {
-	res.render("profile/profile");
+  res.render("profile/profile");
 });
 app.get("/profileupdate", (req, res) => {
-	res.render("profile/profileUpdate");
+  res.render("profile/profileUpdate");
 });
 
 // localhost:8000/nextpage
 app.get("/login", (req, res) => {
-	res.render("loginWeb");
+  res.render("loginWeb");
 });
 
 // localhost:8000/magazine
 app.get("/magazine", (req, res) => {
-	res.render("magazine/magazine");
+  res.render("magazine/magazine");
 });
 
 app.listen(port, () => {
-	console.log("server open:", port);
+  console.log("server open:", port);
 });

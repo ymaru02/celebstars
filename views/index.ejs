@@ -5,22 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>celebstars</title>
-
-    <link rel="stylesheet" href="/static/css/main/main.css" />
     <%-include("link.ejs")%>
+    <link rel="stylesheet" href="/static/css/main/main.css" />
   </head>
-  <body>
+  <body class="main_body">
     <div id="wrap">
       <%-include("./navbar/navbar.ejs")%>
-      <nav id="navbar_mob">
-        <ul>
-          <li><a href="/">캐스팅</a></li>
-          <li><a href="/">매거진</a></li>
-          <li><a href="/">미디어</a></li>
-          <li><a href="/">커뮤니티</a></li>
-        </ul>
-      </nav>
-      <main>
+      <%-include("./back_to_top/back_to_top.ejs")%>
+      <main class="main">
         <div id="banner_box" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
             <button
@@ -31,38 +23,32 @@
               aria-current="true"
               aria-label="Slide 1"
             ></button>
+            <% for(var i=2; i<4; i++) { %>
             <button
               type="button"
               data-bs-target="#banner_box"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
+              data-bs-slide-to="<%=i-1%>"
+              aria-label="Slide <%=i%>"
             ></button>
-            <button
-              type="button"
-              data-bs-target="#banner_box"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+            <% } %>
           </div>
-          <div id="banner_img" class="carousel-inner">
+          <div class="banner_img" class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="/static/img/homepage/main/main_banner1.jpg"
-                class="d-block w-100"
-              />
+              <a href="/"
+                ><img
+                  src="/static/img/homepage/main/main_banner1.jpg"
+                  class="d-block w-100"
+              /></a>
             </div>
+            <% for(var i=2; i<4; i++) { %>
             <div class="carousel-item">
-              <img
-                src="/static/img/homepage/main/main_banner2.jpg"
-                class="d-block w-100"
-              />
+              <a href="/"
+                ><img
+                  src="/static/img/homepage/main/main_banner<%=i%>.jpg"
+                  class="d-block w-100"
+              /></a>
             </div>
-            <div class="carousel-item">
-              <img
-                src="/static/img/homepage/main/main_banner3.jpg"
-                class="d-block w-100"
-              />
-            </div>
+            <% } %>
           </div>
           <button
             class="carousel-control-prev"
@@ -111,7 +97,7 @@
           </div>
         </div>
         <div class="main_box_2">
-          <div id="casting_title">
+          <div class="casting_title">
             <h2>캐스팅</h2>
             <a href="">
               <span>캐스팅 더 보러 가기 ▶</span>
@@ -124,17 +110,20 @@
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div id="casting_box" class="card-group">
+                <div class="card-group casting_box">
+                  <% for(var i=1; i<6; i++) { %>
                   <div class="card">
                     <a href="">
                       <div class="card-header bg-transparent">
                         <bigger class="text-muted">D - 30</bigger>
                       </div>
-                      <img
-                        src="/static/img/homepage/main/celeblogo1.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
+                      <div class="casting_img">
+                        <img
+                          src="/static/img/homepage/main/logo<%=i%>.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
                       <div class="card-body">
                         <h5 class="card-title">회사 이름</h5>
                         <p class="card-text">구인구직글 개요</p>
@@ -146,104 +135,24 @@
                       </div>
                     </a>
                   </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/celeblogo1.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/celeblogo1.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/celeblogo1.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/celeblogo1.png"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
+                  <% } %>
                 </div>
               </div>
               <div class="carousel-item">
-                <div id="casting_box" class="card-group">
+                <div class="card-group casting_box">
+                  <% for(var i=1; i<6; i++) { %>
                   <div class="card">
                     <a href="">
                       <div class="card-header bg-transparent">
                         <bigger class="text-muted">D - 30</bigger>
                       </div>
-                      <img
-                        src="/static/img/homepage/main/logo2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
+                      <div class="casting_img">
+                        <img
+                          src="/static/img/homepage/main/logo<%=i%>.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
                       <div class="card-body">
                         <h5 class="card-title">회사 이름</h5>
                         <p class="card-text">구인구직글 개요</p>
@@ -255,199 +164,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/logo2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/logo2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/logo2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/logo2.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div id="casting_box" class="card-group">
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/logo3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/logo3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/logo3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/logo3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <img
-                        src="/static/img/homepage/main/logo3.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
-                      </div>
-                    </a>
-                  </div>
+                  <% } %>
                 </div>
               </div>
             </div>
@@ -476,18 +193,19 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div id="magazine_title">
+          <div class="magazine_title">
             <h2>오픈 프로필</h2>
             <a href="">
               <span>프로필 더 보러 가기 ▶</span>
             </a>
           </div>
-          <div id="magazine_box" class="row row-cols-1 row-cols-md-4 g-3">
+          <div class="magazine_box row row-cols-1 row-cols-md-4 g-3">
+            <% for(var i=1; i<9; i++) { %>
             <div class="col">
               <div class="card">
                 <a href="/">
                   <img
-                    src="/static/img/homepage/main/model1.jpg"
+                    src="/static/img/homepage/main/model<%=i%>.jpg"
                     class="card-img-top"
                     alt="..."
                   />
@@ -499,118 +217,7 @@
                 </a>
               </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <a href="/">
-                  <img
-                    src="/static/img/homepage/main/model2.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">이름</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/">
-                  <img
-                    src="/static/img/homepage/main/model3.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">이름</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/">
-                  <img
-                    src="/static/img/homepage/main/model4.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">이름</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/">
-                  <img
-                    src="/static/img/homepage/main/model5.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">이름</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/">
-                  <img
-                    src="/static/img/homepage/main/model6.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">이름</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/">
-                  <img
-                    src="/static/img/homepage/main/model7.jpeg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">이름</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/">
-                  <img
-                    src="/static/img/homepage/main/model8.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">이름</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
+            <% } %>
           </div>
         </div>
       </main>
