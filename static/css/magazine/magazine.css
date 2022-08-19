@@ -1,18 +1,9 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
+.li {
   list-style: none;
   color: #000;
 }
-a {
-  text-decoration: none;
+
+.a {
   color: #000;
 }
 
@@ -20,15 +11,23 @@ a {
   display: none;
 }
 
-.container {
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_box {
   max-width: 1280px;
   min-height: 100vh;
   position: relative;
   margin: 0 auto;
   font-size: 10px;
+  overflow: hidden;
+  /* background-color: rgba(0, 0, 0, 1); */
 }
 
-.container::-webkit-scrollbar {
+.body::-webkit-scrollbar {
   display: none;
 }
 
@@ -80,8 +79,14 @@ a {
 
 .toTheTop:hover {
   cursor: pointer;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
+
+.toTheTopIcon {
+  transform: rotate(180deg);
+  filter: invert(1);
+}
+
 /* BG imgs 공통 */
 .img_wrapper,
 .page_one,
@@ -94,7 +99,6 @@ a {
 .page_eight,
 .page_nine,
 .page_ten,
-.page_last_thirteen,
 .two_img,
 .four_img,
 .five_img,
@@ -216,9 +220,10 @@ a {
 }
 
 .page_last_thirteen {
-  padding: 2em;
+  height: 100vh;
+  margin: 2em;
   display: grid;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 70% 20%;
 }
 
 .eleven_img,
@@ -269,6 +274,11 @@ a {
   background-color: gray;
   color: #fff;
 }
+@media screen and (max-width: 620px) {
+  .model_info {
+    padding: 1em;
+  }
+}
 
 .model_career {
   display: grid;
@@ -285,17 +295,22 @@ a {
   align-items: center;
   justify-content: center;
   gap: 1em;
+
+  margin-bottom: 2em;
+  padding: 0;
 }
 
 .social_info {
   display: flex;
   align-items: center;
 }
+
 .info_item {
   border: 1px solid #000;
   padding: 1em;
   margin-left: 1em;
 }
+
 @media screen and (max-width: 768px) {
   .info_item {
     display: none;

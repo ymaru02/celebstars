@@ -1,9 +1,4 @@
-* {
-  margin: 0;
-  /* text-align: center; */
-  font-family: "IBM Plex Sans KR", sans-serif;
-}
-body {
+.nav-body {
   margin: 0;
   padding-top: 100px;
 }
@@ -11,10 +6,6 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-}
-li {
-  list-style: none;
-  display: inline-block;
 }
 /* header부분 */
 .header_box {
@@ -33,37 +24,37 @@ li {
   align-items: center;
   justify-content: space-between;
 }
-#logo_box a img {
+.logo_box a img {
   width: 200px;
   height: 100%;
 }
-#navbar {
+.navbar {
   width: auto;
   height: 40px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
-#navbar ul {
+.navbar ul {
   display: flex;
   justify-content: center;
   width: 100%;
   gap: 20px;
 }
-#navbar ul li {
+.navbar ul li {
   display: flex;
   justify-content: center;
   white-space: nowrap;
 }
-#navbar li a {
+.navbar li a {
   text-decoration: none;
   color: black;
   font-size: 22px;
   font-weight: bold;
   padding: 5px 10px 5px 10px;
 }
-#navbar li a:hover {
+.navbar li a:hover {
   font-size: 25px;
 }
-#login_box {
+.login_box {
   width: 100px;
   height: 40px;
   display: flex;
@@ -71,55 +62,59 @@ li {
   align-items: center;
   margin-top: 40px;
 }
-#login_box ul {
+.login_box ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
   margin-right: 20px;
 }
-#login_icon {
+.login_box ul li {
+  list-style: none;
+  display: inline-block;
+}
+.login_icon {
   width: 25px;
 }
-#qa_icon {
+.qa_icon {
   width: 35px;
 }
-#navbar_mob {
+.navbar_mob {
   display: none;
   background-color: black;
   height: 35px;
   width: 100%;
 }
-#navbar_mob li a {
+.navbar_mob li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
   font-weight: bold;
   padding: 5px 10px 5px 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .navbar_header {
     margin: 0 20px;
   }
-  #logo_box a img {
+  .logo_box a img {
     width: 200px;
     height: 100%;
     margin-left: 10px;
   }
-  #login_icon {
+  .login_icon {
     width: 22px;
   }
-  #qa_icon {
+  .qa_icon {
     width: 32px;
   }
-  #navbar {
+  .navbar {
     display: none;
   }
-  #navbar_mob {
+  .navbar_mob {
     display: flex;
     justify-content: space-around;
   }
-  #navbar_mob li {
+  .navbar_mob li {
     font-size: 20px;
     margin: 0px 20px;
   }

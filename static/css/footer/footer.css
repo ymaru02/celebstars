@@ -25,6 +25,7 @@
 }
 .footer_logo {
   margin-left: 20px;
+  text-align: center;
 }
 .footer_logo img {
   width: 200px;
@@ -48,23 +49,26 @@
   justify-content: center;
   gap: 20px;
 }
+.info_top_item ul li,
+.info_top_item2 ul li {
+  list-style: none;
+}
 .info_top_item ul li a {
-  text-decoration: none;
   color: black;
   white-space: nowrap;
 }
-.sns_icon {
+.info_top_item2 ul {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.sns_icon li a img {
+.info_top_item2 ul li a img {
   width: 36px;
   height: 36px;
 }
 @media screen and (max-width: 768px) {
   .footer_logo img {
     width: 100px;
-    height: 50px;
+    height: 55px;
   }
 }
