@@ -12,6 +12,27 @@
 
 <body>
   <div class="container">
+
+    <!-- <div class="container">
+      <button id="myBtn">Open Modal</button>
+      <div id="myModal" class="modal ">
+      
+        <div class="modal_content ">
+          <div class="modal_header">
+            <span class="close">&times;</span>
+            <p>This is modal header</p>
+          </div>
+          <div class="modal_body">
+            <p>text 1</p>
+            <p>text 2</p>
+          </div>
+          <div class="modal_footer">
+            <h3>Modal footer</h3>
+          </div>
+        </div>
+      </div>
+      </div> -->
+      
     <!-- 아이콘 래퍼  -->
     <div class="wrapper_buttons">
       <section class="button close">
@@ -214,11 +235,14 @@
     downBtn.addEventListener('click', lazyLoad)
 
     // 창닫기 기능
-    // const closeBtn = document.getElementById('closeBtn');
-    // closeBtn.addEventListener('click', () => {
-    //   console.log(1)
-    //   document.close();
-    // });
+    const closeBtn = document.getElementById('closeBtn');
+    closeBtn.addEventListener('click', () => {
+      console.log(1)
+     
+
+      window.close();
+      // return false
+    });
 
 
     // 스크롤 하단 감지
@@ -243,6 +267,32 @@
     // })
 
 
+
+
+    // 모달 시작
+    // const btn = document.querySelector('#myBtn')
+    // const span = document.getElementsByClassName("close")[0]
+    // const modal = document.querySelector('#myModal')
+    // const modalContent = document.querySelector('.modal_content')
+    // const HIEDDEN_CLASS = 'hidden'
+
+    // function openModal() {
+    //   modal.classList.remove(HIEDDEN_CLASS)
+    //   // modalContent.classList.remove(HIEDDEN_CLASS)
+    //   window.onclick = (event) => {
+    //     if (event.target === modal) {
+    //       modal.classList.add(HIEDDEN_CLASS)
+    //     }
+    //   }
+    // }
+
+    // function closeModal() {
+    //   modal.classList.add(HIEDDEN_CLASS)
+    // }
+
+    // btn.addEventListener('click', openModal)
+    // span.addEventListener('click', closeModal)
+  
 
   </script>
 </body>
