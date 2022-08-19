@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>celebstars</title>
 
-    <link rel="stylesheet" href="/static/css/homepage/main.css" />
-    <link rel="stylesheet" href="/static/css/homepage/footer.css" />
-
-    <%-include("style.ejs")%>
+    <link rel="stylesheet" href="/static/css/main/main.css" />
+    <%-include("link.ejs")%>
   </head>
   <body>
     <div id="wrap">
-      <%-include("navbar.ejs")%>
+      <%-include("./navbar/navbar.ejs")%>
       <nav id="navbar_mob">
         <ul>
           <li><a href="/">캐스팅</a></li>
@@ -616,7 +614,7 @@
           </div>
         </div>
       </main>
-      <%-include('footer.ejs')%>
+      <%-include('./footer/footer.ejs')%>
     </div>
     <!-- 부트스트랩 -->
     <script src="/js/bootstrap.min.js"></script>
