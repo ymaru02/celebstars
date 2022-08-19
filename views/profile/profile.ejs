@@ -13,9 +13,11 @@
     <%-include("../navbar/navbar.ejs")%>
     <div class="profile">
       <div class="profile-header">
-        <button type="button" class="btn btn-outline-primary">
-          <a href="/profileUpdate"> 프로필 관리하기</a>
-        </button>
+        <a href="/profileUpdate"
+          ><button type="button" class="btn btn-outline-primary">
+            프로필 관리하기
+          </button></a
+        >
       </div>
     </div>
     <!-- profile -->
@@ -104,7 +106,12 @@
             </div>
             <!-- Button trigger modal -->
             <div class="ful-screen">
-              <button
+              <a href="/magazine">
+                <button type="button" class="btn btn-outline-primary">
+                  <strong> 프로필 보기 </strong>
+                </button>
+              </a>
+              <!-- <button
                 type="button"
                 class="btn btn-outline-primary"
                 data-bs-toggle="modal"
@@ -112,7 +119,7 @@
                 onclick="hiddenScroll()"
               >
                 <strong> 프로필 보기 </strong>
-              </button>
+              </button> -->
             </div>
           </div>
         </div>
