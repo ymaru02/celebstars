@@ -10,29 +10,9 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div class="container">
+<body class="body">
+  <div class="container_box">
 
-    <!-- <div class="container">
-      <button id="myBtn">Open Modal</button>
-      <div id="myModal" class="modal ">
-      
-        <div class="modal_content ">
-          <div class="modal_header">
-            <span class="close">&times;</span>
-            <p>This is modal header</p>
-          </div>
-          <div class="modal_body">
-            <p>text 1</p>
-            <p>text 2</p>
-          </div>
-          <div class="modal_footer">
-            <h3>Modal footer</h3>
-          </div>
-        </div>
-      </div>
-      </div> -->
-      
     <!-- 아이콘 래퍼  -->
     <div class="wrapper_buttons">
       <section class="button close">
@@ -157,7 +137,7 @@
     <section class="img_wrapper">
       <div class="page_last_thirteen">
         <div class="last_fifteen_img"></div>
-        <ul class="social">
+        <ul class="social ul">
           <li class="social_info li">
             <img src="/static/img/icon/phone.png">
             <div class="info_item">010-5575-2759</div>
@@ -187,34 +167,15 @@
             </a>
           </li>
         </ul>
-        <div class="toTheTop">처음으로 돌아가기</div>
+      </div>
+      <div class="toTheTop">
+        <img class='toTheTopIcon' src="../../static/img/artistImg/page_down_arrow_action.gif">
       </div>
     </section>
 
   </div>
+
   <script>
-
-    // duration 속도 지정
-    // function setDuration() {
-    //   const durationScrollTo = (y, duration = 1000) => {
-    //     const stepY = (y - window.scrollY) / duration;
-
-    //     const currentY = window.scrollY;
-
-    //     const startTime = new Date().getTime();
-
-    //     const scrollInterval = setInterval(() => {
-    //       const now = new Date().getTime() - startTime;
-
-    //       window.scrollTo({ top: currentY + (stepY * now) });
-
-    //       if (duration <= now) {
-    //         clearInterval(scrollInterval);
-    //       }
-    //     }, 1);
-    //   };
-    // }
-
     let imgs = document.querySelectorAll('.img_wrapper');
     // window.scrollTo({ top: imgs[0].offsetTop, behavior: "smooth" });
 
@@ -266,33 +227,6 @@
     //   window.scrollTo({ top: imgs[0].offsetTop, behavior: "smooth" });
     // })
 
-
-
-
-    // 모달 시작
-    // const btn = document.querySelector('#myBtn')
-    // const span = document.getElementsByClassName("close")[0]
-    // const modal = document.querySelector('#myModal')
-    // const modalContent = document.querySelector('.modal_content')
-    // const HIEDDEN_CLASS = 'hidden'
-
-    // function openModal() {
-    //   modal.classList.remove(HIEDDEN_CLASS)
-    //   // modalContent.classList.remove(HIEDDEN_CLASS)
-    //   window.onclick = (event) => {
-    //     if (event.target === modal) {
-    //       modal.classList.add(HIEDDEN_CLASS)
-    //     }
-    //   }
-    // }
-
-    // function closeModal() {
-    //   modal.classList.add(HIEDDEN_CLASS)
-    // }
-
-    // btn.addEventListener('click', openModal)
-    // span.addEventListener('click', closeModal)
-  
 
   </script>
 </body>
