@@ -24,7 +24,7 @@
   margin: 0 auto;
   font-size: 10px;
   overflow: hidden;
-
+  /* background-color: rgba(0, 0, 0, 1); */
 }
 
 .body::-webkit-scrollbar {
@@ -88,7 +88,6 @@
   transform: rotate(180deg);
   filter: invert(1);
 }
-
   
 /* BG imgs 공통 */
 .img_wrapper,
@@ -123,12 +122,6 @@
 .page_three {
   background: url('/static/img/artistImg/김백진/image1.jpeg') center no-repeat fixed;
   background-size: 100% 100%;
-}
-
-@media screen and (min-width:1024px) {
-  .page_three {
-    background-size: contain;
-  }
 }
 
 .page_seven {
