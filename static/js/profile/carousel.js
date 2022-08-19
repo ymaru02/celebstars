@@ -1,20 +1,4 @@
 $(document).ready(function () {
-  const img_list = [];
-
-  for (let i = 1; i < 11; i++) {
-    img_list.push(`picture${i}.jpg`);
-  }
-
-  for (let i = 1; i < img_list.length; i++) {
-    let carouselinner = document.createElement("div");
-    carouselinner.className = "inner";
-    let img = document.createElement("img");
-    img.className = "carousel-img";
-    img.src = `/static/img/profile/user1/${img_list[i]}`;
-    carouselinner.append(img);
-    $(".center").append(carouselinner);
-  }
-
   $(".center").slick({
     centerMode: true,
     centerPadding: "60px",
@@ -29,3 +13,9 @@ $(document).ready(function () {
     variableWidth: true,
   });
 });
+
+function hiddenScroll() {
+  document.body.className = "";
+}
+
+// $(".center img").on("click", function () {});

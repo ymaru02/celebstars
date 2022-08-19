@@ -1,3 +1,7 @@
+.nav-body {
+  margin: 0;
+  padding-top: 100px;
+}
 #wrap {
   margin: auto;
   display: flex;
