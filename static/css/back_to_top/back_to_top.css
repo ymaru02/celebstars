@@ -1,0 +1,27 @@
+.back_to_top {
+  display: inline-flex;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 1px 1px 1px 2px lightgray;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+.back_to_top::after {
+  content: url(../../img/homepage/back_to_top/up.png);
+}
+.back_to_top:hover {
+  cursor: pointer;
+  background-color: rgb(239, 239, 239);
+}
+.back_to_top.show {
+  opacity: 1;
+  visibility: visible;
+}
