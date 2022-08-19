@@ -14,7 +14,6 @@ li {
 a {
   text-decoration: none;
   color: #000;
-
 }
 
 .hidden {
@@ -43,7 +42,6 @@ a {
 .button {
   position: fixed;
   width: 2.5em;
-
 }
 
 .close {
@@ -52,7 +50,6 @@ a {
   margin: 20px;
   text-align: center;
   transform: translate(-2.5em, -2em);
-
 }
 
 .close_button_value {
@@ -71,7 +68,7 @@ a {
 
 .toTheTop {
   position: absolute;
-  
+
   bottom: 0;
   left: 50%;
 
@@ -111,79 +108,89 @@ a {
 }
 
 .page_one {
-  background: url('/static/img/artistImg/김백진/메인.jpeg') center no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/메인.jpeg") center no-repeat
+    fixed;
   background-size: 100% 100%;
   position: relative;
 }
 
 .page_three {
-  background: url('/static/img/artistImg/김백진/image1.jpeg') center no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image1.jpeg") center no-repeat
+    fixed;
   background-size: 100% 100%;
 }
 
 .page_seven {
-  background: url('/static/img/artistImg/김백진/image5.jpeg') center no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image5.jpeg") center no-repeat
+    fixed;
   background-size: 100% 100%;
 }
 
 .page_eight {
-  background: url('/static/img/artistImg/김백진/image6.jpeg') center no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image6.jpeg") center no-repeat
+    fixed;
   background-size: 100% 100%;
 }
 
 .page_eleven {
-  background: url('/static/img/artistImg/김백진/image12.jpeg') center no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image12.jpeg") center no-repeat
+    fixed;
   background-size: 100% 100%;
 }
 
 .page_twelve {
-  background: url('/static/img/artistImg/김백진/image13.jpeg') center no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image13.jpeg") center no-repeat
+    fixed;
   background-size: 100% 100%;
 }
 
 .two_img {
-  background: url('/static/img/artistImg/김백진/image0.jpeg') no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image0.jpeg") no-repeat fixed;
   background-size: calc(100% - 30%) 100%;
 }
 
 .four_img {
-  background: url('/static/img/artistImg/김백진/image2.jpeg') no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image2.jpeg") no-repeat fixed;
   background-size: calc(100% - 30%) 100%;
 }
 
 .five_img {
-  background: url('/static/img/artistImg/김백진/image3.jpeg') right no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image3.jpeg") right no-repeat
+    fixed;
   background-size: calc(100% - 30%) 100%;
 }
 
 .six_img {
-  background: url('/static/img/artistImg/김백진/image4.jpeg') no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image4.jpeg") no-repeat fixed;
   background-size: calc(100% - 30%) 100%;
 }
 
 .nine_img {
-  background: url('/static/img/artistImg/김백진/image7.jpeg') no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image7.jpeg") no-repeat fixed;
   background-size: calc(100% - 50%) 100%;
 }
 
 .ten_img {
-  background: url('/static/img/artistImg/김백진/image9.jpeg') right no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image9.jpeg") right no-repeat
+    fixed;
   background-size: calc(100% - 50%) 100%;
 }
 
 .eleven_img {
-  background: url('/static/img/artistImg/김백진/image10.jpeg') left no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image10.jpeg") left no-repeat
+    fixed;
   background-size: calc(100% - 40%) 100%;
 }
 
 .twelve_img {
-  background: url('/static/img/artistImg/김백진/image11.jpeg') right no-repeat fixed;
+  background: url("/static/img/artistImg/김백진/image11.jpeg") right no-repeat
+    fixed;
   background-size: calc(100% - 40%) 100%;
 }
 
 .last_fifteen_img {
-  background: url('/static/img/artistImg/김백진/image14.jpeg') center no-repeat;
-  background-size: 100% 100%
+  background: url("/static/img/artistImg/김백진/image14.jpeg") center no-repeat;
+  background-size: 100% 100%;
 }
 
 /* 화면 분리 CSS */
@@ -245,9 +252,8 @@ a {
   color: #fff;
   right: 1em;
   bottom: 1em;
-  transform: translate(-.5em, -.5em);
+  transform: translate(-0.5em, -0.5em);
 }
-
 
 .model_info {
   /* wrapper_form */
@@ -292,7 +298,6 @@ a {
 }
 @media screen and (max-width: 768px) {
   .info_item {
-    display: none
+    display: none;
   }
-  
 }
