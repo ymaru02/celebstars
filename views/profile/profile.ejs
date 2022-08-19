@@ -4,78 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%-include("../link.ejs")%>
+    <link href="/static/css/profile/profile.css" rel="stylesheet" />
     <title>Document</title>
-    <link href="/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/slick/slick.css" rel="stylesheet" />
-    <link href="/slick/slick-theme.css" rel="stylesheet" />
-    <link href="/static/css/navbar/style.css" rel="stylesheet" />
-    <link href="/static/css/profile/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div id="logo_Box">
-        <a href="/">
-          <img
-            src="/static/img/index_img/celebstars_logo.png"
-            alt=""
-            id="logo_img"
-          />
-        </a>
+    <%-include("../navbar/navbar.ejs")%>
+    <div class="profile">
+      <div class="profile-header">
+        <button type="button" class="btn btn-outline-primary">
+          <a href="/profileUpdate"> 프로필 관리하기</a>
+        </button>
       </div>
-      <nav id="navBar">
-        <ul>
-          <li><a href="/">캐스팅</a></li>
-          <li><a href="/">매거진</a></li>
-          <li><a href="/">미디어</a></li>
-          <li><a href="/">커뮤니티</a></li>
-        </ul>
-      </nav>
-      <div id="login_Box">
-        <ul>
-          <li>
-            <a href="">
-              <img
-                src="/static/img/index_img/login_icon.png"
-                alt=""
-                id="login_Icon"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="/static/img/index_img/q&a_icon.png"
-                alt=""
-                id="qa_Icon"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
-
-    <nav id="navBar_Mob">
-      <ul>
-        <li><a href="/">캐스팅</a></li>
-        <li><a href="/">매거진</a></li>
-        <li><a href="/">미디어</a></li>
-        <li><a href="/">커뮤니티</a></li>
-      </ul>
-    </nav>
-
+    </div>
     <!-- profile -->
     <main class="profile">
       <div class="profile-container">
         <div class="profile-inner">
           <img
             class="profile-img"
-            src="/static/img/profile/user1/main6.jpg"
+            src="/static/img/profile/user1/main4.jpg"
             alt=""
           />
           <div class="profile-content">
             <div class="container text-center">
               <div class="row">
-                <div class="col-12 profile-name">xxx</div>
+                <div class="col-12 profile-name">한나나</div>
               </div>
               <div class="row profile-description">
                 <div class="col-2 offset-2">
@@ -176,14 +130,20 @@
     </main>
 
     <!-- profile img -->
-    <h1>사진</h1>
-    <div class="center"></div>
+    <main class="profile">
+      <div class="profile-top">
+        <span class="profile-top-text">대표 사진</span>
+      </div>
+      <div class="center"></div>
+    </main>
 
     <!-- profile movie -->
-    <h1>영상</h1>
-    <div class="center"></div>
-
-    <div class=""></div>
+    <main class="profile">
+      <div class="profile-top">
+        <span class="profile-top-text">대표 영상</span>
+      </div>
+      <div class="center"></div>
+    </main>
 
     <script src="/jq/jquery.js"></script>
     <script src="/static/js/profile/carousel.js"></script>
