@@ -38,7 +38,13 @@
 }
 
 /* Hide the slides by default */
-.mySlides {
+.myImgSlides {
+  display: none;
+  text-align: center;
+}
+
+/* Hide the slides by default */
+.myVideoSlides {
   display: none;
   text-align: center;
 }

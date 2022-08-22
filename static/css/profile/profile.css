@@ -102,10 +102,22 @@
 }
 .slick-prev:before,
 .slick-next:before {
-  color: #0d6efd;
+  color: #6c757d;
   font-size: 40px;
 }
 
 .magazine-modal {
   background-color: black;
+}
+
+.light-box {
+  overflow: hidden;
+}
+
+.btn {
+  color: black;
+}
+.btn:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
 }

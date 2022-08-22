@@ -15,7 +15,7 @@
     <div class="profile">
       <div class="profile-header">
         <a href="/profileUpdate"
-          ><button type="button" class="btn btn-outline-primary">
+          ><button type="button" class="btn btn-outline-secondary">
             프로필 관리하기
           </button></a
         >
@@ -158,7 +158,7 @@
           <!-- Button trigger modal -->
           <div class="ful-screen">
             <a href="/magazine">
-              <button type="button" class="btn btn-outline-primary">
+              <button type="button" class="btn btn-outline-secondary">
                 <strong> 프로필 보기 </strong>
               </button>
             </a>
@@ -190,7 +190,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture1.jpg"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('img');currentImgSlide(1)"
             class="hover-shadow"
           />
         </div>
@@ -199,7 +199,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture2.jpg"
             alt=""
-            onclick="openModal();currentSlide(2)"
+            onclick="openModal('img');currentImgSlide(2)"
             class="hover-shadow"
           />
         </div>
@@ -208,7 +208,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture3.jpg"
             alt=""
-            onclick="openModal();currentSlide(3)"
+            onclick="openModal('img');currentImgSlide(3)"
             class="hover-shadow"
           />
         </div>
@@ -217,7 +217,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture4.jpg"
             alt=""
-            onclick="openModal();currentSlide(4)"
+            onclick="openModal('img');currentImgSlide(4)"
             class="hover-shadow"
           />
         </div>
@@ -226,7 +226,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture5.jpg"
             alt=""
-            onclick="openModal();currentSlide(5)"
+            onclick="openModal('img');currentImgSlide(5)"
             class="hover-shadow"
           />
         </div>
@@ -235,7 +235,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture6.jpg"
             alt=""
-            onclick="openModal();currentSlide(6)"
+            onclick="openModal('img');currentImgSlide(6)"
             class="hover-shadow"
           />
         </div>
@@ -244,7 +244,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture7.jpg"
             alt=""
-            onclick="openModal();currentSlide(7)"
+            onclick="openModal('img');currentImgSlide(7)"
             class="hover-shadow"
           />
         </div>
@@ -254,7 +254,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture8.jpg"
             alt=""
-            onclick="openModal();currentSlide(8)"
+            onclick="openModal('img');currentImgSlide(8)"
             class="hover-shadow"
           />
         </div>
@@ -263,7 +263,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture9.jpg"
             alt=""
-            onclick="openModal();currentSlide(9)"
+            onclick="openModal('img');currentImgSlide(9)"
             class="hover-shadow"
           />
         </div>
@@ -272,7 +272,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture10.jpg"
             alt=""
-            onclick="openModal();currentSlide(10)"
+            onclick="openModal('img');currentImgSlide(10)"
             class="hover-shadow"
           />
         </div>
@@ -281,7 +281,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture11.png"
             alt=""
-            onclick="openModal();currentSlide(11)"
+            onclick="openModal('img');currentImgSlide(11)"
             class="hover-shadow"
           />
         </div>
@@ -290,7 +290,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture12.png"
             alt=""
-            onclick="openModal();currentSlide(12)"
+            onclick="openModal('img');currentImgSlide(12)"
             class="hover-shadow"
           />
         </div>
@@ -299,7 +299,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture13.jpg"
             alt=""
-            onclick="openModal();currentSlide(13)"
+            onclick="openModal('img');currentImgSlide(13)"
             class="hover-shadow"
           />
         </div>
@@ -308,7 +308,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture14.jpg"
             alt=""
-            onclick="openModal();currentSlide(14)"
+            onclick="openModal('img');currentImgSlide(14)"
             class="hover-shadow"
           />
         </div>
@@ -317,13 +317,13 @@
             class="carousel-img"
             src="/static/img/profile/user1/picture15.png"
             alt=""
-            onclick="openModal();currentSlide(15)"
+            onclick="openModal('img');currentImgSlide(15)"
             class="hover-shadow"
           />
         </div>
       </div>
     </main>
-    <%-include('./modal/lightBox.ejs')%>
+    <%-include('./modal/imgLightBox.ejs')%>
 
     <!-- profile movie -->
     <main class="profile">
@@ -338,7 +338,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/main1.png"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('video');currentVideoSlide(1)"
             class="hover-shadow"
           />
         </div>
@@ -347,7 +347,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/main2.jpg"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('video');currentVideoSlide(2)"
             class="hover-shadow"
           />
         </div>
@@ -356,7 +356,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/main3.jpg"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('video');currentVideoSlide(3)"
             class="hover-shadow"
           />
         </div>
@@ -366,7 +366,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/main4.jpg"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('video');currentVideoSlide(4)"
             class="hover-shadow"
           />
         </div>
@@ -375,7 +375,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/main5.jpg"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('video');currentVideoSlide(5)"
             class="hover-shadow"
           />
         </div>
@@ -384,7 +384,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/main6.jpg"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('video');currentVideoSlide(6)"
             class="hover-shadow"
           />
         </div>
@@ -393,7 +393,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/main7.jpg"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('video');currentVideoSlide(7)"
             class="hover-shadow"
           />
         </div>
@@ -402,7 +402,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/main8.jpg"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('video');currentVideoSlide(8)"
             class="hover-shadow"
           />
         </div>
@@ -411,7 +411,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/main9.jpg"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('video');currentVideoSlide(9)"
             class="hover-shadow"
           />
         </div>
@@ -420,7 +420,7 @@
             class="carousel-img"
             src="/static/img/profile/user1/main10.jpg"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('video');currentVideoSlide(10)"
             class="hover-shadow"
           />
         </div>
@@ -429,11 +429,12 @@
             class="carousel-img"
             src="/static/img/profile/user1/main11.png"
             alt=""
-            onclick="openModal();currentSlide(1)"
+            onclick="openModal('video');currentVideoSlide(11)"
             class="hover-shadow"
           />
         </div>
       </div>
+      <%-include('./modal/videoLightBox.ejs')%>
     </main>
     <%-include('../footer/footer.ejs')%>
     <script src="/jq/jquery.js"></script>
