@@ -6,46 +6,64 @@
   text-align: end;
 }
 .profile-container {
-  height: 80vh;
+  height: 95vh;
   box-shadow: 10px 5px 5px rgb(200, 200, 200);
   border-radius: 20px;
   overflow: hidden;
+  background-image: url("/static/img/profile/user1/main4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .profile-inner {
   display: flex;
   justify-content: center;
+  height: 100%;
   padding: 50px 30px;
   background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
 }
 .profile-img {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  height: 740px;
   border: 1px solid #0d6efd;
   border-radius: 20px;
+  overflow: hidden;
+  width: 500px;
+  transition: all 0.3s;
+}
+.profile-img:hover {
+  width: 800px;
+}
+.profile-img img {
+  position: absolute;
+  height: 100%;
+}
+.profile-img h2 {
+  z-index: 1;
+  color: #0d6efd;
 }
 .profile-file {
   display: none;
+  z-index: 1;
 }
 .profile-button {
   color: #0d6efd;
   border: 1px solid #0d6efd;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
 }
 .profile-button:hover {
   color: white;
   background-color: #0d6efd;
+  z-index: 1;
 }
-.profile-icon {
-  font-size: 30px;
-}
+
 .profile-content {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   text-align: center;
   border: 1px solid #0d6efd;
   border-radius: 20px;
@@ -66,12 +84,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
-
+.item-margin {
+  margin: 20px 0;
+}
 .profile-btn {
-  margin: 20px;
   font-size: 20px;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0;
+}
+.card-title {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8d8d8d;
+}
+.profile-icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.profile-icon {
+  width: 30px;
+}
+.career-height {
+  max-height: 60vh;
+  height: 60vh;
+  overflow: auto;
+  overflow-x: hidden;
 }
 .modal-shadow {
   box-shadow: 10px 5px 5px rgb(200, 200, 200);
