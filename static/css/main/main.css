@@ -1,3 +1,6 @@
+#wrap {
+  width: 100%;
+}
 .main {
   width: 100%;
   display: flex;
@@ -8,12 +11,12 @@
   margin-bottom: 50px;
 }
 .banner_img {
-  width: 100vw;
-  height: 90vh;
+  width: 100%;
+  height: 50vh;
 }
 .banner_img div img {
-  width: 100vw;
-  height: 90vh;
+  width: 100%;
+  height: 50vh;
   object-fit: fill;
 }
 #banner_box button span {
@@ -128,24 +131,28 @@
   height: 125px;
   text-align: center;
 }
-.ytb_qa_box {
+.ytb_box {
   display: flex;
-  margin-top: 40px;
+  width: 100%;
+  margin-top: 30px;
   justify-content: space-around;
 }
 .celeb_ytb,
-.ytb_qa_box div img {
+.ytb_box div img {
   border-radius: 5px;
   margin: 0 3px;
   height: 315px;
 }
 @media screen and (max-width: 770px) {
+  #wrap {
+    width: 100%;
+  }
   #banner_box {
     width: 100%;
   }
   .banner_img,
   .banner_img div img {
-    height: 150px;
+    height: 250px;
   }
   .casting_box {
     height: 320px;
@@ -180,13 +187,14 @@
   .magazine_box div .card img {
     height: 350px;
   }
-  .ytb_qa_box {
+  .ytb_box {
     flex-direction: column;
+    align-items: center;
   }
   .ytb1 {
     margin-bottom: 5px;
   }
-  .ytb_qa_box div img {
+  .ytb_box div img {
     display: none;
   }
 }

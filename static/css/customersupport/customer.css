@@ -1,0 +1,53 @@
+body .customer_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customer_box {
+  margin: 80px 0;
+  width: 1280px;
+}
+.customer_title h2 {
+  font-weight: bold;
+  display: inline;
+}
+.menu_box ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.menu_box ul li {
+  margin: 0 10px;
+  display: inline-block;
+  font-size: 20px;
+}
+.menu_box ul li:first-child a {
+  color: black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.menu_box ul li a {
+  color: darkgray;
+  font-weight: 400;
+}
+.menu_box ul li a:hover {
+  color: black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.item_table {
+  margin-top: 30px;
+  border-top: 2px solid black;
+  width: 100%;
+  text-align: center;
+}
+.customer_item {
+  margin-top: 40px;
+}

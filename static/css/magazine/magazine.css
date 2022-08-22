@@ -1,331 +1,193 @@
-.magazine_li {
-  list-style: none;
-  color: #000;
+@import url(img_path.css);
+
+.magazine_body {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 10px;
 }
 
-.magazine_a {
-  color: #000;
-}
-
-.magazine_ul {
+.magazine_container {
+  width: 100vw;
+  height: 100vh;
   padding: 0;
+  position: relative;
 }
 
 .magazine_hidden {
   display: none;
 }
 
-.body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container_box {
-  max-width: 1280px;
-  min-height: 100vh;
-  position: relative;
-  margin: 0 auto;
-  font-size: 10px;
-  overflow: hidden;
-  /* background-color: rgba(0, 0, 0, 1); */
-}
-
-.body::-webkit-scrollbar {
-  display: none;
-}
-
-/* 버튼 */
-.wrapper_buttons {
+/* 메인(첫)이미지 */
+.main_img {
   width: 100%;
+  height: 100vh;
   position: relative;
-  z-index: 1;
 }
 
-.button {
-  position: fixed;
-  width: 2.5em;
-
-}
-
-.close {
+.artist_name {
+  position: absolute;
   right: 0;
-  top: 2em;
-  margin: 20px;
-  text-align: center;
-  transform: translate(-2.5em, -2em);
+  bottom: 0;
 
+  color: #fff;
+  font-size: 40px;
+  padding: 1em;
 }
 
-.close_button_value {
-  font-size: 2.5em;
-  padding: 0;
-  border: 0;
-  background: transparent;
+/* 이미지마다 적용 될 필터 */
+.img_filter {
+  height: 100vh;
+
+  backdrop-filter: blur(4px);
+  
+  position: relative;
+}
+
+.posting_img_wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  position: relative;
+}
+
+.double_page {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* 아티스트 인포 래퍼 설정 */
+.artist_info_wrapper {
+  position: absolute;
+  top: 0;
   color: #fff;
 }
 
-.down {
-  bottom: 2.5em;
-  left: 50%;
-  transform: translateX(-50%);
+/* 왼쪽에 프로필 사진이 있고 오른쪽에 정보 */
+.left {
+  left: 0;
+  width: calc(100% - 70%);
 }
 
-.toTheTop {
-  position: absolute;
-  
-  bottom: 0;
-  left: 50%;
+/* 오른쪽에 프로필 사진이 있고 왼쪽에 정보 */
+.right {
+  right: 0;
+  width: calc(100% - 70%);
+}
+
+.artist_info {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  font-size: 20px;
+  height: 100vh;
+}
+
+.info_text {
+  padding: 1em;
+}
+
+.artist_career {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.career_wrapper {
+  font-size: 20px;
+}
+
+.career_title {
+  font-size: 32px;
+  padding-bottom: 1em;
+}
+
+.last_grid_wrapper {
+  display: grid;
+  height: inherit;
+  grid-template-rows: 70% 20% 10%;
+}
+
+.magazine_posting_img_last {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.social_wrapper {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_text {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 8px;
+}
+
+.to_the_top {
+  color: #fff;
 
   font-size: 20px;
-  margin: 10px;
-  padding: 10px;
-  transform: translate(-50%, 0);
-}
-
-.toTheTop:hover {
-  cursor: pointer;
-  /* border: 1px solid #000; */
-}
-
-.toTheTopIcon {
+  margin: 0 auto;
+  padding: 20px;
+  align-self: center;
   transform: rotate(180deg);
 }
-  
-/* BG imgs 공통 */
-.img_wrapper,
-.last_wrapper,
-.page_one,
-.page_two,
-.page_three,
-.page_four,
-.page_five,
-.page_six,
-.page_seven,
-.page_eight,
-.page_nine,
-.page_ten,
-.two_img,
-.four_img,
-.five_img,
-.six_img,
-.nine_img,
-.ten_img,
-.eleven_img,
-.twelve_img {
-  width: 100%;
-  height: 100vh;
-}
 
-.page_one {
-  position: relative;
-}
-
-.page_one,
-.page_two,
-.page_three, 
-.page_four,
-.page_five,
-.page_six,
-.page_seven,
-.page_eight,
-.page_ten,
-.page_eleven,
-.page_twelve,
-.page_last_thirteen {
-  background: url('/static/img/artistImg/김백진/메인.jpeg') center no-repeat fixed;
-  background-size: 100% 100%;
-}
-
-.page_last_thirteen {
-  height: 100vh;
-}
-
-.three_wrapper {
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3px);
-  height: 100%;
-}
-
-.last_wrapper {
-  display: grid;
-  grid-template-rows: 60% 20%;
-}
-
-.three_img {
-  position: absolute;
-  height: 100%;
+.close_button {
+  position: fixed;
+  margin: 20px;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
+  right: 0;
 
-.four_img {
-  background: url('/static/img/artistImg/김백진/image2.jpeg') no-repeat fixed;
-  background-size: calc(100% - 30%) 100%;
-}
-
-.five_img {
-  background: url('/static/img/artistImg/김백진/image3.jpeg') right no-repeat fixed;
-  background-size: calc(100% - 30%) 100%;
-}
-
-.six_img {
-  background: url('/static/img/artistImg/김백진/image4.jpeg') no-repeat fixed;
-  background-size: calc(100% - 30%) 100%;
-}
-
-.nine_img {
-  background: url('/static/img/artistImg/김백진/image7.jpeg') no-repeat fixed;
-  background-size: calc(100% - 50%) 100%;
-}
-
-.ten_img {
-  background: url('/static/img/artistImg/김백진/image9.jpeg') right no-repeat fixed;
-  background-size: calc(100% - 50%) 100%;
-}
-
-.eleven_img {
-  background: url('/static/img/artistImg/김백진/image10.jpeg') left no-repeat fixed;
-  background-size: calc(100% - 40%) 100%;
-}
-
-.twelve_img {
-  background: url('/static/img/artistImg/김백진/image11.jpeg') right no-repeat fixed;
-  background-size: calc(100% - 40%) 100%;
-}
-
-.last_fifteen_img {
-  min-width: 300px;
-  width: 100%;
-  height: 100%;
-}
-
-/* 화면 분리 CSS */
-
-.two_img_wrapper,
-.page_four,
-.page_six {
-  display: grid;
-  grid-template-columns: 70% 30%;
-}
-
-.page_five {
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-
-.page_nine {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.page_ten {
-  position: relative;
-}
-
-
-
-.eleven_img,
-.twelve_img {
-  position: absolute;
-  height: 55%;
-  margin: 1em;
-}
-
-.eleven_img {
-  top: 0;
-  left: 0;
   z-index: 1;
 }
 
-.twelve_img {
-  right: 0;
+.button_down {
+  position: fixed;
+  margin: 20px;
+  padding: 20px;
+
   bottom: 0;
-  z-index: 0;
-}
-
-/* 분리된 화면 속 아이템들 CSS */
-.user_name {
-  position: absolute;
-  font-size: 6em;
-  color: #fff;
-  right: 1em;
-  bottom: 1em;
-  transform: translate(-.5em, -.5em);
-}
-
-/* filter */
-
-.magazine_filter {
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  height: 100%;
-}
-
-
-.model_info {
-  font-size: 20px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 2em;
-  gap: 2em;
-
-  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 
 }
 
-.model_career {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+#closeBtn {
+  font-size: 40px;
+  border: 0;
+  background: transparent;
+  color: white;
 }
 
-.model_career_details {
-  padding: 3em;
-  display: grid;
-  color: #fff;
-}
 
-.social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-
-  margin-bottom: 2em;
-}
-
-.social_info {
-  display: flex;
-  align-items: center;
-}
-
-.info_item {
-  border: 1px solid #fff;
-  padding: 1em;
-  margin-left: 1em;
-  color: #fff;
-}
-
-@media screen and (max-width: 620px) {
-  .model_info {
-    padding: 1em;
+/* @media screen and (min-width: 768px) {
+  .artist_name {
+    font-size: 60px;
   }
+   .posting_img_wrapper {
+    width: calc(100% - 15%);
+  } 
 }
-
-@media screen and (max-width: 768px) {
-  .info_item {
-    display: none
+@media screen and (min-width: 1280px) {
+  .artist_name {
+    font-size: 80px;
   }
-  .three_wrapper {
-    display: none;
-  }
-  .page_three {
-    background: url('/static/img/artistImg/김백진/image1.jpeg') center no-repeat fixed;
-    background-size: 100% 100%;
-  }
-}
-
+  .posting_img_wrapper {
+    width: 800px;
+  } 
+} */
