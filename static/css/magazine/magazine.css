@@ -1,13 +1,17 @@
-.li {
+.magazine_li {
   list-style: none;
   color: #000;
 }
 
-.a {
+.magazine_a {
   color: #000;
 }
 
-.hidden {
+.magazine_ul {
+  padding: 0;
+}
+
+.magazine_hidden {
   display: none;
 }
 
@@ -41,6 +45,7 @@
 .button {
   position: fixed;
   width: 2.5em;
+
 }
 
 .close {
@@ -49,6 +54,7 @@
   margin: 20px;
   text-align: center;
   transform: translate(-2.5em, -2em);
+
 }
 
 .close_button_value {
@@ -67,7 +73,7 @@
 
 .toTheTop {
   position: absolute;
-
+  
   bottom: 0;
   left: 50%;
 
@@ -84,11 +90,11 @@
 
 .toTheTopIcon {
   transform: rotate(180deg);
-  filter: invert(1);
 }
-
+  
 /* BG imgs 공통 */
 .img_wrapper,
+.last_wrapper,
 .page_one,
 .page_two,
 .page_three,
@@ -112,93 +118,92 @@
 }
 
 .page_one {
-  background: url("/static/img/artistImg/김백진/메인.jpeg") center no-repeat
-    fixed;
-  background-size: 100% 100%;
   position: relative;
 }
 
-.page_three {
-  background: url("/static/img/artistImg/김백진/image1.jpeg") center no-repeat
-    fixed;
+.page_one,
+.page_two,
+.page_three, 
+.page_four,
+.page_five,
+.page_six,
+.page_seven,
+.page_eight,
+.page_ten,
+.page_eleven,
+.page_twelve,
+.page_last_thirteen {
+  background: url('/static/img/artistImg/김백진/메인.jpeg') center no-repeat fixed;
   background-size: 100% 100%;
 }
 
-.page_seven {
-  background: url("/static/img/artistImg/김백진/image5.jpeg") center no-repeat
-    fixed;
-  background-size: 100% 100%;
+.page_last_thirteen {
+  height: 100vh;
 }
 
-.page_eight {
-  background: url("/static/img/artistImg/김백진/image6.jpeg") center no-repeat
-    fixed;
-  background-size: 100% 100%;
+.three_wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  height: 100%;
 }
 
-.page_eleven {
-  background: url("/static/img/artistImg/김백진/image12.jpeg") center no-repeat
-    fixed;
-  background-size: 100% 100%;
+.last_wrapper {
+  display: grid;
+  grid-template-rows: 60% 20%;
 }
 
-.page_twelve {
-  background: url("/static/img/artistImg/김백진/image13.jpeg") center no-repeat
-    fixed;
-  background-size: 100% 100%;
-}
-
-.two_img {
-  background: url("/static/img/artistImg/김백진/image0.jpeg") no-repeat fixed;
-  background-size: calc(100% - 30%) 100%;
+.three_img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .four_img {
-  background: url("/static/img/artistImg/김백진/image2.jpeg") no-repeat fixed;
+  background: url('/static/img/artistImg/김백진/image2.jpeg') no-repeat fixed;
   background-size: calc(100% - 30%) 100%;
 }
 
 .five_img {
-  background: url("/static/img/artistImg/김백진/image3.jpeg") right no-repeat
-    fixed;
+  background: url('/static/img/artistImg/김백진/image3.jpeg') right no-repeat fixed;
   background-size: calc(100% - 30%) 100%;
 }
 
 .six_img {
-  background: url("/static/img/artistImg/김백진/image4.jpeg") no-repeat fixed;
+  background: url('/static/img/artistImg/김백진/image4.jpeg') no-repeat fixed;
   background-size: calc(100% - 30%) 100%;
 }
 
 .nine_img {
-  background: url("/static/img/artistImg/김백진/image7.jpeg") no-repeat fixed;
+  background: url('/static/img/artistImg/김백진/image7.jpeg') no-repeat fixed;
   background-size: calc(100% - 50%) 100%;
 }
 
 .ten_img {
-  background: url("/static/img/artistImg/김백진/image9.jpeg") right no-repeat
-    fixed;
+  background: url('/static/img/artistImg/김백진/image9.jpeg') right no-repeat fixed;
   background-size: calc(100% - 50%) 100%;
 }
 
 .eleven_img {
-  background: url("/static/img/artistImg/김백진/image10.jpeg") left no-repeat
-    fixed;
+  background: url('/static/img/artistImg/김백진/image10.jpeg') left no-repeat fixed;
   background-size: calc(100% - 40%) 100%;
 }
 
 .twelve_img {
-  background: url("/static/img/artistImg/김백진/image11.jpeg") right no-repeat
-    fixed;
+  background: url('/static/img/artistImg/김백진/image11.jpeg') right no-repeat fixed;
   background-size: calc(100% - 40%) 100%;
 }
 
 .last_fifteen_img {
-  background: url("/static/img/artistImg/김백진/image14.jpeg") center no-repeat;
-  background-size: 100% 100%;
+  min-width: 300px;
+  width: 100%;
+  height: 100%;
 }
 
 /* 화면 분리 CSS */
-.page_two,
+
+.two_img_wrapper,
 .page_four,
 .page_six {
   display: grid;
@@ -219,12 +224,7 @@
   position: relative;
 }
 
-.page_last_thirteen {
-  height: 100vh;
-  margin: 2em;
-  display: grid;
-  grid-template-rows: 70% 20%;
-}
+
 
 .eleven_img,
 .twelve_img {
@@ -245,11 +245,6 @@
   z-index: 0;
 }
 
-.last_fifteen_img {
-  width: 100%;
-  height: 100%;
-}
-
 /* 분리된 화면 속 아이템들 CSS */
 .user_name {
   position: absolute;
@@ -257,11 +252,19 @@
   color: #fff;
   right: 1em;
   bottom: 1em;
-  transform: translate(-0.5em, -0.5em);
+  transform: translate(-.5em, -.5em);
 }
 
+/* filter */
+
+.magazine_filter {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  height: 100%;
+}
+
+
 .model_info {
-  /* wrapper_form */
   font-size: 20px;
 
   display: flex;
@@ -271,13 +274,8 @@
   padding: 2em;
   gap: 2em;
 
-  background-color: gray;
   color: #fff;
-}
-@media screen and (max-width: 620px) {
-  .model_info {
-    padding: 1em;
-  }
+
 }
 
 .model_career {
@@ -288,6 +286,7 @@
 .model_career_details {
   padding: 3em;
   display: grid;
+  color: #fff;
 }
 
 .social {
@@ -297,7 +296,6 @@
   gap: 1em;
 
   margin-bottom: 2em;
-  padding: 0;
 }
 
 .social_info {
@@ -306,13 +304,28 @@
 }
 
 .info_item {
-  border: 1px solid #000;
+  border: 1px solid #fff;
   padding: 1em;
   margin-left: 1em;
+  color: #fff;
+}
+
+@media screen and (max-width: 620px) {
+  .model_info {
+    padding: 1em;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .info_item {
+    display: none
+  }
+  .three_wrapper {
     display: none;
   }
+  .page_three {
+    background: url('/static/img/artistImg/김백진/image1.jpeg') center no-repeat fixed;
+    background-size: 100% 100%;
+  }
 }
+
