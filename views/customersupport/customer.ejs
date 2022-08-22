@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Support</title>
+    <%-include("../link.ejs")%>
+    <link rel="stylesheet" href="/static/css/customersupport/customer.css" />
+    <link rel="stylesheet" href="/static/css/customersupport/items/faq.css" />
+    <link rel="stylesheet" href="/static/css/customersupport/items/faq.css" />
+    <link rel="stylesheet" href="/static/css/customersupport/items/faq.css" />
+    <link rel="stylesheet" href="/static/css/customersupport/items/faq.css" />
+    <link rel="stylesheet" href="/static/css/customersupport/items/faq.css" />
+  </head>
+  <body>
+    <%-include("../navbar/navbar.ejs")%>
+    <main class="customer">
+      <div class="customer_box">
+        <div class="customer_title">
+          <h2>고객 지원 서비스</h2>
+          <div class="menu_box">
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li>|</li>
+              <li><a href="">정보 & 팁</a></li>
+              <li>|</li>
+              <li><a href="">셀럽 제휴 할인</a></li>
+              <li>|</li>
+              <li><a href="">이벤트</a></li>
+              <li>|</li>
+              <li><a href="">Q & A</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="customer_item">
+          <%-include('./items/faq.ejs')%>
+          <!-- <%-include('./items/tips.ejs')%> -->
+          <!-- <%-include('./items/partnership.ejs')%> -->
+          <!-- <%-include('./items/event.ejs')%> -->
+          <!-- <%-include('./items/qa.ejs')%> -->
+        </div>
+      </div>
+    </main>
+    <%-include('../footer/footer.ejs')%>
+    <script src="/static/js/customer/faq_accordion.js"></script>
+  </body>
+</html>
