@@ -38,7 +38,7 @@ app.get("/profileupdate", (req, res) => {
   res.render("profile/profileUpdate");
 });
 
-// localhost:8000/nextpage
+// localhost:8000/login
 app.get("/login", (req, res) => {
   res.render("loginWeb");
 });
@@ -46,6 +46,11 @@ app.get("/login", (req, res) => {
 // localhost:8000/magazine
 app.get("/magazine", (req, res) => {
   res.render("magazine/magazine");
+});
+
+// localhost:8000/customersupport
+app.get("/customersupport", (req, res) => {
+  res.render("customersupport/customer");
 });
 
 app.listen(port, () => {
