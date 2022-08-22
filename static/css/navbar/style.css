@@ -114,6 +114,10 @@
     display: flex;
     justify-content: space-around;
   }
+  .navbar_mob ul {
+    display: flex;
+    flex-direction: row;
+  }
   .navbar_mob li {
     font-size: 20px;
     margin: 0px 20px;
