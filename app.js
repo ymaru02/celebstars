@@ -56,3 +56,11 @@ app.get("/customersupport", (req, res) => {
 app.listen(port, () => {
   console.log("server open:", port);
 });
+
+app.get("/login", (req, res) => {
+  res.render("login/login");
+});
+
+app.get("/join", (req, res) => {
+  res.render("join/join");
+});
