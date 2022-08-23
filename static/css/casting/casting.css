@@ -1,0 +1,10 @@
+.searchbar {
+  position: sticky;
+  width: 1080px;
+  margin: 20px auto;
+  top: 100px;
+}
+.casting {
+  max-width: 1080px;
+  margin: 0 auto;
+}
