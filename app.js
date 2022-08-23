@@ -47,14 +47,24 @@ app.get("/login", (req, res) => {
   res.render("loginWeb");
 });
 
-// localhost:8000/magazine
+// localhost:8000/kimbackjin
 app.get("/kimbackjin", (req, res) => {
   res.render("magazine/kimbackjin");
 });
 
-// localhost:8000/magazine_noname
+// localhost:8000/kimtaehoon
 app.get("/kimtaehoon", (req, res) => {
   res.render("magazine/kimtaehoon");
+});
+
+// localhost:8000/kimtaehoon
+app.get("/parkkwanwoo", (req, res) => {
+	res.render("magazine/parkkwanwoo");
+});
+
+// localhost:8000/parkhayan
+app.get("/parkhayan", (req, res) => {
+	res.render("magazine/parkhayan");
 });
 
 // localhost:8000/customersupport

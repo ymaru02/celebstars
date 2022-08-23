@@ -1,9 +1,11 @@
-@import url(kimtaehoon_img_path.css);
-
 .magazine_body {
   box-sizing: border-box;
-  margin: 0;
   font-size: 10px;
+  margin: 0;
+}
+
+.magazine_body::-webkit-scrollbar {
+  display: none;
 }
 
 .magazine_container {
@@ -85,7 +87,7 @@
 }
 
 .info_text {
-  padding: 1em;
+  padding: .5em;
 }
 
 .artist_career {
@@ -97,12 +99,16 @@
 }
 
 .career_wrapper {
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .career_title {
-  font-size: 32px;
-  padding-bottom: 1em;
+  font-size: 20px;
+  padding: 1em 1em 1em 0;
+}
+
+.career_content {
+  padding-bottom: 4px;
 }
 
 .last_grid_wrapper {
@@ -134,6 +140,7 @@
   text-decoration: none;
   color: #fff;
   padding-left: 8px;
+  display: none;
 }
 
 .to_the_top {
@@ -141,7 +148,6 @@
 
   font-size: 20px;
   margin: 0 auto;
-  padding: 20px;
   align-self: center;
   transform: rotate(180deg);
 }
@@ -175,19 +181,58 @@
 }
 
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .artist_name {
     font-size: 60px;
   }
-   .posting_img_wrapper {
-    width: calc(100% - 15%);
-  } 
+  .info_text {
+    font-size: 28px;
+  }
+  .career_wrapper {
+    font-size: 20px;
+  }
+  
+  .left {
+    left: 0;
+    width: calc(100% - 60%);
+  }
+
+  .right {
+    right: 0;
+    width: calc(100% - 60%);
+  }
+
+  .artist_career {
+    flex-flow: row;
+  }
+  .career_title {
+    font-size: 28px;
+    padding: 1em 1em 0.25em 0;
+  }
+  .social_text {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 8px;
+    display: block;
+  }
+
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
+  .artist_career {
+    height: 100%;
+  }
   .artist_name {
     font-size: 80px;
   }
-  .posting_img_wrapper {
-    width: 800px;
-  } 
-} */
+
+  .info_text {
+    font-size: 36px;
+  }
+  .social_text {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 1em;
+    display: block;
+  }
+}

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../static/css/style.css" />
   <link rel="stylesheet" href="../../static/css/magazine/common.css" />
-  <link rel="stylesheet" href="../../static/css/magazine/kimbackjin_img_path.css" />
+  <link rel="stylesheet" href="../../static/css/magazine/parkkwanwoo_img_path.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -27,7 +27,7 @@
     <!-- 프로필 사진 래퍼 -->
     <div class="magazine_bg_img">
       <div class="main_img">
-        <div class="artist_name">김 백 진</div></div>
+        <div class="artist_name">박 관 우</div></div>
       </div>
     </div>
 
@@ -190,8 +190,6 @@
   
   <script>
     let imgs = document.querySelectorAll('.magazine_bg_img');
-    // window.scrollTo({ top: imgs[0].offsetTop, behavior: "smooth" });
-
     // 버튼 눌러 다음 페이지로 이동
     const downBtn = document.querySelector('.button_down');
     downBtn.addEventListener('click', lazyLoad)
@@ -210,7 +208,6 @@
     // 스크롤 하단 감지
     const HIDDEN_CLASS = 'magazine_hidden';
     document.addEventListener("scroll", function () {
-      // console.log(window.scrollY,window.innerHeight,document.body.clientHeight)
       if (window.scrollY + window.innerHeight >= document.body.clientHeight - 150) {
         downBtn.classList.add(HIDDEN_CLASS);
       } else {
@@ -221,11 +218,6 @@
     $('.to_the_top').on('click', () => {
       window.scrollTo({ top: imgs[0].offsetTop, behavior: "smooth" });
     })
-    // to the top
-    // const toTheTop = document.querySelector('.to_the_top');
-    // toTheTop.addEventListener('click', () => {
-    //   window.scrollTo({ top: imgs[0].offsetTop, behavior: "smooth" });
-    // });
   </script>
 </body>
 
