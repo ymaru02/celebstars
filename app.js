@@ -45,12 +45,12 @@ app.get("/login", (req, res) => {
 
 // localhost:8000/magazine
 app.get("/magazine", (req, res) => {
-	res.render("magazine/magazine");
+	res.render("magazine/kimbackjin");
 });
 
 // localhost:8000/magazine_noname
-app.get("/magazine_noname", (req, res) => {
-	res.render("magazine/magazine_noname");
+app.get("/kimtaehoon", (req, res) => {
+	res.render("magazine/kimtaehoon");
 });
 
 // localhost:8000/customersupport
