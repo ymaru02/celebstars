@@ -1,3 +1,7 @@
+:root {
+  --text-color: #fff;
+}
+
 .magazine_body {
   box-sizing: border-box;
   font-size: 10px;
@@ -31,7 +35,7 @@
   right: 0;
   bottom: 0;
 
-  color: #fff;
+  color: var(--text-color);
   font-size: 40px;
   padding: 1em;
 }
@@ -61,7 +65,7 @@
 .artist_info_wrapper {
   position: absolute;
   top: 0;
-  color: #fff;
+  color: var(--text-color);
 }
 
 /* 왼쪽에 프로필 사진이 있고 오른쪽에 정보 */
@@ -138,13 +142,13 @@
 
 .social_text {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
   padding-left: 8px;
   display: none;
 }
 
 .to_the_top {
-  color: #fff;
+  color: var(--text-color);
 
   font-size: 20px;
   margin: 0 auto;
@@ -211,7 +215,7 @@
   }
   .social_text {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
     padding-left: 8px;
     display: block;
   }
@@ -231,7 +235,7 @@
   .social_text {
     text-decoration: none;
     font-size: 16px;
-    color: #fff;
+    color: var(--text-color);
     padding: 1em;
     display: block;
   }
