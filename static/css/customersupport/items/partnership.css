@@ -1,0 +1,276 @@
+#partner {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#partner .partner_length {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#partner .partner_length p {
+  margin-left: 15px;
+}
+.partner_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+}
+.partner_search {
+  display: flex;
+  justify-content: end;
+  border-radius: 3px;
+}
+.partner_search li {
+  list-style: none;
+}
+.partner_search li select,
+.partner_search li input,
+.partner_search li button {
+  height: 30px;
+  border-radius: 0;
+}
+.partner_search li input {
+  border: 1px solid lightgray;
+}
+.partner_search li button {
+  width: 50px;
+  border: none;
+}
+.partner_post_box {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.partner_table {
+  text-align: center;
+  width: 100%;
+}
+.table_title {
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+}
+.partner_table .partner_no {
+  width: 5%;
+}
+.partner_table .partner_title {
+  width: 60%;
+}
+.partner_table .partner_author {
+  width: 10%;
+}
+.partner_table .partner_upload {
+  width: 12%;
+}
+.partner_table .partner_view {
+  width: 5%;
+}
+.partner {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+}
+.partner .td_title {
+  text-align: start;
+  padding: 0 20px;
+}
+.partner .td_title a {
+  color: black;
+}
+.partner_page_nav {
+  margin-top: 10px;
+  width: 100%;
+}
+.partner_page_nav nav .pagination {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 770px) {
+}
+#partner {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#partner .partner_length {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#partner .partner_length p {
+  margin-left: 15px;
+}
+.partner_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+}
+.partner_search {
+  display: flex;
+  justify-content: end;
+  border-radius: 3px;
+}
+.partner_search li {
+  list-style: none;
+}
+.partner_search li select,
+.partner_search li input,
+.partner_search li button {
+  height: 30px;
+  border-radius: 0;
+}
+.partner_search li input {
+  border: 1px solid lightgray;
+}
+.partner_search li button {
+  width: 50px;
+  border: none;
+}
+.partner_post_box {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.partner_table {
+  text-align: center;
+  width: 100%;
+}
+.table_title {
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+}
+.partner_table .partner_no {
+  width: 5%;
+}
+.partner_table .partner_title {
+  width: 60%;
+}
+.partner_table .partner_author {
+  width: 10%;
+}
+.partner_table .partner_upload {
+  width: 12%;
+}
+.partner_table .partner_view {
+  width: 5%;
+}
+.partner {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+}
+.partner .td_title {
+  text-align: start;
+  padding: 0 20px;
+}
+.partner .td_title a {
+  color: black;
+}
+.partner_page_nav {
+  margin-top: 10px;
+  width: 100%;
+}
+.partner_page_nav nav .pagination {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 770px) {
+}
+#partner {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#partner .partner_length {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#partner .partner_length p {
+  margin-left: 15px;
+}
+.partner_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+}
+.partner_search {
+  display: flex;
+  justify-content: end;
+  border-radius: 3px;
+}
+.partner_search li {
+  list-style: none;
+}
+.partner_search li select,
+.partner_search li input,
+.partner_search li button {
+  height: 30px;
+  border-radius: 0;
+}
+.partner_search li input {
+  border: 1px solid lightgray;
+}
+.partner_search li button {
+  width: 50px;
+  border: none;
+}
+.partner_post_box {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.partner_table {
+  text-align: center;
+  width: 100%;
+}
+.table_title {
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+}
+.partner_table .partner_no {
+  width: 5%;
+}
+.partner_table .partner_title {
+  width: 60%;
+}
+.partner_table .partner_author {
+  width: 10%;
+}
+.partner_table .partner_upload {
+  width: 12%;
+}
+.partner_table .partner_view {
+  width: 5%;
+}
+.partner {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+}
+.partner .td_title {
+  text-align: start;
+  padding: 0 20px;
+}
+.partner .td_title a {
+  color: black;
+}
+.partner_page_nav {
+  margin-top: 10px;
+  width: 100%;
+}
+.partner_page_nav nav .pagination {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 770px) {
+}
