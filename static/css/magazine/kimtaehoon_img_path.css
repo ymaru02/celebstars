@@ -1,95 +1,138 @@
+:root {
+  --posting-img-main: url(../../img/artistImg/김태훈/메인.jpg);
+  --posting-img-01: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926.jpg);
+  --posting-img-02: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_01.jpg);
+  --posting-img-03: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_02.jpg);
+  --posting-img-04: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_09.jpg);
+  --posting-img-05: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_10.jpg);
+  --posting-img-06: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_11.jpg);
+  --posting-img-07: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_12.jpg);
+  --posting-img-08: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_13.jpg);
+  --posting-img-09: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_14.jpg);
+  --posting-img-10: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_15.jpg);
+  --posting-img-11: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_16.jpg);
+  --posting-img-12: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_17.jpg);
+  --posting-img-13: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_18.jpg);
+  --posting-img-14: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_19.jpg);
+}
 
 .magazine_bg_img {
-  background: url(../../img/artistImg/김태훈/메인.jpg) no-repeat center/100% 100% fixed;
+  background: var(--posting-img-main) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img2 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926.jpg) left / 70% 100% no-repeat fixed;
+  background: var(--posting-img-01) no-repeat fixed left / 70% 100%;
 }
+
 .magazine_posting_img3 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_01.jpg) center / 100% 100% no-repeat fixed;
+  background: var(--posting-img-02) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img4 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_02.jpg) left / 70% 100% no-repeat fixed;
+  background: var(--posting-img-03) no-repeat fixed left / 70% 100%;
 }
+
 .magazine_posting_img5 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_09.jpg) right / 70% 100% no-repeat fixed;
+  background: var(--posting-img-04) no-repeat fixed right / 70% 100%;
 }
+
 .magazine_posting_img6 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_10.jpg) left / 70% 100% no-repeat fixed;
+  background: var(--posting-img-05) no-repeat fixed left / 70% 100%;
 }
+
 .magazine_posting_img7 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_11.jpg) center / 100% 100% no-repeat fixed;
+  background: var(--posting-img-06) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img8 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_12.jpg) center / 100% 100% no-repeat fixed;
+  background: var(--posting-img-07) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img9 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_13.jpg) left / 50% 100% no-repeat fixed;
+  background: var(--posting-img-08) no-repeat fixed left / 50% 100%;
 }
+
 .magazine_posting_img10 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_14.jpg) right / 50% 100% no-repeat fixed;
+  background: var(--posting-img-09) no-repeat fixed right / 50% 100%;
 }
+
 .magazine_posting_img11 {
-  background: url(../../img/artistImg/김백진/image11.jpeg) left / 70% 100% no-repeat fixed;
+  background: var(--posting-img-10) no-repeat fixed left / 70% 100%;
 }
+
 .magazine_posting_img12 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_15.jpg) right / 70% 100% no-repeat fixed;
+  background: var(--posting-img-11) no-repeat fixed right / 70% 100%;
 }
+
 .magazine_posting_img13 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_16.jpg) center / 100% 100% no-repeat fixed;
+  background: var(--posting-img-12) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img14 {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_17.jpg) center / 100% 100% no-repeat fixed;
+  background: var(--posting-img-13) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img_last {
-  background: url(../../img/artistImg/김태훈/KakaoTalk_20220525_151543926_18.jpg) center / 80% 80% no-repeat fixed;
+  background: var(--posting-img-14) no-repeat fixed center / 80% 80%;
 }
 
 
 @media screen and (min-width: 769px) {
   .magazine_posting_img3 {
-    background: url(../../img/artistImg/김백진/image1.jpeg) center / 70% 100% no-repeat fixed;
+    background: var(--posting-img-02) no-repeat fixed center / 70% 100%;
   }
+
   .magazine_posting_img7 {
-    background: url(../../img/artistImg/김백진/image5.jpeg) center / 80% 100% no-repeat fixed;
+    background: var(--posting-img-06) no-repeat fixed center / 80% 100%;
   }
+
   .magazine_posting_img8 {
-    background: url(../../img/artistImg/김백진/image6.jpeg) center / 80% 100% no-repeat fixed;
+    background: var(--posting-img-07) no-repeat fixed center / 80% 100%;
   }
+
   .magazine_posting_img11 {
-    background: url(../../img/artistImg/김백진/image11.jpeg) left / 50% 100% no-repeat fixed;
+    background: var(--posting-img-10) no-repeat fixed left / 50% 100%;
   }
+
   .magazine_posting_img12 {
-    background: url(../../img/artistImg/김백진/image10.jpeg) right / 50% 100% no-repeat fixed;
+    background: var(--posting-img-11) no-repeat fixed right / 50% 100%;
   }
+
   .magazine_posting_img13 {
-    background: url(../../img/artistImg/김백진/image12.jpeg) center / 70% 100% no-repeat fixed;
+    background: var(--posting-img-12) no-repeat fixed center / 70% 100%;
   }
+
   .magazine_posting_img14 {
-    background: url(../../img/artistImg/김백진/image13.jpeg) center / 70% 100% no-repeat fixed;
+    background: var(--posting-img-13) no-repeat fixed center / 70% 100%;
   }
+
   .magazine_posting_img_last {
-    background: url(../../img/artistImg/김백진/image14.jpeg) center / 70% 70% no-repeat fixed;
+    background: var(--posting-img-14) no-repeat fixed center / 70% 70%;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .magazine_posting_img3 {
-    background: url(../../img/artistImg/김백진/image1.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-02) no-repeat fixed center / 60% 100%;
   }
+
   .magazine_posting_img7 {
-    background: url(../../img/artistImg/김백진/image5.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-06) no-repeat fixed center / 60% 100%;
   }
+
   .magazine_posting_img8 {
-    background: url(../../img/artistImg/김백진/image6.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-07) no-repeat fixed center / 60% 100%;
   }
+
   .magazine_posting_img13 {
-    background: url(../../img/artistImg/김백진/image12.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-12) no-repeat fixed center / 60% 100%;
   }
+
   .magazine_posting_img14 {
-    background: url(../../img/artistImg/김백진/image13.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-13) no-repeat fixed center / 60% 100%;
   }
+
   .magazine_posting_img_last {
-    background: url(../../img/artistImg/김백진/image14.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-14) no-repeat fixed center / 60% 100%;
   }
 }

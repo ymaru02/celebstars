@@ -1,95 +1,139 @@
+:root {
+  --posting-img-main: url(../../img/artistImg/김백진/메인.jpeg);
+  --posting-img-01: url(../../img/artistImg/김백진/image0.jpeg);
+  --posting-img-02: url(../../img/artistImg/김백진/image1.jpeg);
+  --posting-img-03: url(../../img/artistImg/김백진/image2.jpeg);
+  --posting-img-04: url(../../img/artistImg/김백진/image3.jpeg);
+  --posting-img-05: url(../../img/artistImg/김백진/image4.jpeg);
+  --posting-img-06: url(../../img/artistImg/김백진/image5.jpeg);
+  --posting-img-07: url(../../img/artistImg/김백진/image6.jpeg);
+  --posting-img-08: url(../../img/artistImg/김백진/image7.jpeg);
+  --posting-img-09: url(../../img/artistImg/김백진/image9.jpeg);
+  --posting-img-10: url(../../img/artistImg/김백진/image11.jpeg);
+  --posting-img-11: url(../../img/artistImg/김백진/image10.jpeg);
+  --posting-img-12: url(../../img/artistImg/김백진/image12.jpeg);
+  --posting-img-13: url(../../img/artistImg/김백진/image13.jpeg);
+  --posting-img-14: url(../../img/artistImg/김백진/image14.jpeg);
+}
 
 .magazine_bg_img {
-  background: url(../../img/artistImg/김백진/메인.jpeg) no-repeat center/100% 100% fixed;
+  background: var(--posting-img-main) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img2 {
-  background: url(../../img/artistImg/김백진/image0.jpeg) left / 70% 100% no-repeat fixed;
+  background: var(--posting-img-01) no-repeat fixed left / 70% 100%;
 }
+
 .magazine_posting_img3 {
-  background: url(../../img/artistImg/김백진/image1.jpeg) center / 100% 100% no-repeat fixed;
+  background: var(--posting-img-02) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img4 {
-  background: url(../../img/artistImg/김백진/image2.jpeg) left / 70% 100% no-repeat fixed;
+  background: var(--posting-img-03) no-repeat fixed left / 70% 100%;
 }
+
 .magazine_posting_img5 {
-  background: url(../../img/artistImg/김백진/image3.jpeg) right / 70% 100% no-repeat fixed;
+  background: var(--posting-img-04) no-repeat fixed right / 70% 100%;
 }
+
 .magazine_posting_img6 {
-  background: url(../../img/artistImg/김백진/image4.jpeg) left / 70% 100% no-repeat fixed;
+  background: var(--posting-img-05) no-repeat fixed left / 70% 100%;
 }
+
 .magazine_posting_img7 {
-  background: url(../../img/artistImg/김백진/image5.jpeg) center / 100% 100% no-repeat fixed;
+  background: var(--posting-img-06) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img8 {
-  background: url(../../img/artistImg/김백진/image6.jpeg) center / 100% 100% no-repeat fixed;
+  background: var(--posting-img-07) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img9 {
-  background: url(../../img/artistImg/김백진/image7.jpeg) left / 50% 100% no-repeat fixed;
+  background: var(--posting-img-08) no-repeat fixed left / 50% 100%;
 }
+
 .magazine_posting_img10 {
-  background: url(../../img/artistImg/김백진/image9.jpeg) right / 50% 100% no-repeat fixed;
+  background: var(--posting-img-09) no-repeat fixed right / 50% 100%;
 }
+
 .magazine_posting_img11 {
-  background: url(../../img/artistImg/김백진/image11.jpeg) left / 70% 100% no-repeat fixed;
+  background: var(--posting-img-10) no-repeat fixed left / 70% 100%;
 }
+
 .magazine_posting_img12 {
-  background: url(../../img/artistImg/김백진/image10.jpeg) right / 70% 100% no-repeat fixed;
+  background: var(--posting-img-11) no-repeat fixed right / 70% 100%;
 }
+
 .magazine_posting_img13 {
-  background: url(../../img/artistImg/김백진/image12.jpeg) center / 100% 100% no-repeat fixed;
+  background: var(--posting-img-12) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img14 {
-  background: url(../../img/artistImg/김백진/image13.jpeg) center / 100% 100% no-repeat fixed;
+  background: var(--posting-img-13) no-repeat fixed center / 100% 100%;
 }
+
 .magazine_posting_img_last {
-  background: url(../../img/artistImg/김백진/image14.jpeg) center / 80% 80% no-repeat fixed;
+  background: var(--posting-img-14) no-repeat fixed center / 80% 80%;
 }
 
 
 @media screen and (min-width: 769px) {
   .magazine_posting_img3 {
-    background: url(../../img/artistImg/김백진/image1.jpeg) center / 70% 100% no-repeat fixed;
+    background: var(--posting-img-02) no-repeat fixed center / 70% 100%;
   }
+
   .magazine_posting_img7 {
-    background: url(../../img/artistImg/김백진/image5.jpeg) center / 80% 100% no-repeat fixed;
+    background: var(--posting-img-06) no-repeat fixed center / 80% 100%;
   }
+
   .magazine_posting_img8 {
-    background: url(../../img/artistImg/김백진/image6.jpeg) center / 80% 100% no-repeat fixed;
+    background: var(--posting-img-07) no-repeat fixed center / 80% 100%;
   }
+
   .magazine_posting_img11 {
-    background: url(../../img/artistImg/김백진/image11.jpeg) left / 50% 100% no-repeat fixed;
+    background: var(--posting-img-10) no-repeat fixed left / 50% 100%;
   }
+
   .magazine_posting_img12 {
-    background: url(../../img/artistImg/김백진/image10.jpeg) right / 50% 100% no-repeat fixed;
+    background: var(--posting-img-11) no-repeat fixed right / 50% 100%;
   }
+
   .magazine_posting_img13 {
-    background: url(../../img/artistImg/김백진/image12.jpeg) center / 70% 100% no-repeat fixed;
+    background: var(--posting-img-12) no-repeat fixed center / 70% 100%;
   }
+
   .magazine_posting_img14 {
-    background: url(../../img/artistImg/김백진/image13.jpeg) center / 70% 100% no-repeat fixed;
+    background: var(--posting-img-13) no-repeat fixed center / 70% 100%;
   }
+
   .magazine_posting_img_last {
-    background: url(../../img/artistImg/김백진/image14.jpeg) center / 70% 70% no-repeat fixed;
+    background: var(--posting-img-14) no-repeat fixed center / 70% 70%;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .magazine_posting_img3 {
-    background: url(../../img/artistImg/김백진/image1.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-02) no-repeat fixed center / 60% 100%;
   }
+
   .magazine_posting_img7 {
-    background: url(../../img/artistImg/김백진/image5.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-06) no-repeat fixed center / 60% 100%;
   }
+
   .magazine_posting_img8 {
-    background: url(../../img/artistImg/김백진/image6.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-07) no-repeat fixed center / 60% 100%;
   }
+
   .magazine_posting_img13 {
-    background: url(../../img/artistImg/김백진/image12.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-12) no-repeat fixed center / 60% 100%;
   }
+
   .magazine_posting_img14 {
-    background: url(../../img/artistImg/김백진/image13.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-13) no-repeat fixed center / 60% 100%;
   }
+
   .magazine_posting_img_last {
-    background: url(../../img/artistImg/김백진/image14.jpeg) center / 60% 100% no-repeat fixed;
+    background: var(--posting-img-14) no-repeat fixed center / 60% 100%;
   }
 }
+
