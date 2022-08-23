@@ -196,9 +196,9 @@
 
     // 버튼 눌러 다음 페이지로 이동
     const downBtn = document.querySelector('.button_down');
-    downBtn.addEventListener('click', lazyLoad)
+    downBtn.addEventListener('click', scrollDown)
 
-    function lazyLoad() {
+    function scrollDown() {
       if (window.scrollY === 0) {
         window.scrollTo({ top: imgs[1].offsetTop, behavior: 'smooth' });
       } else {
@@ -210,16 +210,19 @@
       }
     }
     // 스크롤 하단 감지
-    const HIDDEN_CLASS = 'magazine_hidden';
-
-    document.addEventListener("scroll", function () {
-      // console.log(window.scrollY,window.innerHeight,document.body.clientHeight)
-      if (window.scrollY + window.innerHeight <= document.body.clientHeight - 100) {
-        downBtn.classList.add(HIDDEN_CLASS);
-      } else {
-        downBtn.classList.remove(HIDDEN_CLASS);
+    window.addEventListener("scroll", function () {
+      const SCROLLED_HEIGHT = window.scrollY;
+      const WINDOW_HEIGHT = window.innerHeight;
+      const DOC_TOTAL_HEIGHT = (document.body.offsetHeight) * 12;
+      const IS_END = SCROLLED_HEIGHT >= DOC_TOTAL_HEIGHT - 150;
+      // const IS_BOTTOM = WINDOW_HEIGHT + SCROLLED_HEIGHT === DOC_TOTAL_HEIGHT;
+      console.log( SCROLLED_HEIGHT, DOC_TOTAL_HEIGHT)
+      if (IS_END) {
+        downBtn.style.display = 'none'
+      }  else {
+        downBtn.style.display = 'block'
       }
-    })
+    });
 
     $('.to_the_top').on('click', () => {
       window.scrollTo({ top: imgs[0].offsetTop, behavior: "smooth" });
