@@ -58,6 +58,11 @@ app.get("/parkkwanwoo", (req, res) => {
 	res.render("magazine/parkkwanwoo");
 });
 
+// localhost:8000/parkhayan
+app.get("/parkhayan", (req, res) => {
+	res.render("magazine/parkhayan");
+});
+
 // localhost:8000/customersupport
 app.get("/customersupport", (req, res) => {
 	res.render("customersupport/customer");
