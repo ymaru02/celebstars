@@ -1,10 +1,10 @@
-<div class="customer_content" id="qa">
-  <div class="qa_top">
-    <div class="qa_length">
+<div class="customer_content" id="tip">
+  <div class="tip_top">
+    <div class="tip_length">
       <p>총 <span style="color: rgb(255, 89, 24)"><%= imax = 5%></span>건</p>
     </div>
     <div>
-      <ul class="qa_search">
+      <ul class="tip_search">
         <li><select name="" id="">
           <option value="">제목</option>
           <option value="">내용</option>
@@ -15,17 +15,17 @@
       </ul>
     </div>
   </div>
-  <div class="qa_post_box">
-    <table class="qa_table">
+  <div class="tip_post_box">
+    <table class="tip_table">
       <tr class="table_title">
-        <th class="qa_no">No</th>
-        <th class="qa_title">제목</th>
-        <th class="qa_author">글쓴이</th>
-        <th class="qa_upload">날짜</th>
-        <th class="qa_view">조회</th>
+        <th class="tip_no">No</th>
+        <th class="tip_title">제목</th>
+        <th class="tip_author">글쓴이</th>
+        <th class="tip_upload">날짜</th>
+        <th class="tip_view">조회</th>
       </tr>
       <%for(var i=1;i<imax+1;i++) {%>
-      <tr class="qa">
+      <tr class="tip">
         <td><%=i%></td>
         <td class="td_title"><a href="">제목</a></td>
         <td>글쓴이<%=i%></td>
@@ -35,7 +35,7 @@
       <%}%>
     </table>
   </div>
-  <div class="qa_page_nav">
+  <div class="tip_page_nav">
     <nav aria-label="Page navigation example">
       <ul class="pagination">
         <li class="page-item">

@@ -1,6 +1,5 @@
 function accordionEvent(wrap) {
   let area = document.querySelectorAll(wrap);
-  console.log(area);
   // forEach를 사용해 각각의 아코디언이 따로 동작하도록 설정
   area.forEach(function (faqArea) {
     // 아코디언 영역에 data-group의 값을 가져옴

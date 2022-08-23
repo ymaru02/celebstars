@@ -1,51 +1,51 @@
-#qa {
+#tip {
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-#qa .qa_length {
+#tip .tip_length {
   display: flex;
   justify-content: start;
   height: 20px;
   margin-bottom: 10px;
 }
-#qa .qa_length p {
+#tip .tip_length p {
   margin-left: 15px;
 }
-.qa_top {
+.tip_top {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
   height: 40px;
 }
-.qa_search {
+.tip_search {
   display: flex;
   justify-content: end;
   border-radius: 3px;
 }
-.qa_search li {
+.tip_search li {
   list-style: none;
 }
-.qa_search li select,
-.qa_search li input,
-.qa_search li button {
+.tip_search li select,
+.tip_search li input,
+.tip_search li button {
   height: 30px;
   border-radius: 0;
 }
-.qa_search li input {
+.tip_search li input {
   border: 1px solid lightgray;
 }
-.qa_search li button {
+.tip_search li button {
   width: 50px;
   border: none;
 }
-.qa_post_box {
+.tip_post_box {
   padding: 0 8px;
   display: flex;
   flex-wrap: wrap;
 }
-.qa_table {
+.tip_table {
   text-align: center;
   width: 100%;
 }
@@ -54,37 +54,37 @@
   border-bottom: 1px solid lightgray;
   height: 30px;
 }
-.qa_table .qa_no {
+.tip_table .tip_no {
   width: 5%;
 }
-.qa_table .qa_title {
+.tip_table .tip_title {
   width: 60%;
 }
-.qa_table .qa_author {
+.tip_table .tip_author {
   width: 10%;
 }
-.qa_table .qa_upload {
+.tip_table .tip_upload {
   width: 12%;
 }
-.qa_table .qa_view {
+.tip_table .tip_view {
   width: 5%;
 }
-.qa {
+.tip {
   border-bottom: 1px solid lightgray;
   height: 40px;
 }
-.qa .td_title {
+.tip .td_title {
   text-align: start;
   padding: 0 20px;
 }
-.qa .td_title a {
+.tip .td_title a {
   color: black;
 }
-.qa_page_nav {
+.tip_page_nav {
   margin-top: 10px;
   width: 100%;
 }
-.qa_page_nav nav .pagination {
+.tip_page_nav nav .pagination {
   display: flex;
   justify-content: center;
 }
