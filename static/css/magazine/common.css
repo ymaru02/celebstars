@@ -19,10 +19,6 @@
   position: relative;
 }
 
-.magazine_hidden {
-  display: none;
-}
-
 /* 메인(첫)이미지 */
 .main_img {
   width: 100%;
@@ -150,10 +146,12 @@
 .to_the_top {
   color: var(--text-color);
 
+  position: absolute;
+  left: 50%;
+  bottom: 1em;
   font-size: 20px;
-  margin: 0 auto;
-  align-self: center;
-  transform: rotate(180deg);
+
+  transform: translate(-50%, -1em) rotate(180deg);
 }
 
 .close_button {
@@ -167,9 +165,7 @@
 
 .button_down {
   position: fixed;
-  margin: 20px;
   padding: 20px;
-
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
