@@ -1,0 +1,150 @@
+:root {
+  --posting-img-main: url(../../img/artistImg/choiseoah/main0.jpg);
+  --posting-img-01: url(../../img/artistImg/choiseoah/main0.jpg);
+  --posting-img-02: url(../../img/artistImg/choiseoah/main1.jpg);
+  --posting-img-03: url(../../img/artistImg/choiseoah/main2.jpg);
+  --posting-img-04: url(../../img/artistImg/choiseoah/main3.jpg);
+  --posting-img-05: url(../../img/artistImg/choiseoah/main4.jpg);
+  --posting-img-06: url(../../img/artistImg/choiseoah/main5.jpg);
+  --posting-img-07: url(../../img/artistImg/choiseoah/main6.jpg);
+  --posting-img-08: url(../../img/artistImg/choiseoah/main7.jpg);
+  --posting-img-09: url(../../img/artistImg/choiseoah/main8.jpg);
+  --posting-img-10: url(../../img/artistImg/choiseoah/main9.jpg);
+  --posting-img-11: url(../../img/artistImg/choiseoah/main10.jpg);
+  --posting-img-12: url(../../img/artistImg/choiseoah/main11.jpg);
+  --posting-img-13: url(../../img/artistImg/choiseoah/main12.jpg);
+  --posting-img-14: url(../../img/artistImg/choiseoah/main13.jpg);
+}
+
+.magazine_bg_img {
+  background: var(--posting-img-main) no-repeat fixed center / 100% 100%;
+}
+
+.magazine_posting_img2 {
+  background: var(--posting-img-01) no-repeat fixed left / 70% 100%;
+}
+
+.magazine_posting_img3 {
+  background: var(--posting-img-02) no-repeat fixed center / 100% 100%;
+}
+
+.magazine_posting_img4 {
+  background: var(--posting-img-03) no-repeat fixed left / 70% 100%;
+}
+
+.magazine_posting_img5 {
+  background: var(--posting-img-04) no-repeat fixed right / 70% 100%;
+}
+
+.magazine_posting_img6 {
+  background: var(--posting-img-05) no-repeat fixed left / 70% 100%;
+}
+
+.magazine_posting_img7 {
+  background: var(--posting-img-06) no-repeat fixed center / 100% 100%;
+}
+
+.magazine_posting_img8 {
+  background: var(--posting-img-07) no-repeat fixed center / 100% 100%;
+}
+
+.magazine_posting_img9 {
+  background: var(--posting-img-08) no-repeat fixed left / 50% 100%;
+}
+
+.magazine_posting_img10 {
+  background: var(--posting-img-09) no-repeat fixed right / 50% 100%;
+}
+
+.magazine_posting_img11 {
+  background: var(--posting-img-10) no-repeat fixed left / 70% 100%;
+}
+
+.magazine_posting_img12 {
+  background: var(--posting-img-11) no-repeat fixed right / 70% 100%;
+}
+
+.magazine_posting_img13 {
+  background: var(--posting-img-12) no-repeat fixed center / 100% 100%;
+}
+
+.magazine_posting_img14 {
+  background: var(--posting-img-13) no-repeat fixed center / 100% 100%;
+}
+
+.magazine_posting_img_last {
+  background: var(--posting-img-14) no-repeat fixed center / 80% 80%;
+}
+
+
+@media screen and (min-width: 769px) {
+  .magazine_posting_img2 {
+    background: var(--posting-img-01) no-repeat fixed left / 60% 100%;
+  }
+  .magazine_posting_img3 {
+    background: var(--posting-img-02) no-repeat fixed center / 60% 100%;
+  }
+
+  .magazine_posting_img4 {
+    background: var(--posting-img-03) no-repeat fixed left / 60% 100%;
+  }
+  .magazine_posting_img5 {
+    background: var(--posting-img-04) no-repeat fixed right / 60% 100%;
+  }
+  .magazine_posting_img6 {
+    background: var(--posting-img-05) no-repeat fixed left / 60% 100%;
+  }
+  .magazine_posting_img7 {
+    background: var(--posting-img-06) no-repeat fixed center / 70% 100%;
+  }
+
+  .magazine_posting_img8 {
+    background: var(--posting-img-07) no-repeat fixed center / 70% 100%;
+  }
+
+  .magazine_posting_img11 {
+    background: var(--posting-img-10) no-repeat fixed left / 50% 100%;
+  }
+
+  .magazine_posting_img12 {
+    background: var(--posting-img-11) no-repeat fixed right / 50% 100%;
+  }
+
+  .magazine_posting_img13 {
+    background: var(--posting-img-12) no-repeat fixed center / 60% 100%;
+  }
+
+  .magazine_posting_img14 {
+    background: var(--posting-img-13) no-repeat fixed center / 60% 100%;
+  }
+
+  .magazine_posting_img_last {
+    background: var(--posting-img-14) no-repeat fixed center / 60% 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .magazine_posting_img3 {
+    background: var(--posting-img-02) no-repeat fixed center / 50% 100%;
+  }
+
+  .magazine_posting_img7 {
+    background: var(--posting-img-06) no-repeat fixed center / 50% 100%;
+  }
+
+  .magazine_posting_img8 {
+    background: var(--posting-img-07) no-repeat fixed center / 50% 100%;
+  }
+
+  .magazine_posting_img13 {
+    background: var(--posting-img-12) no-repeat fixed center / 50% 100%;
+  }
+
+  .magazine_posting_img14 {
+    background: var(--posting-img-13) no-repeat fixed center / 50% 100%;
+  }
+
+  .magazine_posting_img_last {
+    background: var(--posting-img-14) no-repeat fixed center / 50% 100%;
+  }
+}
