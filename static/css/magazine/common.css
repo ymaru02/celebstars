@@ -11,6 +11,9 @@
 .magazine_body::-webkit-scrollbar {
   display: none;
 }
+.magazine_hidden {
+  display: none;
+}
 
 .magazine_container {
   width: 100vw;
