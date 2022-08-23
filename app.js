@@ -44,7 +44,7 @@ app.get("/login", (req, res) => {
 });
 
 // localhost:8000/magazine
-app.get("/magazine", (req, res) => {
+app.get("/kimbackjin", (req, res) => {
 	res.render("magazine/kimbackjin");
 });
 
