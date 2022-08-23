@@ -211,7 +211,7 @@
     const HIDDEN_CLASS = 'magazine_hidden';
     document.addEventListener("scroll", function () {
       // console.log(window.scrollY,window.innerHeight,document.body.clientHeight)
-      if (window.scrollY + window.innerHeight === document.body.clientHeight) {
+      if (window.scrollY + window.innerHeight >= document.body.clientHeight - 150) {
         downBtn.classList.add(HIDDEN_CLASS);
       } else {
         downBtn.classList.remove(HIDDEN_CLASS);
