@@ -6,7 +6,7 @@
   text-align: end;
 }
 .profile-container {
-  background-image: url("/static/img/profile/user1/main4.jpg");
+  background-image: url("/static/img/artistImg/hannana/main4.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 20px;
@@ -120,4 +120,49 @@
 .btn:hover {
   color: black;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 1280px) {
+  .profile {
+    max-width: 768px;
+    width: auto;
+    margin: 20px auto;
+  }
+  .profile-container {
+    overflow: visible;
+    background-repeat: repeat;
+  }
+  .porfile-cover {
+    overflow: visible;
+    border-radius: 20px;
+  }
+
+  .profile-inner {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .profile-img {
+    object-fit: cover;
+  }
+
+  .profile-icons {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .ful-screen .btn {
+    margin: 10px 0;
+  }
+
+  .center {
+    width: 330px;
+    margin: 0 auto;
+  }
+  .slick-next {
+    transform: translateX(-20px);
+  }
 }
