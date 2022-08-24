@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%-include("../../link.ejs")%>
+    <link href="/static/css/profile/profileUpdate.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%-include("../../navbar/navbar.ejs")%>
+    <div class="profile">
+      <div class="profile-header">
+        <a href="/profileUpdate">
+          <button type="button" class="btn btn-outline-secondary">
+            프로필 저장
+          </button>
+        </a>
+      </div>
+    </div>
+    <!-- profile -->
+    <main class="profile">
+      <div class="profile-container">
+        <div class="profile-inner">
+          <div class="profile-img">
+            <img src="/static/img/artistImg/hannana/main2.jpg" alt="" />
+            <label
+              class="profile-button input-group-text"
+              for="inputGroupFile01"
+            >
+              <i class="profile-icon bi bi-file-earmark-plus"></i>
+            </label>
+            <input
+              type="file"
+              class="profile-file form-control"
+              id="inputGroupFile01"
+              onchange="fileChange()"
+            />
+            <h2 class="picture-update">사진 편집</h2>
+          </div>
+          <div class="profile-content">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-12 profile-name">한나나</div>
+              </div>
+              <div class="row profile-description">
+                <div class="col-2 offset-2">
+                  <p><strong>생년월일</strong></p>
+                  <p>xx.xx.xx</p>
+                </div>
+                <div class="col-2">
+                  <p><strong>Height</strong></p>
+                  <p>xxxcm</p>
+                </div>
+                <div class="col-2">
+                  <p><strong>Weight</strong></p>
+                  <p>xxkg</p>
+                </div>
+                <div class="col-2">
+                  <p><strong>3 Size</strong></p>
+                  <p>xx-xx-xx</p>
+                </div>
+              </div>
+            </div>
+            <!-- Button trigger modal -->
+            <div class="profile-item">
+              <button
+                type="button"
+                class="profile-btn btn btn-outline-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#namestaticBackdrop"
+                onclick="hidenScroll()"
+              >
+                <i class="bi bi-pencil-square"> 프로필 수정 </i>
+              </button>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3">
+              <div class="col mt-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">드라마</h5>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">영화</h5>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">광고</h5>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">잡지</h5>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">무대</h5>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">TV</h5>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                    <p class="card-text">2022 08 경력 내용</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button trigger modal -->
+
+            <div class="profile-item item-margin">
+              <button
+                type="button"
+                class="profile-btn btn btn-outline-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#careerBackdrop"
+                onclick="hidenScroll()"
+              >
+                <i class="bi bi-pencil-square"> 포트폴리오 추가 </i>
+              </button>
+            </div>
+
+            <div class="profile-item">
+              <!-- icons -->
+              <div class="profile-icons">
+                <div>
+                  <img
+                    class="profile-icon"
+                    src="/static/img/profile/profileIcon/kakakotalk.png"
+                    alt=""
+                  />
+                  <span>xxx@xxx.com</span>
+                </div>
+                <div>
+                  <img
+                    class="profile-icon"
+                    src="/static/img/profile/profileIcon/youtube.png"
+                    alt=""
+                  />
+                  <span>xxx@xxx.com</span>
+                </div>
+                <div>
+                  <img
+                    class="profile-icon"
+                    src="/static/img/profile/profileIcon/instagram.png"
+                    alt=""
+                  />
+                  <span>xxx@xxx.com</span>
+                </div>
+                <div>
+                  <img
+                    class="profile-icon"
+                    src="/static/img/profile/profileIcon/twitter.png"
+                    alt=""
+                  />
+                  <span>xxx@xxx.com</span>
+                </div>
+              </div>
+            </div>
+            <!-- Button trigger modal -->
+            <div class="profile-item item-margin">
+              <button
+                type="button"
+                class="profile-btn btn btn-outline-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                onclick="hidenScroll()"
+              >
+                <i class="bi bi-pencil-square"> SNS 추가 </i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('../modal/name.ejs') %> <%- include('../modal/career.ejs') %>
+    <%- include('../modal/sns.ejs') %> <%-include('../../footer/footer.ejs')%>
+
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/slick/slick.js"></script>
+    <script src="/static/js/profile/carousel.js"></script>
+    <script src="/static/js/profile/fileUpdate.js"></script>
+    <script src="/static/js/profile/profile.js"></script>
+  </body>
+</html>

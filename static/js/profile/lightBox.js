@@ -1,7 +1,3 @@
-function hiddenScroll() {
-  document.body.className = "";
-}
-
 // Open the Modal
 function openModal(target) {
   if (target === "img") {
@@ -34,7 +30,9 @@ function showImgSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slides[slideImgIndex - 1].style.display = "block";
+  if (slides[slideImgIndex - 1]) {
+    slides[slideImgIndex - 1].style.display = "block";
+  }
 }
 
 var slideImgIndex = 1;
@@ -66,7 +64,9 @@ function showVideoSlides(n) {
 }
 
 var slideVideoIndex = 1;
-showVideoSlides(slideVideoIndex);
+if (document.getElementsByClassName("myVideoSlides").length) {
+  showVideoSlides(slideVideoIndex);
+}
 
 // Next/previous controls
 function plusVideoSlides(n) {
@@ -77,9 +77,3 @@ function plusVideoSlides(n) {
 function currentVideoSlide(n) {
   showVideoSlides((slideVideoIndex = n));
 }
-
-$(document).ready(function () {
-  $(".inner img").hover(function () {
-    $(this).css("cursor", "pointer");
-  });
-});

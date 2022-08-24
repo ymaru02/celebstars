@@ -6,13 +6,13 @@
   text-align: end;
 }
 .profile-container {
+  /* background-image: url("/static/img/artistImg/hannana/main2.jpg"); */
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 95vh;
   box-shadow: 10px 5px 5px rgb(200, 200, 200);
   border-radius: 20px;
   overflow: hidden;
-  background-image: url("/static/img/artistImg/hannana/main4.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 .profile-inner {
   display: flex;
