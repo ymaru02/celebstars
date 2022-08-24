@@ -44,7 +44,7 @@
   height: 100vh;
 
   backdrop-filter: blur(4px);
-  
+
   position: relative;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .info_text {
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .artist_career {
@@ -162,7 +162,6 @@
   margin: 20px;
   top: 0;
   right: 0;
-
   z-index: 1;
 }
 
@@ -173,7 +172,6 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-
 }
 
 #closeBtn {
@@ -181,8 +179,8 @@
   border: 0;
   background: transparent;
   color: white;
+  cursor: pointer;
 }
-
 
 @media screen and (min-width: 768px) {
   .artist_name {
@@ -194,7 +192,7 @@
   .career_wrapper {
     font-size: 20px;
   }
-  
+
   .left {
     left: 0;
     width: calc(100% - 60%);
@@ -218,7 +216,6 @@
     padding-left: 8px;
     display: block;
   }
-
 }
 @media screen and (min-width: 1024px) {
   .artist_career {

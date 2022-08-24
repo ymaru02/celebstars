@@ -5,10 +5,21 @@
 }
 .card-img-top {
   width: auto;
-  height: 200px;
+  height: 150px;
   object-fit: contain;
   overflow: hidden;
   border: 1px solid rgba(100, 100, 100, 0.1);
   border-radius: 10px;
   z-index: 1;
+}
+.card-title {
+  font-weight: bold;
+  height: 50px;
+}
+.card-text {
+  font-size: 15px;
+}
+.card-location {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
 }

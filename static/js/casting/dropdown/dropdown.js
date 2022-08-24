@@ -7,7 +7,11 @@ function myFunction() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
-  if (!event.target.matches(".casting-btn")) {
+  if (
+    !event.target.matches(".casting-btn") &&
+    !event.target.parentNode?.matches(".casting-btn") &&
+    !event.target.parentNode.parentNode?.matches(".casting-btn")
+  ) {
     var dropdowns = document.getElementsByClassName("casting-dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -17,7 +21,6 @@ window.onclick = function (event) {
       }
     }
     document.querySelector(".casting-icon").classList.remove("rotation");
-    console.log("a");
   }
 };
 
