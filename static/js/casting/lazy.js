@@ -1,7 +1,6 @@
 function lazyload() {
   var lazyloadImages = document.querySelectorAll("img.lazy");
   var scrollTop = window.scrollY;
-  // console.log(scrollTop);
   lazyloadImages.forEach(function (img) {
     if (img.offsetTop < window.innerHeight + scrollTop - 100) {
       img.src = img.dataset.src;

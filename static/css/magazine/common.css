@@ -157,6 +157,11 @@
   transform: translate(-50%, -1em) rotate(180deg);
 }
 
+.button_down,
+.to_the_top:hover {
+  cursor: pointer;
+}
+
 .close_button {
   position: fixed;
   margin: 20px;
@@ -192,17 +197,14 @@
   .career_wrapper {
     font-size: 20px;
   }
-
   .left {
     left: 0;
     width: calc(100% - 60%);
   }
-
   .right {
     right: 0;
     width: calc(100% - 60%);
   }
-
   .artist_career {
     flex-flow: row;
   }

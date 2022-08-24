@@ -59,8 +59,86 @@
         </div>
       </div>
     </div>
-    <hr />
-    <main><%-include("./cards.ejs")%></main>
+    <nav class="stick-search">
+      <div class="subsearch">
+        <div>
+          <button class="subsearch-item">
+            <span> 지역</span>
+            <span class="select-item"> 전체 </span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <button class="subsearch-item">
+            <span> 나이 </span>
+            <span class="select-item"> 전체</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="casting-dropdown">
+            <button class="subsearch-item">
+              <span> 성별</span>
+              <span class="select-item"> 전체</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="location-dropdown-content">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  전체
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  남성
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  여성
+                </label>
+              </div>
+              <hr />
+              <div>적용</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <select
+            class="form-select form-select-sm"
+            aria-label=".form-select-sm example"
+          >
+            <option selected value="1">최신순</option>
+            <option value="2">응답률</option>
+            <option value="3">인기순</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+    </nav>
+    <main class="casting">
+      <div class="bookmark">
+        <i class="bi bi-bookmark-star-fill"></i>
+        <span> 북마크 모아보기</span>
+      </div>
+      <%-include("./cards.ejs")%>
+    </main>
+
     <%-include('../footer/footer.ejs')%>
     <script src="/jq/jquery.js"></script>
     <script src="/js/bootstrap.js"></script>

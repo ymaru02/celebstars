@@ -2,7 +2,7 @@
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
-  document.querySelector(".casting-icon").classList.toggle("rotation");
+  document.querySelector(".casting-icon-cover").classList.toggle("rotation");
 }
 
 // Close the dropdown menu if the user clicks outside of it
@@ -20,7 +20,7 @@ window.onclick = function (event) {
         openDropdown.classList.remove("show");
       }
     }
-    document.querySelector(".casting-icon").classList.remove("rotation");
+    document.querySelector(".casting-icon-cover").classList.remove("rotation");
   }
 };
 

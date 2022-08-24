@@ -7,7 +7,8 @@
   font-size: 25px;
   border: none;
   cursor: pointer;
-  background-color: white;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
 }
 .casting-dropbtn strong {
   padding-right: 10px;
@@ -31,7 +32,7 @@
   background-color: white;
   min-width: 160px;
   box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
-  z-index: 100;
+  z-index: 1;
   border-radius: 10px;
 }
 
@@ -55,7 +56,7 @@
 }
 
 .rotation {
-  transform: rotate(0.5turn);
+  transform: rotate(180deg);
 }
 .casting-icon-cover {
   display: flex;
@@ -64,9 +65,31 @@
   width: 25px;
   height: 25px;
   color: rgb(100, 100, 100);
-  border: 1px solid rgb(100, 100, 100);
+  border: 0.5px solid rgba(100, 100, 100, 0.5);
   border-radius: 50%;
+  transition: transform 0.5s;
 }
 .casting-icon {
-  transition: transform 0.5s;
+  margin-top: 2px;
+}
+
+.location-dropdown-content {
+  display: block;
+  position: absolute;
+  left: 10px;
+  margin-top: 10px;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+.form-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-check-label {
+  width: 30px;
+  margin: 5px 10px;
 }
