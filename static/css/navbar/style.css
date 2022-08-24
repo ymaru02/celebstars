@@ -1,6 +1,6 @@
 .nav-body {
   margin: 0;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 #wrap {
   margin: auto;
@@ -9,8 +9,8 @@
 }
 /* header부분 */
 .header_box {
-  width: 100vw;
-  height: 100px;
+  width: 100%;
+  height: 80px;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -19,7 +19,7 @@
 }
 .navbar_header {
   margin: 0 50px;
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,7 +31,7 @@
 .navbar {
   width: auto;
   height: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .navbar ul {
   display: flex;
@@ -82,8 +82,11 @@
 .navbar_mob {
   display: none;
   background-color: black;
-  height: 35px;
+  height: 30px;
   width: 100%;
+}
+.navbar_mob li {
+  margin: 0px 20px;
 }
 .navbar_mob li a {
   text-decoration: none;
@@ -93,6 +96,9 @@
   padding: 5px 10px 5px 10px;
 }
 @media screen and (max-width: 770px) {
+  .nav-body {
+    padding-top: 110px;
+  }
   .navbar_header {
     margin: 0 20px;
   }
@@ -113,13 +119,21 @@
   .navbar_mob {
     display: flex;
     justify-content: space-around;
+    position: fixed;
   }
   .navbar_mob ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   .navbar_mob li {
-    font-size: 20px;
-    margin: 0px 20px;
+    margin: 0px 5px;
+  }
+  .navbar_mob li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
   }
 }
