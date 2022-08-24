@@ -2,12 +2,12 @@
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
-  console.log("a");
+  document.querySelector(".casting-icon").classList.toggle("rotation");
 }
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
-  if (!event.target.matches(".casting-dropbtn")) {
+  if (!event.target.matches(".casting-btn")) {
     var dropdowns = document.getElementsByClassName("casting-dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -15,7 +15,12 @@ window.onclick = function (event) {
       if (openDropdown.classList.contains("show")) {
         openDropdown.classList.remove("show");
       }
-      console.log("a");
     }
+    document.querySelector(".casting-icon").classList.remove("rotation");
+    console.log("a");
   }
 };
+
+$("li").on("click", function () {
+  $(".casting-title").text($(this).text());
+});
