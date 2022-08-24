@@ -25,16 +25,17 @@
 }
 .main_box_2 {
   margin: auto;
-  width: 1280px;
+  width: 1080px;
 }
 .casting_carousel {
   position: relative;
+  height: 374px;
 }
 .casting_carousel button {
   position: absolute;
   width: 40px;
   height: 40px;
-  top: 45%;
+  top: 40%;
 }
 .casting_carousel .casting_prev {
   margin-left: -20px;
@@ -73,7 +74,7 @@
 .casting_box {
   margin: auto;
   width: 100%;
-  height: 360px;
+  height: 374px;
   display: flex;
   margin-top: 0;
 }
@@ -88,7 +89,7 @@
 .casting_box .card {
   width: 100%;
   align-items: center;
-  margin-top: 10px;
+  margin-top: auto;
 }
 .card-header {
   text-align: center;
@@ -97,7 +98,7 @@
 .casting_box .card .casting_img {
   display: flex;
   align-items: center;
-  height: 175px;
+  height: 150px;
 }
 .casting_box a {
   text-decoration: none;
@@ -108,7 +109,7 @@
   padding: 10px 10px;
 }
 .casting_box .card-body {
-  height: 90px;
+  height: 130px;
 }
 .casting_box .card-body,
 .casting_box .card-footer {
@@ -124,7 +125,7 @@
   color: black;
 }
 .magazine_box div .card img {
-  height: 220px;
+  height: 200px;
 }
 .magazine_box div .card a .card-body {
   overflow: hidden;
@@ -134,7 +135,7 @@
 .ytb_box {
   display: flex;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
   justify-content: space-around;
 }
 .celeb_ytb,
@@ -142,6 +143,9 @@
   border-radius: 5px;
   margin: 0 3px;
   height: 315px;
+}
+.casting_carousel_mob {
+  display: none;
 }
 @media screen and (max-width: 770px) {
   #wrap {
@@ -155,7 +159,7 @@
     height: auto;
   }
   .casting_box {
-    height: 320px;
+    height: 345px;
   }
   .casting_box .card .casting_img {
     display: flex;
@@ -163,7 +167,11 @@
     height: 100px;
   }
   .casting_box .card-body {
-    height: 102px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    overflow: hidden;
   }
   .main_box_2 {
     display: flex;
@@ -184,17 +192,46 @@
     width: 95vw;
     flex-direction: row;
   }
+  .magazine_box div .card .img_body {
+    height: auto;
+    overflow-y: hidden;
+    display: flex;
+  }
   .magazine_box div .card img {
-    height: 350px;
+    max-height: 450px;
+    min-height: 300px;
   }
   .ytb_box {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 5px;
+    margin-top: 0;
+  }
+  .ytb_box iframe {
+    width: 100%;
+    height: 270px;
   }
   .ytb1 {
     margin-bottom: 5px;
   }
-  .ytb_box div img {
+  .casting_carousel {
     display: none;
+  }
+  .casting_carousel_mob {
+    padding: 20px;
+    display: block;
+    height: 360px;
+  }
+  .casting_carousel_mob button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 45%;
+  }
+  .casting_carousel_mob button span {
+    height: 70px;
+    background-color: rgb(202, 208, 214);
+    border-radius: 12px;
   }
 }

@@ -66,6 +66,10 @@
   width: 36px;
   height: 36px;
 }
+.footer_mob {
+  text-align: center;
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .footer_logo img {
     width: 195px;
@@ -73,5 +77,14 @@
   }
   .celeb_desc {
     width: 100%;
+  }
+  .info_top_item ul li {
+    font-size: 13px;
+  }
+  .footer_web {
+    display: none;
+  }
+  .footer_mob {
+    display: inline;
   }
 }
