@@ -7,14 +7,12 @@ app.set("view engine", "ejs");
 app.use("/static", express.static("static"));
 
 // prepare server
-// redirect API calls
-// app.use("/api", api);
-// redirect root
-// app.use("/", express.static(__dirname + "/www"));
-// redirect bootstrap JS
-app.use("/js", express.static(__dirname + "/node_modules/bootstrap/dist/js"));
 // redirect JS jQuery
 app.use("/jq", express.static(__dirname + "/node_modules/jquery/dist"));
+// redirect JS jQuery
+app.use("/jqui", express.static(__dirname + "/node_modules/jquery-ui/dist"));
+// redirect bootstrap JS
+app.use("/js", express.static(__dirname + "/node_modules/bootstrap/dist/js"));
 // redirect CSS bootstrap
 app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/css"));
 // redirect CSS bootstrap
@@ -34,9 +32,16 @@ app.get("/", (req, res) => {
 app.get("/casting", (req, res) => {
   res.render("casting/casting");
 });
-
 // localhost:8000/login
 app.get("/login", (req, res) => {
+  res.render("login/login");
+});
+// localhost:8000/join
+app.get("/join", (req, res) => {
+  res.render("join/join");
+});
+// localhost:8000/loginWeb
+app.get("/loginWeb", (req, res) => {
   res.render("loginWeb");
 });
 
@@ -125,12 +130,4 @@ app.get("/customersupport", (req, res) => {
 
 app.listen(port, () => {
   console.log("server open:", port);
-});
-
-app.get("/login", (req, res) => {
-  res.render("login/login");
-});
-
-app.get("/join", (req, res) => {
-  res.render("join/join");
 });

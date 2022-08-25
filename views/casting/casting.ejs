@@ -15,14 +15,14 @@
     <div class="searchbar">
       <div class="casting-dropdown">
         <button onclick="myFunction()" class="casting-dropbtn casting-btn">
-          <strong class="casting-title casting-btn">분야</strong>
+          <strong class="casting-title">분야</strong>
           <span class="casting-icon-cover">
             <svg
               xmlns="https://www.w3.org/2000/svg"
               width="12"
               height="12"
               viewBox="0 0 12 12"
-              class="casting-btn casting-icon"
+              class="casting-icon"
             >
               <path
                 fill="#666"
@@ -59,8 +59,73 @@
         </div>
       </div>
     </div>
-    <hr />
-    <main><%-include("./cards.ejs")%></main>
+    <nav class="stick-search">
+      <div class="subsearch">
+        <div>
+          <button class="subsearch-item">
+            <span> 지역</span>
+            <span class="select-item"> 전체 </span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="casting-dropdown">
+            <button class="subsearch-item" onclick="ageClick()">
+              <span> 나이 </span>
+              <span class="select-item"> 전체</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div id="ageDropdown" class="age-dropdown-content">
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="50"
+                  class="slider"
+                  id="myRange"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="casting-dropdown">
+            <button
+              class="subsearch-item location-btn"
+              onclick="locationClick()"
+            >
+              <span> 성별</span>
+              <span class="select-item"> 전체</span>
+              <i class="bi bi-caret-down-fill lacationicon"></i>
+            </button>
+            <div id="locationDropdown" class="location-dropdown-content">
+              <ul>
+                <li>전체</li>
+                <li>남성</li>
+                <li>여성</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <select
+            class="form-select form-select-sm"
+            aria-label=".form-select-sm example"
+          >
+            <option selected value="1">최신순</option>
+            <option value="2">응답률</option>
+            <option value="3">인기순</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+    </nav>
+    <main class="casting">
+      <div class="bookmark">
+        <i class="bi bi-bookmark-star-fill"></i>
+        <span> 북마크 모아보기</span>
+      </div>
+      <%-include("./cards.ejs")%>
+    </main>
+
     <%-include('../footer/footer.ejs')%>
     <script src="/jq/jquery.js"></script>
     <script src="/js/bootstrap.js"></script>

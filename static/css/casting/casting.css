@@ -1,10 +1,99 @@
 .searchbar {
-  position: sticky;
+  position: relative;
   width: 1080px;
-  margin: 20px auto;
-  top: 100px;
+  padding-top: 20px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 3;
+}
+.stick-search {
+  position: sticky;
+  top: 80px;
+  width: 1080px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: white;
+  z-index: 2;
+}
+.subsearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.subsearch-item {
+  position: relative;
+  margin: 0px 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  border-top: 1px solid rgb(190, 190, 190);
+  border-bottom: 1px solid rgb(190, 190, 190);
+  /* cursor: pointer; */
+  background-color: rgba(255, 255, 255, 0);
+}
+.subsearch-item i {
+  font-size: 12px;
+}
+.select-item {
+  font-weight: bold;
+  padding-left: 5px;
+  color: #092063;
+}
+.form-select {
+  cursor: pointer;
 }
 .casting {
   max-width: 1080px;
   margin: 0 auto;
+}
+.bookmark {
+  display: inline-block;
+  color: #ffc107;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+/* range */
+.slidecontainer {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 80%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
 }
