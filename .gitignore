@@ -203,4 +203,6 @@ $RECYCLE.BIN/
 # package-lock
 package-lock.json
 
+# video
+video/
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,node
