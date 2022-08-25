@@ -36,6 +36,12 @@ app.get("/casting", (req, res) => {
 app.get("/login", (req, res) => {
   res.render("login/login");
 });
+
+//localhost:8000/login_user
+app.get("/login_user", (req, res) => {
+  res.render("login/login_user");
+});
+
 // localhost:8000/join
 app.get("/join", (req, res) => {
   res.render("join/join");
