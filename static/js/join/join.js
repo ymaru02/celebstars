@@ -90,13 +90,13 @@ function resisterBirthReg() {
     if (dateStr.length <= 8) {
       // 연도의 경우 1900 보다 작거나 yearNow 보다 크다면 false를 반환합니다.
       if (1900 > year || year > yearNow) {
-        $("#birth_check").text('"year"를 확인해주세요 :)  ex_19891029');
+        $("#birth_check").text('"YYYY"를 확인해주세요 :)  ex_YYYYMMDD');
         $("#birth_check").css("color", "red");
       } else if (month < 1 || month > 12) {
-        $("#birth_check").text('"month"를 확인해주세요 :) ex_19891029');
+        $("#birth_check").text('"MM"를 확인해주세요 :) ex_YYYYMMDD');
         $("#birth_check").css("color", "red");
       } else if (day < 1 || day > 31) {
-        $("#birth_check").text('"day"를 확인해주세요 :) ex_19891029');
+        $("#birth_check").text('"DD"를 확인해주세요 :) ex_YYYYMMDD');
         $("#birth_check").css("color", "red");
       } else if (
         (month == 4 || month == 6 || month == 9 || month == 11) &&

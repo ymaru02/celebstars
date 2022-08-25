@@ -1,5 +1,11 @@
+.background{
+    width: 100%;
+}
 .box {
-  /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .background {
   background: radial-gradient(
@@ -39,9 +45,12 @@
 @media screen and (max-width: 768px) {
   .box1 {
     /* display: block; */
-    width: 440px;
+    width: 100%;
     height: 800px;
   }
+}
+.text_box{
+    width: 100%;
 }
 
 .jointext {
@@ -50,15 +59,15 @@
 .input {
   margin-top: 50px;
   /* margin:auto; */
-  text-align: left;
-  margin-left: 90px;
-  width: 510px;
+  text-align: center;
+  /* margin-left: 90px; */
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .input {
     /* display: block; */
-    width: 420px;
-    margin-left: 50px;
+    width: 100%;
+    /* margin-left: 50px; */
   }
 }
 
@@ -103,7 +112,7 @@ input[type="button"] {
   color: black;
   outline: none;
   display: inline;
-  margin-left: -30px;
+  margin-left: -36px;
   box-sizing: border-box;
 }
 input[type="button"]:hover {
@@ -429,7 +438,7 @@ input[id="cbtest2"]:checked + .cb2::before {
 }
 .checkbox_group {
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 @media screen and (max-width: 768px) {
   .checkbox_group {
@@ -438,21 +447,34 @@ input[id="cbtest2"]:checked + .cb2::before {
   }
 }
 .box3 label {
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 .modal-sm {
   width: 300px;
 }
+.save_box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .save_box {
+      display: flex;
+      justify-content: center;
+  
+    }
+}
 #save {
-  margin-left: 145px;
+
+  width: 70%;
   margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
   #save {
-    /* display: block; */
-    margin-left: 80px;
+    
+
   }
 }
 #dialog1 {
@@ -460,9 +482,4 @@ input[id="cbtest2"]:checked + .cb2::before {
 
   width: 400px;
 }
-@media screen and (max-width: 768px) {
-  #dialog1 {
-    /* display: block; */
-    margin: -10px;
-  }
-}
+
