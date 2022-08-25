@@ -67,54 +67,41 @@
             <span class="select-item"> 전체 </span>
             <i class="bi bi-caret-down-fill"></i>
           </button>
-          <button class="subsearch-item">
-            <span> 나이 </span>
-            <span class="select-item"> 전체</span>
-            <i class="bi bi-caret-down-fill"></i>
-          </button>
           <div class="casting-dropdown">
-            <button class="subsearch-item">
-              <span> 성별</span>
+            <button class="subsearch-item" onclick="ageClick()">
+              <span> 나이 </span>
               <span class="select-item"> 전체</span>
               <i class="bi bi-caret-down-fill"></i>
             </button>
-            <div class="location-dropdown-content">
-              <div class="form-check">
+            <div id="ageDropdown" class="age-dropdown-content">
+              <div class="slidecontainer">
                 <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault1"
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="50"
+                  class="slider"
+                  id="myRange"
                 />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  전체
-                </label>
               </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault1"
-                />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  남성
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault2"
-                  checked
-                />
-                <label class="form-check-label" for="flexRadioDefault2">
-                  여성
-                </label>
-              </div>
-              <hr />
-              <div>적용</div>
+            </div>
+          </div>
+
+          <div class="casting-dropdown">
+            <button
+              class="subsearch-item location-btn"
+              onclick="locationClick()"
+            >
+              <span> 성별</span>
+              <span class="select-item"> 전체</span>
+              <i class="bi bi-caret-down-fill lacationicon"></i>
+            </button>
+            <div id="locationDropdown" class="location-dropdown-content">
+              <ul>
+                <li>전체</li>
+                <li>남성</li>
+                <li>여성</li>
+              </ul>
             </div>
           </div>
         </div>

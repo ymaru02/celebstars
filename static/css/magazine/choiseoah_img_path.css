@@ -14,7 +14,7 @@
   --posting-img-12: url(../../img/artistImg/choiseoah/main11.jpg);
   --posting-img-13: url(../../img/artistImg/choiseoah/main12.jpg);
   --posting-img-14: url(../../img/artistImg/choiseoah/main13.jpg);
-  --text-color: #000
+  --text-color: #000;
 }
 
 .magazine_bg_img {
@@ -76,7 +76,6 @@
 .magazine_posting_img_last {
   background: var(--posting-img-14) no-repeat fixed center / 80% 80%;
 }
-
 
 @media screen and (min-width: 769px) {
   .magazine_posting_img2 {

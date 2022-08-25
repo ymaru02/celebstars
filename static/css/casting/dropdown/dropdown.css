@@ -50,14 +50,6 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-  display: block;
-}
-
-.rotation {
-  transform: rotate(180deg);
-}
 .casting-icon-cover {
   display: flex;
   justify-content: center;
@@ -74,22 +66,53 @@
 }
 
 .location-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 10px;
+  min-width: 100px;
+  margin-top: 10px;
+  background-color: white;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
+}
+/* Links inside the dropdown */
+.location-dropdown-content li {
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+/* Change color of dropdown links on hover */
+.location-dropdown-content li:hover {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.lacationicon::before {
+  transition: transform 0.5s;
+}
+
+.age-dropdown-content {
   display: block;
   position: absolute;
   left: 10px;
+  width: 400px;
+  height: 100px;
   margin-top: 10px;
   background-color: white;
-  min-width: 150px;
-  box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  border-radius: 10px;
+  border-radius: 5px;
+  box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
 }
-.form-check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
 }
-.form-check-label {
-  width: 30px;
-  margin: 5px 10px;
+.rotation {
+  transform: rotate(0.5turn);
+}
+.rotation::before {
+  transform: rotate(0.5turn);
 }

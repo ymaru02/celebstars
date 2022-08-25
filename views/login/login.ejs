@@ -1,145 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%-include("../link.ejs")%>
+    <link href="/static/css/join/login.css" rel="stylesheet" />
     <title>login</title>
- <style>
-    .logo{
-        width: 300px;
-        height: 100px;
-    }
-
-    .box{
-                /* margin: auto; */
-            }
-
-
-    .box1{
-        justify-content: space-between;
-        margin: auto;
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        width: 600px;
-        height: 800px;
-        background-color: white;
-        border-radius: 50px;
-      
-        /* text-align: center; */
-    }
-    .box2{
-        position: relative;
-        width: 80%;
-        margin-left: 10%;
-        /* background-size: contain;
-        background-repeat: no-repeat; */
-        /* background-image: url("/static/img/logo.png"); */
-    }
-    @media screen and (max-width:768px){
-        .box2{
-            display: block;
-            
-        }
-    }
-        @media screen and (max-width:768px){
-        .box1{
-            /* display: block; */
-            width: 440px;
-            height: 800px;
-        }
-    
-
-    }
-    .box3{
-        position: absolute;
-        margin-left: 20px;
-        font-size: 30px;
-    }
-    .box4{
-        position: absolute;
-        margin-top: 30px;
-        margin-left: 20px;
-        font-size: 15px;
-    }
-    .box5{
-        position: absolute;
-        margin-top: 40px;
-        font-size: 15px;
-    }
-   
-    @media screen and (min-width:768px){
-        .boxmove{
-        margin-left: 10%;
-        
-    }
-        
-        }
-
-
-    .button1{
-        margin-top: 20px;
-        width: 310px;
-        background-color: yellow;
-        height: 50px;
-        border-radius: 100px;
-        border: none;
-        
-    }
-    .button2{
-        margin-top: 20px;
-        /* margin-left: 10px; */
-        width: 310px;
-        background-color: yellow;
-        height: 50px;
-        border-radius: 100px;
-        border: none;
-        
-    }
-    
- </style>
-</head>
-<body style="background-color: whitesmoke">
+  </head>
+  <body class="background">
     <!-- 투명 인풋 박스창 -->
-            <!-- <div>이름
-                <input type="text" style="border: none; background: transparent;">
-            </div> -->
+    <!-- <div>이름
+            <input type="text" style="border: none; background: transparent;">
+        </div> -->
     <div class="box">
-        <div class="box1" >
-            
-            <div class="box2">
-                <img src="../static/img/logo.png" alt="" style="width: 100%; height:300px;">
-                <div class="box3">셀럽스타즈는 당신과 함께 합니다.
-                    <div class="box4">
-                        <div>
-                        에이전시, 매니지먼트, 캐스팅 관계자등<p></p>
-                        사업자 번호가 있는 고객은 기업회원으로 가입해주세요.
-                             <div class="boxmove"><button class="button1" type="button" onclick="location.href='링크주소';">기업고객</button></div>
-                            </div>
-                       
-                        <div class="box5">모델, 배우라면?<p></p>
-                            캐스팅에 지원할 고객은 개인 회원으로 가입해주세요.
-                            <div class="boxmove"><button class="button2" type="button" onclick="location.href='링크주소';" >개인회원</button></div>
-                            </div>
-                    </div>
-                    
-
+      <div class="box1">
+        <div class="box2">
+          <div class="imgbox1">
+            <img
+              src="/static/img/homepage/main/celeblogo1.png"
+              alt=""
+              style="width: 100%"
+            />
+          </div>
+          <div class="box3">
+            셀럽스타즈는 당신과 함께 합니다.
+            <div class="box4">
+              <div>
+                에이전시, 매니지먼트, 캐스팅 관계자등
+                <p></p>
+                사업자 번호가 있는 고객은 기업회원으로 가입해주세요.
+                <div class="boxmove">
+                  <a href="/join">
+                    <button class="button1" type="button">기업고객</button>
+                  </a>
                 </div>
-               
-            </div>
-            
+              </div>
 
+              <div class="box5">
+                모델, 배우라면?
+                <p></p>
+                캐스팅에 지원할 고객은 개인 회원으로 가입해주세요.
+                <div class="boxmove">
+                  <a href="/join">
+                    <button class="button2" type="button">개인회원</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
+      </div>
     </div>
     <!-- <img class="logo" src="/static/img/KakaoTalk_20220414_145050835 (1).png" alt=""> -->
-</body>
+    <script src="/jq/jquery.js"></script>
+    <script src="/jq/jquery-ui.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/static/js/join/login.js"></script>
+  </body>
 </html>
