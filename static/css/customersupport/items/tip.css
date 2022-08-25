@@ -27,11 +27,18 @@
 .tip_search li {
   list-style: none;
 }
+.tip_search li select {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.tip_search li button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 .tip_search li select,
 .tip_search li input,
 .tip_search li button {
   height: 30px;
-  border-radius: 0;
 }
 .tip_search li input {
   border: 1px solid lightgray;
