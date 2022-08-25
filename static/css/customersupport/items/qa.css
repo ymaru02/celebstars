@@ -13,6 +13,9 @@
 #qa .qa_length p {
   margin-left: 15px;
 }
+.qa_ment_box {
+  margin-bottom: 40px;
+}
 .qa_top {
   display: flex;
   justify-content: space-between;
@@ -44,49 +47,39 @@
   padding: 0 8px;
   display: flex;
   flex-wrap: wrap;
-}
-.qa_table {
-  text-align: center;
-  width: 100%;
-}
-.table_title {
-  border-top: 2px solid black;
+  border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
-  height: 30px;
-}
-.qa_table .qa_no {
-  width: 5%;
-}
-.qa_table .qa_title {
-  width: 60%;
-}
-.qa_table .qa_author {
-  width: 10%;
-}
-.qa_table .qa_upload {
-  width: 12%;
-}
-.qa_table .qa_view {
-  width: 5%;
-}
-.qa {
-  border-bottom: 1px solid lightgray;
-  height: 40px;
-}
-.qa .td_title {
-  text-align: start;
-  padding: 0 20px;
-}
-.qa .td_title a {
-  color: black;
-}
-.qa_page_nav {
-  margin-top: 10px;
-  width: 100%;
-}
-.qa_page_nav nav .pagination {
-  display: flex;
   justify-content: center;
 }
+.qa_post_box .qa_empty {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.qa_post_box .qa_empty p {
+  margin-top: 15px;
+  color: darkgray;
+}
+.qa_btn {
+  width: 120px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
 @media screen and (max-width: 770px) {
+  .qa_top {
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .qa_length {
+    padding-left: 15px;
+  }
+  .qa_top ul {
+    display: flex;
+    justify-content: center;
+  }
 }

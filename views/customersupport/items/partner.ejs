@@ -24,32 +24,35 @@
         <th class="partner_upload">날짜</th>
         <th class="partner_view">조회</th>
       </tr>
-      <%for(var i=1;i<imax+1;i++) {%>
-      <tr class="partner">
-        <td><%=i%></td>
-        <td class="td_title"><a href="">제목</a></td>
-        <td>글쓴이<%=i%></td>
-        <td>2022-01-0<%=i%></td>
-        <td>0</th>
-      </tr>
-      <%}%>
+      <%for(var i=imax;i>0;i--) {%>
+        <tr class="partner">
+          <td><%=i%></td>
+          <td class="td_title"><a href="#">제목</a></td>
+          <td>글쓴이<%=i%></td>
+          <td>2022-01-0<%=i%></td>
+          <td>0</th>
+        </tr>
+        <%}%>
     </table>
   </div>
   <div class="partner_page_nav">
-    <nav aria-label="Page navigation example">
+    <nav>
       <ul class="pagination">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true"><</span>
+        <li class="partner_previous">
+          <a href="#">
+            <
           </a>
         </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">></span>
+        <li><a href="#">1</a></li>
+        <li class="partner_next">
+          <a href="#">
+            >
           </a>
         </li>
       </ul>
     </nav>
+    <div class="partner_btn_box">
+      <button class="partner_btn"><a href="#">글쓰기</a></button>
+    </div>
   </div>
 </div>

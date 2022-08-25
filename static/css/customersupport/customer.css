@@ -36,12 +36,14 @@ body .customer_wrap {
   color: black;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  border-radius: 5px;
 }
 .menu_box button.active {
   color: black;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   font-weight: bold;
+  border-radius: 5px;
 }
 .menu_box li {
   list-style: none;
@@ -64,5 +66,6 @@ body .customer_wrap {
   .menu_box button {
     font-size: 16px;
     font-weight: 400;
+    margin: 0;
   }
 }
