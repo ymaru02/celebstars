@@ -54,46 +54,35 @@
   cursor: pointer;
   margin: 20px 0;
 }
-
-/* range */
-.slidecontainer {
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 80%; /* Width of the outside container */
+.range-text {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.range-age {
+  padding-right: 10px;
+  color: #092063;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-/* The slider itself */
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: 0.2s;
-  transition: opacity 0.2s;
+.range-age-end {
+  padding: 0 20px;
 }
 
-/* Mouse-over effects */
-.slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+.range-cover {
+  float: right;
+  margin-top: 30px;
+}
+.range-cover span {
+  padding-right: 15px;
 }
 
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #04aa6d;
+.cancle-btn {
+  color: #777;
   cursor: pointer;
 }
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #04aa6d;
+.apply-btn {
   cursor: pointer;
+  font-weight: bold;
+  color: #092063;
 }

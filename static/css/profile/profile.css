@@ -67,6 +67,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .icons-inner {
   margin: 10px 0;
@@ -125,7 +126,7 @@
 @media screen and (max-width: 1280px) {
   .profile {
     max-width: 768px;
-    width: auto;
+    width: 100%;
     margin: 20px auto;
   }
   .profile-container {
@@ -143,9 +144,20 @@
     height: auto;
   }
   .profile-img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
   }
-
+  /* .offset-2 {
+    margin: 0;
+  } */
+  .col-2 {
+    width: auto;
+  }
+  .profile-description {
+    justify-content: center;
+    width: auto;
+  }
   .profile-icons {
     position: relative;
     width: 100%;
@@ -153,13 +165,16 @@
     display: flex;
     justify-content: space-evenly;
   }
+  .profile-icons > div {
+    margin: 10px 0;
+  }
 
   .ful-screen .btn {
     margin: 10px 0;
   }
 
   .center {
-    width: 330px;
+    width: 90%;
     margin: 0 auto;
   }
   .slick-next {
