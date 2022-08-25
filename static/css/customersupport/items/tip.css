@@ -27,11 +27,18 @@
 .tip_search li {
   list-style: none;
 }
+.tip_search li select {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.tip_search li button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 .tip_search li select,
 .tip_search li input,
 .tip_search li button {
   height: 30px;
-  border-radius: 0;
 }
 .tip_search li input {
   border: 1px solid lightgray;
@@ -55,19 +62,20 @@
   height: 30px;
 }
 .tip_table .tip_no {
-  width: 5%;
+  width: 7%;
 }
 .tip_table .tip_title {
   width: 60%;
+  overflow-x: hidden;
 }
 .tip_table .tip_author {
-  width: 10%;
-}
-.tip_table .tip_upload {
   width: 12%;
 }
+.tip_table .tip_upload {
+  width: 15%;
+}
 .tip_table .tip_view {
-  width: 5%;
+  width: 6%;
 }
 .tip {
   border-bottom: 1px solid lightgray;
@@ -81,12 +89,67 @@
   color: black;
 }
 .tip_page_nav {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 .tip_page_nav nav .pagination {
   display: flex;
   justify-content: center;
 }
+.pagination li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+}
+.tip_previous {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.tip_next {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.pagination li a {
+  color: black;
+  font-weight: bold;
+}
+.pagination li:hover,
+.tip_btn:hover {
+  border: 2px solid #ffc107;
+  cursor: pointer;
+}
+.tip_btn_box {
+  position: absolute;
+  height: 30px;
+  right: 10px;
+}
+.tip_btn {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: 1px solid darkgray;
+}
+.tip_btn a {
+  color: black;
+}
 @media screen and (max-width: 770px) {
+  .tip_search li input {
+    width: 150px;
+  }
+  .tip_table .tip_title {
+    width: 40%;
+  }
+  .tip_table .tip_author {
+    width: 20%;
+  }
+  .tip_table .tip_upload {
+    width: 27%;
+  }
 }
