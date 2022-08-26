@@ -78,7 +78,7 @@
   width: 6%;
 }
 .free {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid lightgray; 
   height: 40px;
 }
 .free .td_title {
@@ -146,6 +146,15 @@
 .free_notice_title a {
   font-weight: bold;
   color: blue;
+}
+.free_empty {
+  width: 100%;
+  height: 100px;
+}
+.free_empty .free p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: darkgray;
 }
 @media screen and (max-width: 770px) {
   .free_search li input {
