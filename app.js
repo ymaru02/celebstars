@@ -22,7 +22,7 @@ app.use(
   "/slick",
   express.static(__dirname + "/node_modules/slick-carousel/slick")
 );
-
+app.use("/sweet", express.static(__dirname + "/node_modules/sweetalert2/dist"));
 const port = 8000;
 
 app.get("/", (req, res) => {
@@ -135,6 +135,11 @@ app.get("/update/parkwhite", (req, res) => {
 // localhost:8000/customersupport
 app.get("/customersupport", (req, res) => {
   res.render("customersupport/customer");
+});
+
+// localhost:8000/community
+app.get("/community", (req, res) => {
+  res.render("community/community");
 });
 
 app.listen(port, () => {

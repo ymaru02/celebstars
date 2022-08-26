@@ -1,0 +1,339 @@
+#actor {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#actor .actor_length {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#actor .actor_length p {
+  margin-left: 15px;
+}
+.actor_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+}
+.actor_search {
+  display: flex;
+  justify-content: end;
+  border-radius: 3px;
+}
+.actor_search li {
+  list-style: none;
+}
+.actor_search li select,
+.actor_search li input,
+.actor_search li button {
+  height: 30px;
+  border-radius: 0;
+}
+.actor_search li input {
+  border: 1px solid lightgray;
+}
+.actor_search li button {
+  width: 50px;
+  border: none;
+}
+.actor_post_box {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.actor_table {
+  text-align: center;
+  width: 100%;
+}
+.table_title {
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+}
+.actor_table .actor_no {
+  width: 5%;
+}
+.actor_table .actor_title {
+  width: 60%;
+}
+.actor_table .actor_author {
+  width: 10%;
+}
+.actor_table .actor_upload {
+  width: 12%;
+}
+.actor_table .actor_view {
+  width: 5%;
+}
+.actor {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+}
+.actor .td_title {
+  text-align: start;
+  padding: 0 20px;
+}
+.actor .td_title a {
+  color: black;
+}
+.actor_page_nav {
+  margin-top: 10px;
+  width: 100%;
+}
+.actor_page_nav nav .pagination {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 770px) {
+}
+#actor {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#actor .actor_length {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#actor .actor_length p {
+  margin-left: 15px;
+}
+.actor_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+}
+.actor_search {
+  display: flex;
+  justify-content: end;
+  border-radius: 3px;
+}
+.actor_search li {
+  list-style: none;
+}
+.actor_search li select,
+.actor_search li input,
+.actor_search li button {
+  height: 30px;
+  border-radius: 0;
+}
+.actor_search li input {
+  border: 1px solid lightgray;
+}
+.actor_search li button {
+  width: 50px;
+  border: none;
+}
+.actor_post_box {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.actor_table {
+  text-align: center;
+  width: 100%;
+}
+.table_title {
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+}
+.actor_table .actor_no {
+  width: 5%;
+}
+.actor_table .actor_title {
+  width: 60%;
+}
+.actor_table .actor_author {
+  width: 10%;
+}
+.actor_table .actor_upload {
+  width: 12%;
+}
+.actor_table .actor_view {
+  width: 5%;
+}
+.actor {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+}
+.actor .td_title {
+  text-align: start;
+  padding: 0 20px;
+}
+.actor .td_title a {
+  color: black;
+}
+.actor_page_nav {
+  margin-top: 10px;
+  width: 100%;
+}
+.actor_page_nav nav .pagination {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 770px) {
+}
+#actor {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#actor .actor_length {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#actor .actor_length p {
+  margin-left: 15px;
+}
+.actor_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+}
+.actor_search {
+  display: flex;
+  justify-content: end;
+  border-radius: 3px;
+}
+.actor_search li {
+  list-style: none;
+}
+.actor_search li select {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.actor_search li button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.actor_search li select,
+.actor_search li input,
+.actor_search li button {
+  height: 30px;
+}
+.actor_search li input {
+  border: 1px solid lightgray;
+}
+.actor_search li button {
+  width: 50px;
+  border: none;
+}
+.actor_post_box {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.actor_table {
+  text-align: center;
+  width: 100%;
+}
+.table_title {
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+}
+.actor_table .actor_no {
+  width: 7%;
+}
+.actor_table .actor_title {
+  width: 60%;
+  overflow-x: hidden;
+}
+.actor_table .actor_author {
+  width: 12%;
+}
+.actor_table .actor_upload {
+  width: 15%;
+}
+.actor_table .actor_view {
+  width: 6%;
+}
+.actor {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+}
+.actor .td_title {
+  text-align: start;
+  padding: 0 20px;
+}
+.actor .td_title a {
+  color: black;
+}
+.actor_page_nav {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.actor_page_nav nav .pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+}
+.actor_previous {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.actor_next {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.pagination li a {
+  color: black;
+  font-weight: bold;
+}
+.pagination li:hover,
+.actor_btn:hover {
+  border: 2px solid #ffc107;
+  cursor: pointer;
+}
+.actor_btn_box {
+  position: absolute;
+  height: 30px;
+  right: 10px;
+}
+.actor_btn {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: 1px solid darkgray;
+}
+.actor_btn a {
+  color: black;
+}
+@media screen and (max-width: 770px) {
+  .actor_search li input {
+    width: 150px;
+  }
+  .actor_table .actor_title {
+    width: 40%;
+  }
+  .actor_table .actor_author {
+    width: 20%;
+  }
+  .actor_table .actor_upload {
+    width: 27%;
+  }
+}

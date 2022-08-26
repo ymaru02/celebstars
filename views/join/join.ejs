@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login</title>
     <%-include("../link.ejs")%>
+    <link rel="stylesheet" href="/sweet/sweetalert2.css" />
     <link rel="stylesheet" href="../../static/css/join/join.css" />
   </head>
 
@@ -226,9 +227,11 @@
             >
               취소
             </button>
-            <a href="/loginuser">
-              <button type="button" class="btn btn-warning">회원가입</button>
-            </a>
+            <!-- <a href="/loginuser"> -->
+            <button id="joinmembership" type="button" class="btn btn-warning">
+              회원가입
+            </button>
+            <!-- </a> -->
           </div>
         </div>
       </div>
@@ -236,9 +239,10 @@
 
     <script src="/jq/jquery.js"></script>
     <script src="/jq/jquery-ui.js"></script>
+    <script src="/sweet/sweetalert2.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script src="/static/js/join/join.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <!-- <img class="logo" src="/static/img/KakaoTalk_20220414_145050835 (1).png" alt=""> -->
   </body>
 </html>
