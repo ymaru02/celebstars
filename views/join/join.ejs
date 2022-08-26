@@ -142,21 +142,6 @@
                 id="sample3_extraAddress"
                 placeholder="참고항목"
               />
-              <div id="wrap">
-                <img
-                  src="//t1.daumcdn.net/postcode/resource/images/close.png"
-                  id="btnFoldWrap"
-                  style="
-                    cursor: pointer;
-                    position: absolute;
-                    right: 0px;
-                    top: -1px;
-                    z-index: 1;
-                  "
-                  onclick="foldDaumPostcode()"
-                  alt="접기 버튼"
-                />
-              </div>
             </div>
             <p></p>
             <div class="h4">
@@ -197,6 +182,24 @@
       </div>
     </div>
 
+    <!-- 주소검색 -->
+    <div id="location-modal">
+      <div id="wrap">
+        <img
+          src="//t1.daumcdn.net/postcode/resource/images/close.png"
+          id="btnFoldWrap"
+          style="
+            cursor: pointer;
+            position: absolute;
+            right: 0px;
+            top: -1px;
+            z-index: 1;
+          "
+          onclick="foldDaumPostcode()"
+          alt="접기 버튼"
+        />
+      </div>
+    </div>
     <!-- Modal -->
     <div
       class="modal fade"
@@ -227,11 +230,9 @@
             >
               취소
             </button>
-            <!-- <a href="/loginuser"> -->
             <button id="joinmembership" type="button" class="btn btn-warning">
               회원가입
             </button>
-            <!-- </a> -->
           </div>
         </div>
       </div>

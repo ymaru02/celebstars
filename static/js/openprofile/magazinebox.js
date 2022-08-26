@@ -19,7 +19,6 @@ $(document).ready(function () {
   $(".rolling_wrap a").each(function () {
     $(this).css("left", banner_left);
     banner_left += $(this).find("img").width() + 10;
-    console.log($(this).find("img").width());
     $(this).attr("id", "content" + ++img_cnt);
   });
   last = img_cnt;

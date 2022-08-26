@@ -99,4 +99,27 @@
     justify-content: center;
     margin: 0 0;
   }
+  .age-dropdown-content {
+    min-width: 60vw;
+    left: 0;
+  }
+  .subsearch-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 460px) {
+  .subsearch-menu {
+    flex-direction: column;
+  }
+  .subsearch-menu div {
+    flex-direction: column;
+    margin: 3px;
+  }
+  .age-dropdown-content {
+    min-width: 90vw;
+    left: 0;
+  }
+  .subsearch-item {
+    margin-bottom: 5px;
+  }
 }

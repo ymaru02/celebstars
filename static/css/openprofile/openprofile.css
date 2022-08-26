@@ -98,3 +98,42 @@
   font-weight: bold;
   color: #092063;
 }
+
+@media screen and (max-width: 1080px) {
+  .searchbar {
+    width: 100%;
+  }
+  .subsearch {
+    width: 100%;
+  }
+  .stick-search {
+    width: 100%;
+  }
+  .row {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .age-dropdown-content {
+    min-width: 60vw;
+    left: 0;
+  }
+  .subsearch-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 460px) {
+  .subsearch-menu {
+    flex-direction: column;
+  }
+  .subsearch-menu div {
+    flex-direction: column;
+    margin: 3px;
+  }
+  .age-dropdown-content {
+    min-width: 90vw;
+    left: 0;
+  }
+  .subsearch-item {
+    margin-bottom: 5px;
+  }
+}
