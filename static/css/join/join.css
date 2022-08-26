@@ -7,6 +7,7 @@
     align-items: center;
     height: 100%;
     overflow: hidden;
+    padding: 10px;
 }
 .background {
   background: radial-gradient(
@@ -306,7 +307,7 @@ input[type="password"] {
   .select{
     /* text-align: center; */
     
-    width: 40%;
+    width: 43%;
     margin: auto;
   }
 }
