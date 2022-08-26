@@ -1,0 +1,339 @@
+#model {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#model .model_length {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#model .model_length p {
+  margin-left: 15px;
+}
+.model_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+}
+.model_search {
+  display: flex;
+  justify-content: end;
+  border-radius: 3px;
+}
+.model_search li {
+  list-style: none;
+}
+.model_search li select,
+.model_search li input,
+.model_search li button {
+  height: 30px;
+  border-radius: 0;
+}
+.model_search li input {
+  border: 1px solid lightgray;
+}
+.model_search li button {
+  width: 50px;
+  border: none;
+}
+.model_post_box {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.model_table {
+  text-align: center;
+  width: 100%;
+}
+.table_title {
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+}
+.model_table .model_no {
+  width: 5%;
+}
+.model_table .model_title {
+  width: 60%;
+}
+.model_table .model_author {
+  width: 10%;
+}
+.model_table .model_upload {
+  width: 12%;
+}
+.model_table .model_view {
+  width: 5%;
+}
+.model {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+}
+.model .td_title {
+  text-align: start;
+  padding: 0 20px;
+}
+.model .td_title a {
+  color: black;
+}
+.model_page_nav {
+  margin-top: 10px;
+  width: 100%;
+}
+.model_page_nav nav .pagination {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 770px) {
+}
+#model {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#model .model_length {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#model .model_length p {
+  margin-left: 15px;
+}
+.model_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+}
+.model_search {
+  display: flex;
+  justify-content: end;
+  border-radius: 3px;
+}
+.model_search li {
+  list-style: none;
+}
+.model_search li select,
+.model_search li input,
+.model_search li button {
+  height: 30px;
+  border-radius: 0;
+}
+.model_search li input {
+  border: 1px solid lightgray;
+}
+.model_search li button {
+  width: 50px;
+  border: none;
+}
+.model_post_box {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.model_table {
+  text-align: center;
+  width: 100%;
+}
+.table_title {
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+}
+.model_table .model_no {
+  width: 5%;
+}
+.model_table .model_title {
+  width: 60%;
+}
+.model_table .model_author {
+  width: 10%;
+}
+.model_table .model_upload {
+  width: 12%;
+}
+.model_table .model_view {
+  width: 5%;
+}
+.model {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+}
+.model .td_title {
+  text-align: start;
+  padding: 0 20px;
+}
+.model .td_title a {
+  color: black;
+}
+.model_page_nav {
+  margin-top: 10px;
+  width: 100%;
+}
+.model_page_nav nav .pagination {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 770px) {
+}
+#model {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#model .model_length {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#model .model_length p {
+  margin-left: 15px;
+}
+.model_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+}
+.model_search {
+  display: flex;
+  justify-content: end;
+  border-radius: 3px;
+}
+.model_search li {
+  list-style: none;
+}
+.model_search li select {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.model_search li button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.model_search li select,
+.model_search li input,
+.model_search li button {
+  height: 30px;
+}
+.model_search li input {
+  border: 1px solid lightgray;
+}
+.model_search li button {
+  width: 50px;
+  border: none;
+}
+.model_post_box {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.model_table {
+  text-align: center;
+  width: 100%;
+}
+.table_title {
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+}
+.model_table .model_no {
+  width: 7%;
+}
+.model_table .model_title {
+  width: 60%;
+  overflow-x: hidden;
+}
+.model_table .model_author {
+  width: 12%;
+}
+.model_table .model_upload {
+  width: 15%;
+}
+.model_table .model_view {
+  width: 6%;
+}
+.model {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+}
+.model .td_title {
+  text-align: start;
+  padding: 0 20px;
+}
+.model .td_title a {
+  color: black;
+}
+.model_page_nav {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.model_page_nav nav .pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+}
+.model_previous {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.model_next {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.pagination li a {
+  color: black;
+  font-weight: bold;
+}
+.pagination li:hover,
+.model_btn:hover {
+  border: 2px solid #ffc107;
+  cursor: pointer;
+}
+.model_btn_box {
+  position: absolute;
+  height: 30px;
+  right: 10px;
+}
+.model_btn {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: 1px solid darkgray;
+}
+.model_btn a {
+  color: black;
+}
+@media screen and (max-width: 770px) {
+  .model_search li input {
+    width: 150px;
+  }
+  .model_table .model_title {
+    width: 40%;
+  }
+  .model_table .model_author {
+    width: 20%;
+  }
+  .model_table .model_upload {
+    width: 27%;
+  }
+}
