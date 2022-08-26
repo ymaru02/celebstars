@@ -5,64 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%-include("../link.ejs")%>
-    <link href="/static/css/casting/casting.css" rel="stylesheet" />
     <link href="/static/css/casting/dropdown/dropdown.css" rel="stylesheet" />
-    <link href="/static/css/casting/cards.css" rel="stylesheet" />
     <link href="/static/css/casting/range.css" rel="stylesheet" />
+    <link href="/static/css/openprofile/openprofile.css" rel="stylesheet" />
+    <link href="/static/css/openprofile/profilecard.css" rel="stylesheet" />
+    <link href="/static/css/openprofile/magazinebox.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
     <%-include("../navbar/navbar.ejs")%>
-    <div class="searchbar">
-      <div class="casting-dropdown">
-        <button onclick="myFunction()" class="casting-dropbtn casting-btn">
-          <strong class="casting-title">분야</strong>
-          <span class="casting-icon-cover">
-            <svg
-              xmlns="https://www.w3.org/2000/svg"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              class="casting-icon"
-            >
-              <path
-                fill="#666"
-                fill-rule="nonzero"
-                d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z"
-              ></path>
-            </svg>
-          </span>
-        </button>
-        <div id="myDropdown" class="casting-dropdown-content">
-          <ul>
-            <li>
-              <span><strong>전체</strong></span>
-            </li>
-            <li>
-              <span><strong>광고</strong></span>
-            </li>
-            <li>
-              <span><strong>영화</strong></span>
-            </li>
-            <li>
-              <span><strong>잡지</strong></span>
-            </li>
-            <li>
-              <span><strong>모델</strong></span>
-            </li>
-            <li>
-              <span><strong>무대</strong></span>
-            </li>
-            <li>
-              <span><strong>TV</strong></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <nav class="stick-search">
       <div class="subsearch">
-        <div>
+        <div class="subsearch-menu">
           <button class="subsearch-item">
             <span> 지역</span>
             <span class="select-item"> 전체 </span>
@@ -150,6 +104,13 @@
       </div>
       <hr />
     </nav>
+    <div class="bookmarkcover">
+      <div class="bookmark-new">
+        <i class="bi bi-bookmark-heart"></i>
+        <span> 최근 프로필</span>
+      </div>
+    </div>
+    <main><%-include("./magazinebox.ejs")%></main>
     <main class="casting">
       <div class="bookmark">
         <i class="bi bi-bookmark-star-fill"></i>
@@ -162,9 +123,10 @@
     <script src="/jq/jquery.js"></script>
     <script src="/jqui/jquery-ui.js"></script>
     <script src="/js/bootstrap.js"></script>
-    <script src="/static/js/casting/casting.js"></script>
+    <script src="/static/js/casting/bookmark.js"></script>
     <script src="/static/js/casting/dropdown/dropdown.js"></script>
     <script src="/static/js/casting/lazy.js"></script>
     <script src="/static/js/casting/range.js"></script>
+    <script src="/static/js/openprofile/magazinebox.js"></script>
   </body>
 </html>

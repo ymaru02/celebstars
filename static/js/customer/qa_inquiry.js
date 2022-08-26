@@ -16,7 +16,6 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
-
 submit.onclick = function () {
   modal.style.display = "none";
   Swal.fire("작성 완료!", "", "success");

@@ -1,13 +1,13 @@
-.background{
-    width: 100%;
+.background {
+  width: 100%;
 }
 .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    overflow: hidden;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px;
 }
 .background {
   background: radial-gradient(
@@ -52,8 +52,8 @@
     min-height: 850px;
   }
 }
-.text_box{
-    width: 100%;
+.text_box {
+  width: 100%;
 }
 
 .jointext {
@@ -304,9 +304,9 @@ input[type="password"] {
   padding: 3px 0;
 }
 @media screen and (max-width: 768px) {
-  .select{
+  .select {
     /* text-align: center; */
-    
+
     width: 43%;
     margin: auto;
   }
@@ -338,12 +338,9 @@ input[type="password"] {
   border-left-width: 1px;
 }
 @media screen and (max-width: 768px) {
-  #sample3_postcode{
-    
+  #sample3_postcode {
     width: 40%;
     margin: auto;
- 
-  
   }
 }
 .ad input {
@@ -443,15 +440,14 @@ input[id="cbtest2"]:checked + .cb2::before {
 .box3 input {
   display: none;
 }
-#location-modal{
-  position:absolute;
+#location-modal {
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 90%;
   max-width: 500px;
 }
-
 
 @keyframes bottomcheck {
   0% {
@@ -479,15 +475,14 @@ input[id="cbtest2"]:checked + .cb2::before {
 @media screen and (max-width: 768px) {
   .checkbox_group {
     /* display: block; */
-    margin-left: 10px
+    margin-left: 10px;
   }
 }
 .box3 label {
   margin-right: 60px;
-
 }
 @media screen and (max-width: 768px) {
-  .box3 label  {
+  .box3 label {
     /* display: block; */
     margin-right: 0px;
   }
@@ -496,28 +491,24 @@ input[id="cbtest2"]:checked + .cb2::before {
 .modal-sm {
   width: 300px;
 }
-.save_box{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.save_box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
-    .save_box {
-      display: flex;
-      justify-content: center;
-  
-    }
+  .save_box {
+    display: flex;
+    justify-content: center;
+  }
 }
 #save {
-
   width: 70%;
   margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
   #save {
-    
-
   }
 }
 #dialog1 {
@@ -525,15 +516,14 @@ input[id="cbtest2"]:checked + .cb2::before {
 
   width: 400px;
 }
-#wrap{
-
-    display: none;
-    border: 1px solid;
-    width: 100%;
-    height: 100px;
-    margin: 5px 0;
-    position: relative;
-                
+#wrap {
+  display: none;
+  border: 1px solid;
+  width: 100%;
+  height: 100px;
+  margin: 5px 0;
+  position: relative;
 }
-#wrap { height: 300px !important;
+#wrap {
+  height: 300px !important;
 }

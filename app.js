@@ -41,7 +41,7 @@ app.get("/login", (req, res) => {
 });
 
 //localhost:8000/login_user
-app.get("/login_user", (req, res) => {
+app.get("/loginuser", (req, res) => {
   res.render("login/login_user");
 });
 

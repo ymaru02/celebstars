@@ -28,7 +28,7 @@ function dropdownClose(event) {
         openDropdown.classList.remove("show");
       }
     }
-    document.querySelector(".casting-icon-cover").classList.remove("rotation");
+    document.querySelector(".casting-icon-cover")?.classList.remove("rotation");
   }
   if (
     event.target === document ||

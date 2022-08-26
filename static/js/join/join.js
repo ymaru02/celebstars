@@ -253,3 +253,19 @@ $(".checkbox_group").on("click", ".normal", function () {
 
   $("#cbtest2").prop("checked", is_checked);
 });
+
+var submit = document.getElementById("joinmembership");
+
+submit.onclick = function () {
+  console.log("aaaa");
+  Swal.fire({
+    icon: "success",
+    title: "회원가입 완료",
+    showConfirmButton: false,
+  });
+  setTimeout(() => {
+    let curlink = location.href;
+    curlink = curlink.replace("join", "loginuser");
+    location.href = curlink;
+  }, 1000);
+};
