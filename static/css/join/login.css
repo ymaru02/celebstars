@@ -10,6 +10,12 @@
     rgba(42, 27, 106, 1) 100%
   );
 }
+
+@media screen and (max-width: 768px) {
+  .box {
+    padding: 5px;
+  }
+}
 .box1 {
   justify-content: space-between;
   margin: auto;
@@ -35,7 +41,7 @@ width: 100%;
 @media screen and (max-width: 768px) {
   .box1 {
     /* display: block; */
-    width: 440px;
+    width: 100%;
     height: 800px;
   }
 }
@@ -44,6 +50,11 @@ width: 100%;
 text-align: center;
   font-size: 30px;
 }
+@media screen and (max-width: 768px) {
+  .box3 {
+font-size: 25px;}
+  }
+
 .box4 {
 text-align: center;
   margin-top: 60px;
@@ -79,5 +90,10 @@ text-align: center;
   padding: 30px;
   /* text-align: center; */
 }
-
+@media screen and (max-width: 768px) {
+  .imgbox1 {
+    /* display: block; */
+height: 250px;
+  }
+}
 
