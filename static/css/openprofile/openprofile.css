@@ -9,13 +9,14 @@
 .stick-search {
   position: sticky;
   top: 80px;
-  width: 1080px;
-  margin: 0 auto;
+  width: 100%;
   padding-top: 20px;
   background-color: white;
   z-index: 2;
 }
 .subsearch {
+  width: 1080px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,9 +48,20 @@
   max-width: 1080px;
   margin: 0 auto;
 }
+.bookmarkcover {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 .bookmark {
   display: inline-block;
   color: #ffc107;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.bookmark-new {
+  display: inline-block;
+  color: #3668ff;
   font-size: 22px;
   cursor: pointer;
   margin: 20px 0;
@@ -85,18 +97,4 @@
   cursor: pointer;
   font-weight: bold;
   color: #092063;
-}
-
-@media screen and (max-width: 1080px) {
-  .searchbar {
-    width: 100%;
-  }
-  .stick-search {
-    width: 100%;
-  }
-  .row {
-    max-width: 100%;
-    justify-content: center;
-    margin: 0 0;
-  }
 }
