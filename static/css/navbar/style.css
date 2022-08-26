@@ -52,7 +52,8 @@
   padding: 5px 10px 5px 10px;
 }
 .navbar li a:hover {
-  font-size: 25px;
+  font-size: 23px;
+  color: #ffc107;
 }
 .login_box {
   width: 100px;
@@ -95,6 +96,7 @@
   font-weight: bold;
   padding: 5px 10px 5px 10px;
 }
+
 @media screen and (max-width: 770px) {
   .nav-body {
     padding-top: 110px;
@@ -125,6 +127,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    white-space: nowrap;
   }
   .navbar_mob li {
     margin: 0px 5px;

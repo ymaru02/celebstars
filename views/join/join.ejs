@@ -21,7 +21,7 @@
         <div id="menu" class="box1">
             <div class="box2">
                 <p></p>
-                <h2 class="jointext">개인회원 가입</h2>
+                <h2 class="jointext">회원 가입</h2>
                 <div class="input">
                     <div class="text_box">
                         <input id="user_email" name="user_email" type="email" placeholder="이메일"
@@ -89,22 +89,7 @@
                         <input type="text" id="sample3_address" placeholder="주소" /><br />
                         <input type="text" id="sample3_detailAddress" placeholder="상세주소" />
                         <input type="text" id="sample3_extraAddress" placeholder="참고항목" />
-                        <div id="wrap" style="
-                  display: none;
-                  border: 1px solid;
-                  width: 500px;
-                  height: 300px;
-                  margin: 5px 0;
-                  position: relative;
-                ">
-                            <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap" style="
-                    cursor: pointer;
-                    position: absolute;
-                    right: 0px;
-                    top: -1px;
-                    z-index: 1;
-                  " onclick="foldDaumPostcode()" alt="접기 버튼" />
-                        </div>
+
                     </div>
                     <p></p>
                     <div class="h4">
@@ -137,22 +122,32 @@
                     </button>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
-    
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <!-- 주소검색 -->
+    <div id="location-modal">
+
+        <div id="wrap">
+            <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap" style="
+cursor: pointer;
+position: absolute;
+right: 0px;
+top: -1px;
+z-index: 1;
+" onclick="foldDaumPostcode()" alt="접기 버튼" />
+</div>
+</div>
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div id="dialog1" class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
                         셀럽스타즈 회원가입
                     </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     셀럽스타즈 가입을 진행하시겠습니까?

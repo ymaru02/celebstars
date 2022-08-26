@@ -16,402 +16,103 @@
         <video class="video play1" width="100%" height="630" muted autoplay>
           <source src="/static/video/celebstars1.mp4" type="video/mp4" />
         </video>
-        <%-include("./text_scroll/text_scroll.ejs")%>
-        <div id="banner_box" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#banner_box"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <% for(var i=2; i<4; i++) { %>
-            <button
-              type="button"
-              data-bs-target="#banner_box"
-              data-bs-slide-to="<%=i-1%>"
-              aria-label="Slide <%=i%>"
-            ></button>
-            <% } %>
-          </div>
-          <div class="banner_img" class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="/"
-                ><img
-                  src="/static/img/homepage/main/main_banner1.jpg"
-                  class="d-block w-100"
-              /></a>
-            </div>
-            <% for(var i=2; i<4; i++) { %>
-            <div class="carousel-item">
-              <a href="/"
-                ><img
-                  src="/static/img/homepage/main/main_banner<%=i%>.jpg"
-                  class="d-block w-100"
-              /></a>
-            </div>
-            <% } %>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#banner_box"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#banner_box"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
         <div class="main_box_2">
+          <%-include("./text_scroll/text_scroll.ejs")%>
+          <div id="banner_box" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#banner_box"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <% for(var i=2; i<4; i++) { %>
+              <button
+                type="button"
+                data-bs-target="#banner_box"
+                data-bs-slide-to="<%=i-1%>"
+                aria-label="Slide <%=i%>"
+              ></button>
+              <% } %>
+            </div>
+            <div class="banner_img" class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="/"
+                  ><img
+                    src="/static/img/homepage/main/main_banner1.jpg"
+                    class="d-block w-100"
+                /></a>
+              </div>
+              <% for(var i=2; i<4; i++) { %>
+              <div class="carousel-item">
+                <a href="/"
+                  ><img
+                    src="/static/img/homepage/main/main_banner<%=i%>.jpg"
+                    class="d-block w-100"
+                /></a>
+              </div>
+              <% } %>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#banner_box"
+              data-bs-slide="prev"
+            >
+              <span
+                ><img src="/static/img/homepage/main/prevIcon.png" alt=""
+              /></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#banner_box"
+              data-bs-slide="next"
+            >
+              <span
+                ><img src="/static/img/homepage/main/nextIcon.png" alt=""
+              /></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
           <div class="casting_title">
             <h2>캐스팅</h2>
-            <a href="">
+            <a href="/casting">
               <span>캐스팅 더 보러 가기 ▶</span>
             </a>
           </div>
-          <div
-            id="carouselExampleControlsNoTouching"
-            class="casting_carousel carousel slide"
-            data-bs-touch="false"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card-group casting_box">
-                  <% for(var i=1; i<6; i++) { %>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <div class="casting_img">
-                        <img
-                          src="/static/img/homepage/main/logo<%=i%>.jpg"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted">3분 전</small>
-                      </div>
-                    </a>
-                  </div>
-                  <% } %>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card-group casting_box">
-                  <% for(var i=1; i<6; i++) { %>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <div class="casting_img">
-                        <img
-                          src="/static/img/homepage/main/logo<%=i%>.jpg"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <p class="card-text">구인구직글 개요</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted">3분 전</small>
-                      </div>
-                    </a>
-                  </div>
-                  <% } %>
-                </div>
-              </div>
-            </div>
-            <button
-              class="casting_prev carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControlsNoTouching"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="casting_next carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControlsNoTouching"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- mobile -->
-          <div
-            id="carouselExampleControlsNoTouching1"
-            class="casting_carousel_mob carousel slide"
-            data-bs-touch="false"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card-group casting_box">
-                  <% for(var i=1; i<5; i++) { %>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <div class="casting_img">
-                        <img
-                          src="/static/img/homepage/main/logo<%=i%>.jpg"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <div class="card-text casting_text_mob">
-                          구인구직글 개요
-                        </div>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted">3분 전</small>
-                      </div>
-                    </a>
-                  </div>
-                  <% } %>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card-group casting_box">
-                  <% for(var i=1; i<5; i++) { %>
-                  <div class="card">
-                    <a href="">
-                      <div class="card-header bg-transparent">
-                        <bigger class="text-muted">D - 30</bigger>
-                      </div>
-                      <div class="casting_img">
-                        <img
-                          src="/static/img/homepage/main/logo<%=i%>.jpg"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="card-body">
-                        <h5 class="card-title">회사 이름</h5>
-                        <div class="card-text casting_text_mob">
-                          구인구직글 개요
-                        </div>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted">3분 전</small>
-                      </div>
-                    </a>
-                  </div>
-                  <% } %>
-                </div>
-              </div>
-            </div>
-            <button
-              class="casting_prev carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControlsNoTouching1"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="casting_next carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControlsNoTouching1"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+          <%-include('./main/main_corp.ejs')%>
           <div class="magazine_title">
             <h2>오픈 프로필</h2>
-            <a href="">
+            <a href="/openprofile">
               <span>프로필 더 보러 가기 ▶</span>
             </a>
           </div>
-          <div class="magazine_box row row-cols-1 row-cols-md-4 g-3">
-            <!-- <% for(var i=1; i<9; i++) { %>
-            <div class="col">
-              <div class="card">
-                <a href="/">
-                  <img
-                    src="/static/img/homepage/main/model2.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">이름</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <% } %> -->
-            <div class="col">
-              <div class="card">
-                <a href="/">
-                  <div class="img_body">
-                    <img
-                      src="/static/img/homepage/main/model1.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">이름</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/profile/kimtaehoon">
-                  <img
-                    src="/static/img/homepage/main/model2.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">김 태 훈</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/profile/parkwhite">
-                  <img
-                    src="/static/img/homepage/main/model3.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">박 하 얀</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/profile/jangmikwan">
-                  <img
-                    src="/static/img/homepage/main/model4.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">장 미 관</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/profile/parkkwanwoo">
-                  <img
-                    src="/static/img/homepage/main/model5.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">박 관 우</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/profile/hannana">
-                  <img
-                    src="/static/img/homepage/main/model6.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">한 나 나</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/profile/kimbaekjin">
-                  <img
-                    src="/static/img/homepage/main/model7.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">김 백 진</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="/profile/choiseoah">
-                  <img
-                    src="/static/img/homepage/main/model8.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">최 서 아</h5>
-                    <p class="card-text">오픈 프로필 개요</p>
-                    <p>나이, 소속사, 주요 경력 한 줄 등</p>
-                  </div>
-                </a>
-              </div>
-            </div>
+          <%-include('./main/main_profile.ejs')%>
+          <div class="ytb_box">
+            <iframe
+              class="celeb_ytb ytb1"
+              width="620"
+              height="325"
+              src="https://www.youtube-nocookie.com/embed/dA1jRO0egbU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              class="celeb_ytb"
+              width="620"
+              height="325"
+              src="https://www.youtube-nocookie.com/embed/tJN2Do4yq4s"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </main>

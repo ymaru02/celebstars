@@ -6,6 +6,8 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    overflow: hidden;
+    padding: 10px;
 }
 .background {
   background: radial-gradient(
@@ -22,7 +24,8 @@
   margin-top: 50px;
   margin-bottom: 50px;
   width: 600px;
-  height: 800px;
+  min-height: 850px;
+  padding-bottom: 20px;
   background-color: white;
   border-radius: 50px;
 
@@ -46,7 +49,7 @@
   .box1 {
     /* display: block; */
     width: 100%;
-    height: 800px;
+    min-height: 850px;
   }
 }
 .text_box{
@@ -284,6 +287,7 @@ input[type="password"] {
 /* IE */
 
 .select {
+  margin-top: 10px;
   width: 150px;
   height: 35px;
   background: url("https://freepikpsd.com/media/2019/10/down-arrow-icon-png-7-Transparent-Images.png")
@@ -299,6 +303,19 @@ input[type="password"] {
   color: #fff;
   padding: 3px 0;
 }
+@media screen and (max-width: 768px) {
+  .select{
+    /* text-align: center; */
+    
+    width: 43%;
+    margin: auto;
+  }
+}
+/* @media screen and (max-width: 768px) {
+  .select option{
+    text-align: center;
+  }
+} */
 #sample3_postcode {
   text-align: center;
   width: 80px;
@@ -319,6 +336,15 @@ input[type="password"] {
   border-right-width: 1px;
   border-bottom-width: 1px;
   border-left-width: 1px;
+}
+@media screen and (max-width: 768px) {
+  #sample3_postcode{
+    
+    width: 40%;
+    margin: auto;
+ 
+  
+  }
 }
 .ad input {
   margin-top: 5px;
@@ -417,6 +443,16 @@ input[id="cbtest2"]:checked + .cb2::before {
 .box3 input {
   display: none;
 }
+#location-modal{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  max-width: 500px;
+}
+
+
 @keyframes bottomcheck {
   0% {
     height: 0;
@@ -443,11 +479,18 @@ input[id="cbtest2"]:checked + .cb2::before {
 @media screen and (max-width: 768px) {
   .checkbox_group {
     /* display: block; */
-    margin-left: none;
+    margin-left: 10px
   }
 }
 .box3 label {
   margin-right: 60px;
+
+}
+@media screen and (max-width: 768px) {
+  .box3 label  {
+    /* display: block; */
+    margin-right: 0px;
+  }
 }
 
 .modal-sm {
@@ -482,4 +525,15 @@ input[id="cbtest2"]:checked + .cb2::before {
 
   width: 400px;
 }
+#wrap{
 
+    display: none;
+    border: 1px solid;
+    width: 100%;
+    height: 100px;
+    margin: 5px 0;
+    position: relative;
+                
+}
+#wrap { height: 300px !important;
+}
