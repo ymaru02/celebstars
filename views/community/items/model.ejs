@@ -1,0 +1,65 @@
+<div class="community_content" id="model">
+  <div class="model_top">
+    <div class="model_length">
+      <p>총 <span style="color: rgb(255, 89, 24)"><%= imax = 5%></span>건</p>
+    </div>
+    <div>
+      <ul class="model_search">
+        <li><select name="" id="">
+          <option value="">제목</option>
+          <option value="">내용</option>
+          <option value="">글쓴이</option>
+        </select></li>
+        <li><input type="text"></li>
+        <li><button>검색</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="model_post_box">
+    <table class="model_table">
+      <tr class="table_title">
+        <th class="model_no">No</th>
+        <th class="model_title">제목</th>
+        <th class="model_author">글쓴이</th>
+        <th class="model_upload">날짜</th>
+        <th class="model_view">조회</th>
+      </tr>
+      <tr class="model model_notice">
+        <td><img src="/static/img/community/exclamation.png" alt=""></td>
+        <td class="model_notice_title"><a href="#">모델 전용 게시판 공지사항입니다.</a></td>
+        <td>셀럽스타즈</td>
+        <td>2022-01-01</td>
+        <td>0</th>
+      </tr>
+      <%for(var i=imax;i>0;i--) {%>
+        <tr class="model">
+          <td><%=i%></td>
+          <td class="td_title"><a href="#">제목</a></td>
+          <td>글쓴이<%=i%></td>
+          <td>2022-01-0<%=i%></td>
+          <td>0</th>
+        </tr>
+        <%}%>
+    </table>
+  </div>
+  <div class="model_page_nav">
+    <nav>
+      <ul class="pagination">
+        <li class="model_previous">
+          <a href="#">
+            <
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li class="model_next">
+          <a href="#">
+            >
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="model_btn_box">
+      <button class="model_btn"><a href="#">글쓰기</a></button>
+    </div>
+  </div>
+</div>

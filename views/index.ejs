@@ -5,13 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>celebstars</title>
+    <%-include("link.ejs")%>
+    <link rel="stylesheet" href="/static/css/main/main.css" />
   </head>
   <body>
-    <div>
-      <a href="/prepage">prepage</a>
-      <a href="/nextpage">nextpage</a>
+    <div id="wrap">
+      <%-include("./navbar/navbar.ejs")%>
+      <%-include("./back_to_top/back_to_top.ejs")%>
+      <main class="main">
+        <video class="video play1" width="100%" height="630" muted autoplay>
+          <source src="/static/video/celebstars1.mp4" type="video/mp4" />
+        </video>
+        <div class="main_box_2">
+          <%-include("./text_scroll/text_scroll.ejs")%>
+          <div id="banner_box" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#banner_box"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <% for(var i=2; i<4; i++) { %>
+              <button
+                type="button"
+                data-bs-target="#banner_box"
+                data-bs-slide-to="<%=i-1%>"
+                aria-label="Slide <%=i%>"
+              ></button>
+              <% } %>
+            </div>
+            <div class="banner_img" class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="/"
+                  ><img
+                    src="/static/img/homepage/main/main_banner1.jpg"
+                    class="d-block w-100"
+                /></a>
+              </div>
+              <% for(var i=2; i<4; i++) { %>
+              <div class="carousel-item">
+                <a href="/"
+                  ><img
+                    src="/static/img/homepage/main/main_banner<%=i%>.jpg"
+                    class="d-block w-100"
+                /></a>
+              </div>
+              <% } %>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#banner_box"
+              data-bs-slide="prev"
+            >
+              <span
+                ><img src="/static/img/homepage/main/prevIcon.png" alt=""
+              /></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#banner_box"
+              data-bs-slide="next"
+            >
+              <span
+                ><img src="/static/img/homepage/main/nextIcon.png" alt=""
+              /></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="casting_title">
+            <h2>캐스팅</h2>
+            <a href="/casting">
+              <span>캐스팅 더 보러 가기 ▶</span>
+            </a>
+          </div>
+          <%-include('./main/main_corp.ejs')%>
+          <div class="magazine_title">
+            <h2>오픈 프로필</h2>
+            <a href="/openprofile">
+              <span>프로필 더 보러 가기 ▶</span>
+            </a>
+          </div>
+          <%-include('./main/main_profile.ejs')%>
+          <div class="ytb_box">
+            <iframe
+              class="celeb_ytb ytb1"
+              width="620"
+              height="325"
+              src="https://www.youtube-nocookie.com/embed/dA1jRO0egbU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              class="celeb_ytb"
+              width="620"
+              height="325"
+              src="https://www.youtube-nocookie.com/embed/tJN2Do4yq4s"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </main>
+      <%-include('./footer/footer.ejs')%>
     </div>
-
-    <script></script>
+    <!-- 부트스트랩 -->
+    <script src="/jq/jquery.js"></script>
+    <script src="/static/js/main/video.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>

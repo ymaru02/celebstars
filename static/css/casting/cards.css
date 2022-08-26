@@ -1,0 +1,42 @@
+.card {
+  border: none;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+.card-img-top {
+  width: auto;
+  height: 180px;
+  object-fit: contain;
+  overflow: hidden;
+  border: 1px solid rgba(100, 100, 100, 0.3);
+  border-radius: 10px;
+  z-index: 1;
+}
+.card-bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  z-index: 2;
+  cursor: pointer;
+}
+.bi-bookmark-star-fill {
+  color: #ffc107;
+}
+.card-title {
+  font-weight: bold;
+}
+.card-text {
+  font-size: 15px;
+}
+.card-location {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+}
+.card-tag span {
+  background-color: rgb(238, 250, 249);
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 13px;
+}

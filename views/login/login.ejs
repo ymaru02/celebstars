@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%-include("../link.ejs")%>
+    <link href="/static/css/join/login.css" rel="stylesheet" />
+    <title>login</title>
+  </head>
+  <body class="background">
+    <!-- 투명 인풋 박스창 -->
+    <!-- <div>이름
+            <input type="text" style="border: none; background: transparent;">
+        </div> -->
+    <div class="box">
+      <div class="box1">
+        <div class="box2">
+          <div class="imgbox1">
+            <img
+              src="/static/img/homepage/main/celeblogo1.png"
+              alt=""
+              style="width: 100%"
+            />
+          </div>
+          <div class="box3">
+            셀럽스타즈는 당신과 함께 합니다.
+            <div class="box4">
+              <div>
+                에이전시, 매니지먼트, 캐스팅 관계자등
+                <p></p>
+                사업자 번호가 있는 고객은 기업회원으로 가입해주세요.
+                <div class="boxmove">
+                  <a href="/join">
+                    <button class="button1" type="button">기업고객</button>
+                  </a>
+                </div>
+              </div>
+
+              <div class="box5">
+                모델, 배우라면?
+                <p></p>
+                캐스팅에 지원할 고객은 개인 회원으로 가입해주세요.
+                <div class="boxmove">
+                  <a href="/join">
+                    <button class="button2" type="button">개인회원</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img class="logo" src="/static/img/KakaoTalk_20220414_145050835 (1).png" alt=""> -->
+    <script src="/jq/jquery.js"></script>
+    <script src="/jq/jquery-ui.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/static/js/join/login.js"></script>
+  </body>
+</html>

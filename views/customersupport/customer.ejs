@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Support</title>
+    <%-include("../link.ejs")%>
+    <link rel="stylesheet" href="/static/css/customersupport/customer.css" />
+    <link rel="stylesheet" href="/sweet/sweetalert2.css" />
+    <link rel="stylesheet" href="/static/css/customersupport/items/faq.css" />
+    <link rel="stylesheet" href="/static/css/customersupport/items/tip.css" />
+    <link
+      rel="stylesheet"
+      href="/static/css/customersupport/items/partnership.css"
+    />
+    <link rel="stylesheet" href="/static/css/customersupport/items/event.css" />
+    <link rel="stylesheet" href="/static/css/customersupport/items/qa.css" />
+    <link
+      rel="stylesheet"
+      href="/static/css/customersupport/items/qa/qa_inquiry.css"
+    />
+  </head>
+  <body>
+    <%-include("../navbar/navbar.ejs")%>
+    <main class="customer">
+      <div class="customer_box">
+        <div class="customer_title">
+          <h2>고객 지원 서비스</h2>
+          <div class="menu_box">
+            <button
+              id="defaultOpen"
+              class="option_btn"
+              onclick="openOption(event, 'faq')"
+            >
+              FAQ
+            </button>
+            <li>|</li>
+            <button class="option_btn" onclick="openOption(event, 'tip')">
+              정보 & 팁
+            </button>
+            <li>|</li>
+            <button class="option_btn" onclick="openOption(event, 'partner')">
+              셀럽 제휴 할인
+            </button>
+            <li>|</li>
+            <button class="option_btn" onclick="openOption(event, 'event')">
+              이벤트
+            </button>
+            <li>|</li>
+            <button class="option_btn" onclick="openOption(event, 'qa')">
+              Q & A
+            </button>
+          </div>
+        </div>
+        <div class="customer_item">
+          <%-include('./items/faq.ejs')%> <%-include('./items/tip.ejs')%>
+          <%-include('./items/partner.ejs')%> <%-include('./items/event.ejs')%>
+          <%-include('./items/qa.ejs')%>
+        </div>
+      </div>
+    </main>
+    <%-include('../footer/footer.ejs')%>
+    <script src="/jq/jquery.js"></script>
+    <script src="/static/js/customer/faq_accordion.js"></script>
+    <script src="/static/js/customer/customer.js"></script>
+    <script src="/static/js/customer/qa_inquiry.js"></script>
+    <script src="/sweet/sweetalert2.js"></script>
+  </body>
+</html>

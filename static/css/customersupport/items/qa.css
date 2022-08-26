@@ -1,0 +1,87 @@
+#qa {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#qa .qa_length {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#qa .qa_length p {
+  margin-left: 15px;
+}
+.qa_ment_box {
+  margin-bottom: 40px;
+}
+.qa_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+}
+.qa_search {
+  display: flex;
+  justify-content: end;
+  border-radius: 3px;
+}
+.qa_search li {
+  list-style: none;
+}
+.qa_search li select {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.qa_search li button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.qa_search li select,
+.qa_search li input,
+.qa_search li button {
+  height: 30px;
+}
+.qa_search li input {
+  border: 1px solid lightgray;
+}
+.qa_search li button {
+  width: 50px;
+  border: none;
+}
+.qa_post_box {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  justify-content: center;
+}
+.qa_post_box .qa_empty {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.qa_post_box .qa_empty p {
+  margin-top: 15px;
+  color: darkgray;
+}
+.qa_btn {
+  width: 120px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 1px solid darkgray;
+  font-weight: bold;
+}
+.qa_btn:hover {
+  border: 2px solid #ffc107;
+}
+@media screen and (max-width: 770px) {
+  .qa_search li input {
+    width: 150px;
+  }
+}

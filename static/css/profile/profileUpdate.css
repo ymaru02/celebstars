@@ -1,0 +1,166 @@
+.profile {
+  width: 1280px;
+  margin: 20px auto;
+}
+.profile-header {
+  text-align: end;
+}
+.profile-container {
+  /* background-image: url("/static/img/artistImg/hannana/main2.jpg"); */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 95vh;
+  box-shadow: 10px 5px 5px rgb(200, 200, 200);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.profile-inner {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 50px 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+}
+.profile-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #6c757d;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 500px;
+  transition: all 0.3s;
+}
+.profile-img:hover {
+  width: 800px;
+}
+.profile-img img {
+  position: absolute;
+  height: 100%;
+}
+.profile-img h2 {
+  z-index: 1;
+  color: black;
+}
+.profile-file {
+  display: none;
+  z-index: 1;
+}
+.profile-button {
+  color: black;
+  font-size: 30px;
+  border: 1px solid #6c757d;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+.profile-button:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #6c757d;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.profile-name {
+  font-size: 50px;
+  font-weight: 700;
+}
+.profile-description {
+  font-size: 20px;
+}
+.picture-update {
+  margin: 20px;
+}
+.profile-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-margin {
+  margin: 10px 0;
+}
+.profile-btn {
+  font-size: 20px;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0;
+}
+.card-title {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8d8d8d;
+}
+.profile-icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.profile-icon {
+  width: 30px;
+}
+.career-height {
+  max-height: 60vh;
+  height: 60vh;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.modal-shadow {
+  box-shadow: 10px 5px 5px rgb(200, 200, 200);
+}
+
+.btn {
+  color: black;
+}
+
+.btn:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 1280px) {
+  .profile {
+    max-width: 768px;
+    width: auto;
+    margin: 20px auto;
+  }
+  .profile-container {
+    background-repeat: repeat;
+  }
+  .profile-container {
+    height: auto;
+  }
+  .profile-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .profile-img {
+    width: 100%;
+    height: 800px;
+    transition: height 0.3s;
+    overflow: hidden;
+  }
+  .profile-img:hover {
+    width: 100%;
+  }
+  .profile-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .profile-content {
+    margin: 10px 0;
+  }
+}

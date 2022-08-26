@@ -1,0 +1,110 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="careerBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content modal-shadow">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">
+          <strong> 포트폴리오 </strong>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          onclick="resetCareer()"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="container career-height">
+          <div class="row">
+            <div class="col-3"><strong>1. 작품 분야 </strong></div>
+            <div class="col mb-4">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select genre</option>
+                <option value="1">드라마</option>
+                <option value="2">영화</option>
+                <option value="3">광고</option>
+                <option value="4">잡지</option>
+                <option value="5">무대</option>
+                <option value="6">Tv</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3"><strong>작품명</strong></div>
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Name</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3"><strong>년도</strong></div>
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="year"
+                />
+                <label for="floatingInput">year</label>
+              </div>
+            </div>
+            <div class="col-1"><strong>월</strong></div>
+            <div class="col">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="month"
+                />
+                <label for="floatingInput">month</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-outline-primary w-100"
+          onclick="addCareer()"
+        >
+          작품 추가
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-danger text-danger"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary text-primary"
+          data-bs-dismiss="modal"
+        >
+          Apply
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/profile/career.js"></script>

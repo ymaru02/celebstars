@@ -1,0 +1,139 @@
+.searchbar {
+  position: relative;
+  width: 1080px;
+  padding-top: 20px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 3;
+}
+.stick-search {
+  position: sticky;
+  top: 80px;
+  width: 100%;
+  padding-top: 20px;
+  background-color: white;
+  z-index: 2;
+}
+.subsearch {
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.subsearch-item {
+  position: relative;
+  margin: 0px 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  border-top: 1px solid rgb(190, 190, 190);
+  border-bottom: 1px solid rgb(190, 190, 190);
+  /* cursor: pointer; */
+  background-color: rgba(255, 255, 255, 0);
+}
+.subsearch-item i {
+  font-size: 12px;
+}
+.select-item {
+  font-weight: bold;
+  padding-left: 5px;
+  color: #092063;
+}
+.form-select {
+  cursor: pointer;
+}
+.casting {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.bookmarkcover {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.bookmark {
+  display: inline-block;
+  color: #ffc107;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.bookmark-new {
+  display: inline-block;
+  color: #3668ff;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.range-text {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.range-age {
+  padding-right: 10px;
+  color: #092063;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.range-age-end {
+  padding: 0 20px;
+}
+
+.range-cover {
+  float: right;
+  margin-top: 30px;
+}
+.range-cover span {
+  padding-right: 15px;
+}
+
+.cancle-btn {
+  color: #777;
+  cursor: pointer;
+}
+.apply-btn {
+  cursor: pointer;
+  font-weight: bold;
+  color: #092063;
+}
+
+@media screen and (max-width: 1080px) {
+  .searchbar {
+    width: 100%;
+  }
+  .subsearch {
+    width: 100%;
+  }
+  .stick-search {
+    width: 100%;
+  }
+  .row {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .age-dropdown-content {
+    min-width: 60vw;
+    left: 0;
+  }
+  .subsearch-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 460px) {
+  .subsearch-menu {
+    flex-direction: column;
+  }
+  .subsearch-menu div {
+    flex-direction: column;
+    margin: 3px;
+  }
+  .age-dropdown-content {
+    min-width: 90vw;
+    left: 0;
+  }
+  .subsearch-item {
+    margin-bottom: 5px;
+  }
+}
