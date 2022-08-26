@@ -1,0 +1,71 @@
+body .community_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.community {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.community_box {
+  margin: 80px 0;
+  width: 1080px;
+}
+.community_title h2 {
+  font-weight: bold;
+  display: inline;
+}
+.menu_box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.menu_box button {
+  margin: 0 10px;
+  display: inline-block;
+  font-size: 20px;
+  color: darkgray;
+  font-weight: 400;
+  border: none;
+  background-color: white;
+}
+.menu_box button:hover {
+  color: black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+}
+.menu_box button.active {
+  color: black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.menu_box li {
+  list-style: none;
+  font-size: 25px;
+}
+.item_table {
+  margin-top: 30px;
+  border-top: 2px solid black;
+  width: 100%;
+  text-align: center;
+}
+.community_item {
+  margin-top: 40px;
+}
+.community_content {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  .menu_box button {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+  }
+}

@@ -17,7 +17,7 @@
   border: 1px solid lightgray;
   width: 600px;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .inquiry_title {
   font-size: 30px;
@@ -82,7 +82,8 @@
   border-radius: 10px;
   color: black;
   font-weight: bold;
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: white;
 }
 #inquiry_submit_btn:hover {
   border: 2px solid #ffc107;
