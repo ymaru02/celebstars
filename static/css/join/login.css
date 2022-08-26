@@ -25,12 +25,7 @@
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .box2 {
-  position: relative;
-  width: 80%;
-  margin-left: 10%;
-  /* background-size: contain;
-        background-repeat: no-repeat; */
-  /* background-image: url("/static/img/logo.png"); */
+width: 100%;
 }
 @media screen and (max-width: 768px) {
   .box2 {
@@ -45,26 +40,21 @@
   }
 }
 .box3 {
-  position: absolute;
-  margin-left: 20px;
+
+text-align: center;
   font-size: 30px;
 }
 .box4 {
-  position: absolute;
-  margin-top: 30px;
-  margin-left: 20px;
+text-align: center;
+  margin-top: 60px;
   font-size: 15px;
 }
 .box5 {
-  position: absolute;
+
   margin-top: 40px;
   font-size: 15px;
 }
-@media screen and (min-width: 768px) {
-  .boxmove {
-    margin-left: 10%;
-  }
-}
+
 .button1 {
   margin-top: 20px;
   width: 310px;
@@ -86,4 +76,8 @@
   display: flex;
   align-items: center;
   height: 300px;
+  padding: 30px;
+  /* text-align: center; */
 }
+
+
