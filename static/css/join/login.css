@@ -1,0 +1,97 @@
+.logo {
+  width: 300px;
+  height: 100px;
+}
+.background {
+  background: radial-gradient(
+    circle,
+    rgba(251, 255, 107, 1) 0%,
+    rgba(164, 120, 204, 1) 72%,
+    rgba(42, 27, 106, 1) 100%
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    padding: 5px;
+  }
+}
+.box1 {
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 600px;
+  height: 800px;
+  background-color: white;
+  border-radius: 50px;
+  /* text-align: center; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.box2 {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .box2 {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box1 {
+    /* display: block; */
+    width: 100%;
+    height: 800px;
+  }
+}
+.box3 {
+  text-align: center;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .box3 {
+    font-size: 25px;
+  }
+}
+
+.box4 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 15px;
+}
+.box5 {
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.button1 {
+  margin-top: 20px;
+  width: 310px;
+  background-color: #ffc107;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+}
+.button2 {
+  margin-top: 20px;
+  /* margin-left: 10px; */
+  width: 310px;
+  background-color: #ffc107;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+}
+.imgbox1 {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  padding: 30px;
+  /* text-align: center; */
+}
+@media screen and (max-width: 768px) {
+  .imgbox1 {
+    /* display: block; */
+    height: 250px;
+  }
+}

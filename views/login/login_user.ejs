@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login_user</title>
+    <%-include("../link.ejs")%>
+    <link rel="stylesheet" href="/static/css/login/login_user.css" />
+</head>
+
+<body class="background">
+    <!-- 투명 인풋 박스창 -->
+    <!-- <div>이름
+                <input type="text" style="border: none; background: transparent;">
+            </div> -->
+    <div class="box">
+        <div id="menu" class="box1">
+            <div class="box2">
+                <p></p>
+                <div class="jointext">
+                    <img src="/static/img/homepage/main/celeblogo1.png" alt="">
+                </div>
+                <div class="input">
+                    <div class="text_box">
+                        <input id="user_email" 
+                        name="user_email" 
+                        type="email" 
+                        placeholder="이메일"
+                        style="background: transparent" 
+                        oninput="resisterEmailReg()" required />
+                        
+                        <div class="check_font" 
+                        id="email_check">
+
+                        </div>
+                    </div>
+                    <p></p>
+                    <div>
+                        <input id="user_pw" 
+                        type="password" 
+                        placeholder="비밀번호" 
+                        style="background: transparent"
+                        oninput="resisterPwReg()" required />
+                    </div>
+                    <div class="check_font" id="pw_check">
+
+                    </div>
+                    <p></p>
+                    <div class="button">
+                        <button id="button" type="button" onclick="location.href='/';">로그인</button>
+                    </div>
+                    <div class="a_tag">
+                        <a  href="/login" class="yellow underline bt1" >회원가입</a>
+                        <a href=""  class="yellow underline bt2">비밀번호 찾기</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <script src="/jq/jquery.js"></script>
+    <script src="/jq/jquery-ui.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="/static/js/login/login_user.js"></script>
+    <!-- <img class="logo" src="/static/img/KakaoTalk_20220414_145050835 (1).png" alt=""> -->
+</body>
+
+</html>

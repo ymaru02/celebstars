@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%-include("../link.ejs")%>
+    <link href="/static/css/profile/profile.css" rel="stylesheet" />
+    <link href="/static/css/magazine/magazine.css" rel="stylesheet" />
+    <link href="/static/css/profile/modal/lightBox.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%-include("../navbar/navbar.ejs")%>
+    <div class="profile">
+      <div class="profile-header">
+        <a href="/update/parkwhite"
+          ><button type="button" class="btn btn-outline-secondary">
+            프로필 관리하기
+          </button></a
+        >
+      </div>
+    </div>
+    <!-- profile -->
+    <main class="profile">
+      <div class="profile-container">
+        <div class="porfile-cover">
+          <div class="profile-inner">
+            <img
+              class="profile-img"
+              src="/static/img/artistImg/parkwhite/main0.jpg"
+              alt=""
+            />
+            <div class="profile-content">
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-12 profile-name">박하얀</div>
+                </div>
+                <div class="row profile-description">
+                  <div class="col-4 col-lg-2 offset-lg-2">
+                    <p><strong>생년월일</strong></p>
+                    <p>xx.xx.xx</p>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <p><strong>Height</strong></p>
+                    <p>xxxcm</p>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <p><strong>Weight</strong></p>
+                    <p>xxkg</p>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <p><strong>3 Size</strong></p>
+                    <p>xx-xx-xx</p>
+                  </div>
+                </div>
+                <!-- cards -->
+                <div class="row row-cols-1 row-cols-md-3">
+                  <div class="col mt-3">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">드라마</h5>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mt-3">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">영화</h5>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mt-3">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">광고</h5>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mt-3">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">잡지</h5>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mt-3">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">무대</h5>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mt-3">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">TV</h5>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                        <p class="card-text">2022 08 경력 내용</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- icons -->
+              <div class="profile-icons">
+                <div>
+                  <img
+                    class="profile-icon"
+                    src="/static/img/profile/profileIcon/kakakotalk.png"
+                    alt=""
+                  />
+                  <span>xxx@xxx.com</span>
+                </div>
+                <div>
+                  <img
+                    class="profile-icon"
+                    src="/static/img/profile/profileIcon/youtube.png"
+                    alt=""
+                  />
+                  <span>xxx@xxx.com</span>
+                </div>
+                <div>
+                  <img
+                    class="profile-icon"
+                    src="/static/img/profile/profileIcon/instagram.png"
+                    alt=""
+                  />
+                  <span>xxx@xxx.com</span>
+                </div>
+                <div>
+                  <img
+                    class="profile-icon"
+                    src="/static/img/profile/profileIcon/twitter.png"
+                    alt=""
+                  />
+                  <span>xxx@xxx.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Button trigger modal -->
+          <div class="ful-screen">
+            <a href="/parkwhite">
+              <button type="button" class="btn btn-outline-secondary">
+                <strong> 프로필 보기 </strong>
+              </button>
+            </a>
+            <!-- <button
+            type="button"
+            class="btn btn-outline-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#magazineModal"
+            onclick="hiddenScroll()"
+          >
+            <strong> 프로필 보기 </strong>
+          </button> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <%-include('./modal/magazine.ejs')%>
+
+    <!-- profile img -->
+    <main class="profile">
+      <div class="profile-top">
+        <h2>
+          <strong> 대표 사진 </strong>
+        </h2>
+      </div>
+      <div id="imglightbox" class="center">
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main0.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(1)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main1.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(2)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main2.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(3)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main3.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(4)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main4.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(5)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main5.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(6)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main6.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(7)"
+            class="hover-shadow"
+          />
+        </div>
+
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main7.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(8)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main8.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(9)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main9.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(10)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main10.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(11)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main11.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(12)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main12.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(13)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main13.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(14)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="inner">
+          <img
+            class="carousel-img"
+            src="/static/img/artistImg/parkwhite/main14.jpg"
+            alt=""
+            onclick="openModal('img');currentImgSlide(15)"
+            class="hover-shadow"
+          />
+        </div>
+      </div>
+    </main>
+    <%-include('./lightbox/imgLightBox.ejs')%>
+    <%-include('../footer/footer.ejs')%>
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/slick/slick.js"></script>
+    <script src="/static/js/profile/lightBox.js"></script>
+    <script src="/static/js/profile/profile.js"></script>
+    <script src="/static/js/profile/carousel.js"></script>
+  </body>
+</html>

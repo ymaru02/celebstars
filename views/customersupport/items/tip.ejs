@@ -1,0 +1,58 @@
+<div class="customer_content" id="tip">
+  <div class="tip_top">
+    <div class="tip_length">
+      <p>총 <span style="color: rgb(255, 89, 24)"><%= imax = 5%></span>건</p>
+    </div>
+    <div>
+      <ul class="tip_search">
+        <li><select name="" id="">
+          <option value="">제목</option>
+          <option value="">내용</option>
+          <option value="">글쓴이</option>
+        </select></li>
+        <li><input type="text"></li>
+        <li><button>검색</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="tip_post_box">
+    <table class="tip_table">
+      <tr class="table_title">
+        <th class="tip_no">No</th>
+        <th class="tip_title">제목</th>
+        <th class="tip_author">글쓴이</th>
+        <th class="tip_upload">날짜</th>
+        <th class="tip_view">조회</th>
+      </tr>
+      <%for(var i=imax;i>0;i--) {%>
+        <tr class="tip">
+          <td class="tip_no"><%=i%></td>
+          <td class="td_title"><a href="">제목</a></td>
+          <td class="tip_author">글쓴이<%=i%></td>
+          <td class="tip_upload">2022-01-0<%=i%></td>
+          <td class="tip_view">0</th>
+        </tr>
+        <%}%>
+    </table>
+  </div>
+  <div class="tip_page_nav">
+    <nav>
+      <ul class="pagination">
+        <li class="tip_previous">
+          <a href="#">
+            <
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li class="tip_next">
+          <a href="#">
+            >
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="tip_btn_box">
+      <button class="tip_btn"><a href="#">글쓰기</a></button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="customer_content" id="qa">
+  <div class="qa_ment_box">
+    <p>
+      <span style="font-size: 25px; font-weight: bold">CELEB</span>
+      <span style="font-size: 25px; font-weight: bold; color: #ffc107"
+        >STARS</span
+      >
+      에 <span style="font-weight: bold; color: black">궁금한 점</span>을
+      문의해주세요.<br />
+      빠른 시일 내로 정성을 다해 응답해드리겠습니다.
+    </p>
+  </div>
+  <div class="qa_top">
+    <div class="qa_length">
+      <p>총 <span style="color: rgb(255, 89, 24)"><%= imax = 5%></span>건</p>
+    </div>
+    <div>
+      <ul class="qa_search">
+        <li>
+          <select name="" id="">
+            <option value="">제목</option>
+            <option value="">내용</option>
+            <option value="">글쓴이</option>
+          </select>
+        </li>
+        <li><input type="text" /></li>
+        <li><button>검색</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="qa_post_box">
+    <div class="qa_empty"><p>문의 내용이 없습니다.</p></div>
+  </div>
+  <button class="qa_btn">문의하기</button>
+
+  <!-- 문의 작성 창 -->
+  <div id="inquiry_box" class="modal">
+    <div class="inquiry_inner">
+      <div class="close">
+        <span>&times;</span>
+      </div>
+      <div class="inquiry_title">
+        <p>문의하기</p>
+      </div>
+      <div class="inquiry_contents">
+        <div class="inquiry_id_box">
+          <p>작성자</p>
+          <div class="inquiry_user_id">CelebStars</div>
+        </div>
+        <div class="inquiry_mini_title_box">
+          <p>제목</p>
+          <div><input type="text" name="" id="mini_title" /></div>
+        </div>
+        <div class="inquiry_desc_box">
+          <p>문의 내용</p>
+          <div><textarea id="inquiry_desc" rows="5" cols="40"></textarea></div>
+        </div>
+      </div>
+      <button id="inquiry_submit_btn" type="submit">문의 제출</button>
+    </div>
+  </div>
+</div>

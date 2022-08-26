@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%-include("../link.ejs")%>
+    <link href="/static/css/casting/dropdown/dropdown.css" rel="stylesheet" />
+    <link href="/static/css/casting/casting.css" rel="stylesheet" />
+    <link href="/static/css/casting/cards.css" rel="stylesheet" />
+    <link href="/static/css/casting/range.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%-include("../navbar/navbar.ejs")%>
+    <div class="searchbar">
+      <div class="casting-dropdown">
+        <button onclick="myFunction()" class="casting-dropbtn casting-btn">
+          <strong class="casting-title">분야</strong>
+          <span class="casting-icon-cover">
+            <svg
+              xmlns="https://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              class="casting-icon"
+            >
+              <path
+                fill="#666"
+                fill-rule="nonzero"
+                d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z"
+              ></path>
+            </svg>
+          </span>
+        </button>
+        <div id="myDropdown" class="casting-dropdown-content">
+          <ul>
+            <li>
+              <span><strong>전체</strong></span>
+            </li>
+            <li>
+              <span><strong>광고</strong></span>
+            </li>
+            <li>
+              <span><strong>영화</strong></span>
+            </li>
+            <li>
+              <span><strong>잡지</strong></span>
+            </li>
+            <li>
+              <span><strong>모델</strong></span>
+            </li>
+            <li>
+              <span><strong>무대</strong></span>
+            </li>
+            <li>
+              <span><strong>TV</strong></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="stick-search">
+      <div class="subsearch">
+        <div class="subsearch-menu">
+          <button class="subsearch-item">
+            <span> 지역</span>
+            <span class="select-item"> 전체 </span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="casting-dropdown">
+            <button class="subsearch-item age-btn" onclick="ageClick()">
+              <span> 나이 </span>
+              <span id="age-text" class="select-item"> 전체</span>
+              <i class="bi bi-caret-down-fill ageicon"></i>
+            </button>
+            <div id="ageDropdown" class="age-dropdown-content">
+              <div class="slidecontainer">
+                <div class="middle">
+                  <div class="multi-range-slider">
+                    <div class="range-text">
+                      <span id="start-age" class="range-age">0</span>
+                      <span>이상</span>
+                      <span class="range-age-end">~</span>
+                      <span id="end-age" class="range-age">100</span>
+                      <span>미만</span>
+                    </div>
+                    <!-- 진짜 슬라이더 -->
+                    <input
+                      type="range"
+                      id="input-left"
+                      min="0"
+                      max="100"
+                      value="0"
+                    />
+                    <input
+                      type="range"
+                      id="input-right"
+                      min="0"
+                      max="100"
+                      value="100"
+                    />
+                    <!-- 커스텀 슬라이더 -->
+                    <div class="slider">
+                      <div class="track"></div>
+                      <div class="range"></div>
+                      <div class="thumb left">0</div>
+                      <div class="thumb right">100</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="range-cover">
+                  <span class="cancle-btn" onclick="ageRangeClose() "
+                    >취소하기</span
+                  >
+                  <span class="apply-btn" onclick="ageApply()">적용하기</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="casting-dropdown">
+            <button
+              class="subsearch-item location-btn"
+              onclick="locationClick()"
+            >
+              <span> 성별</span>
+              <span id="gender" class="select-item"> 전체</span>
+              <i class="bi bi-caret-down-fill lacationicon"></i>
+            </button>
+            <div id="locationDropdown" class="location-dropdown-content">
+              <ul>
+                <li>전체</li>
+                <li>남성</li>
+                <li>여성</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <select
+            class="form-select form-select-sm"
+            aria-label=".form-select-sm example"
+          >
+            <option selected value="1">최신순</option>
+            <option value="2">응답률</option>
+            <option value="3">인기순</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+    </nav>
+    <main class="casting">
+      <div class="bookmark">
+        <i class="bi bi-bookmark-star-fill"></i>
+        <span> 북마크 모아보기</span>
+      </div>
+      <%-include("./cards.ejs")%>
+    </main>
+
+    <%-include('../footer/footer.ejs')%>
+    <script src="/jq/jquery.js"></script>
+    <script src="/jqui/jquery-ui.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/static/js/casting/bookmark.js"></script>
+    <script src="/static/js/casting/dropdown/dropdown.js"></script>
+    <script src="/static/js/casting/lazy.js"></script>
+    <script src="/static/js/casting/range.js"></script>
+  </body>
+</html>
