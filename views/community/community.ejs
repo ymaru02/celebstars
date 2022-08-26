@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>community Support</title>
+    <%-include("../link.ejs")%>
+    <link rel="stylesheet" href="/static/css/community/community.css" />
+    <link rel="stylesheet" href="/static/css/community/items/free.css" />
+    <link rel="stylesheet" href="/static/css/community/items/model.css" />
+    <link rel="stylesheet" href="/static/css/community/items/actor.css" />
+  </head>
+  <body>
+    <%-include("../navbar/navbar.ejs")%>
+    <main class="community">
+      <div class="community_box">
+        <div class="community_title">
+          <h2>커뮤니티</h2>
+          <div class="menu_box">
+            <button
+              id="defaultOpen"
+              class="option_btn"
+              onclick="openOption(event, 'free')"
+            >
+              자유 게시판
+            </button>
+            <li>|</li>
+            <button class="option_btn" onclick="openOption(event, 'model')">
+              모델 게시판
+            </button>
+            <li>|</li>
+            <button class="option_btn" onclick="openOption(event, 'actor')">
+              배우 게시판
+            </button>
+          </div>
+        </div>
+        <div class="community_item">
+          <%-include('./items/free.ejs')%> <%-include('./items/model.ejs')%>
+          <%-include('./items/actor.ejs')%>
+        </div>
+      </div>
+    </main>
+    <%-include('../footer/footer.ejs')%>
+    <script src="/jq/jquery.js"></script>
+    <script src="/static/js/community/community.js"></script>
+  </body>
+</html>

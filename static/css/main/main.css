@@ -22,9 +22,25 @@
   height: auto;
   object-fit: fill;
 }
+#banner_box {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
 #banner_box button span {
-  width: 70px;
-  height: 100px;
+  width: 40px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+#banner_box button span img {
+  width: 50px;
+  height: 80px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
 }
 .main_box_2 {
   margin: auto;
@@ -138,6 +154,52 @@
 .casting_carousel_mob {
   display: none;
 }
+.ytb_box {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+.celeb_ytb,
+.ytb_box div img {
+  border-radius: 5px;
+  margin: 0 3px;
+  height: 315px;
+}
+@media screen and (max-width: 1080px) {
+  .video {
+    height: auto;
+  }
+  .main_box_2 {
+    width: 100%;
+  }
+  .casting_carousel {
+    display: none;
+  }
+  .casting_carousel_mob {
+    padding: 20px;
+    display: block;
+    height: 360px;
+  }
+  .casting_carousel_mob button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 45%;
+  }
+  .casting_carousel_mob button span {
+    height: 70px;
+    background-color: rgb(202, 208, 214);
+    border-radius: 12px;
+  }
+  #banner_box {
+    height: 100%;
+  }
+  .banner_img,
+  .banner_img div img {
+    height: auto;
+  }
+}
 @media screen and (max-width: 770px) {
   #wrap {
     width: 100%;
@@ -146,11 +208,22 @@
     height: auto;
   }
   #banner_box {
-    width: 100%;
+    height: 100%;
   }
   .banner_img,
   .banner_img div img {
     height: auto;
+  }
+  #banner_box button span {
+    width: 20px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+  }
+  #banner_box button span img {
+    width: 30px;
+    height: 50px;
   }
   .casting_box {
     height: 345px;
@@ -195,23 +268,18 @@
     max-height: 450px;
     min-height: 300px;
   }
-  .casting_carousel {
-    display: none;
+  .ytb_box {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0;
   }
-  .casting_carousel_mob {
-    padding: 20px;
-    display: block;
-    height: 360px;
+  .ytb_box iframe {
+    width: 100%;
+    height: 270px;
   }
-  .casting_carousel_mob button {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 45%;
-  }
-  .casting_carousel_mob button span {
-    height: 70px;
-    background-color: rgb(202, 208, 214);
-    border-radius: 12px;
+  .ytb1 {
+    margin-bottom: 5px;
   }
 }

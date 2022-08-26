@@ -1,0 +1,159 @@
+#free {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#free .free_length {
+  display: flex;
+  justify-content: start;
+  height: 20px;
+  margin-bottom: 10px;
+}
+#free .free_length p {
+  margin-left: 15px;
+}
+.free_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+}
+.free_search {
+  display: flex;
+  justify-content: end;
+  border-radius: 3px;
+}
+.free_search li {
+  list-style: none;
+}
+.free_search li select {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.free_search li button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.free_search li select,
+.free_search li input,
+.free_search li button {
+  height: 30px;
+}
+.free_search li input {
+  border: 1px solid lightgray;
+}
+.free_search li button {
+  width: 50px;
+  border: none;
+}
+.free_post_box {
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.free_table {
+  text-align: center;
+  width: 100%;
+}
+.table_title {
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+}
+.free_table .free_no {
+  width: 7%;
+}
+.free_table .free_title {
+  width: 60%;
+  overflow-x: hidden;
+}
+.free_table .free_author {
+  width: 12%;
+}
+.free_table .free_upload {
+  width: 15%;
+}
+.free_table .free_view {
+  width: 6%;
+}
+.free {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+}
+.free .td_title {
+  text-align: start;
+  padding: 0 20px;
+}
+.free .td_title a {
+  color: black;
+}
+.free_page_nav {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.free_page_nav nav .pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+}
+.free_previous {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.free_next {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.pagination li a {
+  color: black;
+  font-weight: bold;
+}
+.pagination li:hover,
+.free_btn:hover {
+  border: 2px solid #ffc107;
+  cursor: pointer;
+}
+.free_btn_box {
+  position: absolute;
+  height: 30px;
+  right: 10px;
+}
+.free_btn {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: 1px solid darkgray;
+}
+.free_btn a {
+  color: black;
+}
+.free_notice td img {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 770px) {
+  .free_search li input {
+    width: 150px;
+  }
+  .free_table .free_title {
+    width: 40%;
+  }
+  .free_table .free_author {
+    width: 20%;
+  }
+  .free_table .free_upload {
+    width: 27%;
+  }
+}
