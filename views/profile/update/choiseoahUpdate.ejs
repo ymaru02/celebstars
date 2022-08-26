@@ -12,7 +12,7 @@
     <%-include("../../navbar/navbar.ejs")%>
     <div class="profile">
       <div class="profile-header">
-        <a href="/profileUpdate">
+        <a href="/profile/choiseoah">
           <button type="button" class="btn btn-outline-secondary">
             프로필 저장
           </button>
@@ -35,7 +35,7 @@
               type="file"
               class="profile-file form-control"
               id="inputGroupFile01"
-              onchange="fileChange()"
+              onchange="fileChange(this)"
             />
             <h2 class="picture-update">사진 편집</h2>
           </div>
