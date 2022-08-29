@@ -5,6 +5,13 @@
 .profile-header {
   text-align: end;
 }
+.profile-header button{
+  margin-right: 10px;
+}
+
+.profile-header .btn-outline-danger{
+  color: red;
+}
 .profile-container {
   /* background-image: url("/static/img/artistImg/hannana/main2.jpg"); */
   background-repeat: no-repeat;
