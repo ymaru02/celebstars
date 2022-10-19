@@ -1,22 +1,27 @@
-![image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F69aee781-97e4-4144-8f46-aa72635c0e7a%2FMBTingI_logo(nobg).png?table=block&id=8012164e-eaf7-4375-a72e-19b120687faf&spaceId=6e9ffcdf-452b-494c-a455-03f79451456b&width=1640&userId=b30b4534-c8a0-4959-9f96-2c49d1a62326&cache=v2)
-# MBTingI - E2I2
-- [KDT - 2차 프로젝트](https://www.notion.so/joodeng/4-MBTingI-4e3903fc8fc547589f6db40e0286d39b)
-- 20220919 ~ 20221003
-- Use: HTML, CSS, JavaScript, Git, Node.js, Express, jQuery, Axios, Multer, MySQL, Sequelize, Socket.io
+![image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe3e18f9d-2b79-4574-b50f-9598f8be31bf%2Fcelebstars_logo.png?table=block&id=a073b61b-1cc7-44e1-872f-3cb248d82f82&spaceId=6e9ffcdf-452b-494c-a455-03f79451456b&width=1640&userId=b30b4534-c8a0-4959-9f96-2c49d1a62326&cache=v2)
+# Celebstars
+- [KDT - 1차 프로젝트](https://joodeng.notion.site/joodeng/Joo-Young-Lee-61db50959426458db50275c985d2de2a?p=a073b61b1cc744e1872f3cb248d82f82&pm=c)
+- 20220815 ~ 20220829
+- Use: HTML, CSS, JavaScript, Git, Node.js, Express
+## 페이지 설계
+![celeb](https://user-images.githubusercontent.com/99079176/196618440-421e7cac-a160-4309-bb5b-b56bea38aa8e.JPG)
+- 전체적인 UI/UX, 메인 컬러 디자인
+- 모든 페이지에 반응형 페이지 적용
 ## 구현 기능
 > ### 메인 페이지
-- 로그인 여부(세션 이용)에 따라 메인 페이지의 Navbar와 Button UI에 변화를 줌
-> ### 회원가입 페이지
-- 회원가입 정보를 받아 db에 user 정보 저장
-> ### 로그인 & 로그아웃 페이지
-- 로그인 시 세션에 로그인한 유저 정보 저장
-- 로그인 상태 유지 체크 유무에 따라 세션의 유지 시간 조절
-- 세션 삭제 후, 메인 페이지로 이동
-> ### 아이디 / 비밀번호 찾기 페이지
-- DB에서 일치하는 정보를 찾아, 아이디와 비밀번호를 찾아올 수 있도록 설계
-> ### 매칭 페이지
-- 세션 정보에 있는 MBTI와 MBTI 궁합 테이블을 비교해 궁합이 Best, Good, Soso인 MBTI 결과를 추출
-- userinfo 테이블에서 로그인 유저와 이성 관계인 사람 중 필터링한 MBTI를 가지고 있는 유저의 정보를 추출
-- math.random을 이용해 가져온 유저의 정보를 랜덤 정렬
-> ### 마이 페이지
-- 유저가 본인의 정보를 수정할 수 있도록 함
+- 부트스트랩을 이용한 배너, 캐스팅, 프로필 캐러셀 구현
+- 동영상 파일, 유튜브 영상 삽입
+- 탑 스크롤 버튼 구현
+> ### 로그인 & 회원가입 페이지
+> ### 캐스팅 페이지
+> ### 오픈 프로필 페이지
+> ### 프로필 상세보기 페이지
+> ### 마이 프로필 페이지
+> ### 커뮤니티 페이지
+- 고객 지원 페이지의 정보 & 팁 게시판 활용
+> ### 고객 지원 페이지
+- 유저가 보고 싶은 것만 볼 수 있도록 FAQ를 아코디언으로 구현
+- 이벤트를 한 눈에 확인하기 쉽도록 테이블 형태로 구현
+- 문의하기를 누르면 작성 모달 창이 띄고, 제출 시 Sweet Alert 사용
+> ### 클라우드 서버 구축
+- 네이버 클라우드 플랫폼을 이용해 웹 서버를 구축
